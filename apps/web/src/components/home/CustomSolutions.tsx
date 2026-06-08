@@ -74,7 +74,7 @@ export default function CustomSolutions() {
             <div className="absolute inset-0 opacity-[0.015] bg-[radial-gradient(circle_at_1px_1px,_rgb(0,0,0)_1px,_transparent_0)] bg-[size:32px_32px]" />
 
             {/* Decorative Elements */}
-            <div className="absolute top-20 right-20 w-72 h-72 bg-orange-500/10/30 rounded-full blur-3xl" />
+            <div className="absolute top-20 right-20 w-72 h-72 bg-orange-500/10 rounded-full blur-3xl" />
             <div className="absolute bottom-20 left-20 w-80 h-80 bg-purple-100/30 rounded-full blur-3xl" />
 
             <div className="container px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative z-10">

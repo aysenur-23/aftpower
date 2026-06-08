@@ -97,7 +97,7 @@ export default function Iletisim() {
             {/* Hero Section - Clean & Simple */}
             <section className="relative pt-28 pb-12 lg:pt-32 lg:pb-16 flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50">
                 <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.1)_1px,transparent_1px)] bg-[size:40px_40px]" />
-                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-orange-500/10/40 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/3" />
+                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-orange-500/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/3" />
 
                 <div className="container relative z-10 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto text-center">
                     <div className="space-y-4">

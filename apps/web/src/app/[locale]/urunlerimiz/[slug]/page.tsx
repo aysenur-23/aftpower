@@ -892,7 +892,7 @@ export default async function ProductDetailPage({ params }: Props) {
                     {/* Background Pattern */}
                     <div className="absolute inset-0 z-0">
                         <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.1)_1px,transparent_1px)] bg-[size:60px_60px]" />
-                        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-orange-500/10/40 blur-[150px] rounded-full -translate-y-1/2 translate-x-1/3" />
+                        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-orange-500/10 blur-[150px] rounded-full -translate-y-1/2 translate-x-1/3" />
                         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-cyan-100/30 blur-[120px] rounded-full translate-y-1/2 -translate-x-1/3" />
                     </div>
 

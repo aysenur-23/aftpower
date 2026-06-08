@@ -50,7 +50,7 @@ export default function PortablePower() {
                                 isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
                             )}>
                                 <div>
-                                    <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-orange-500/10/50 border border-orange-500/20/50">
+                                    <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-orange-500/10 border border-orange-500/20">
                                         <div className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
                                         <span className="text-[10px] font-bold text-orange-600 uppercase tracking-widest">
                                             {t('badge') || 'YÜKSEK KAPASİTE'}

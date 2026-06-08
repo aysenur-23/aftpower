@@ -90,7 +90,7 @@ export default async function CategoryPage({ params }: Props) {
                 {/* Refined Background Pattern */}
                 <div className="absolute inset-0 z-0 pointer-events-none">
                     <div className="absolute inset-0 opacity-[0.035] bg-[linear-gradient(rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.1)_1px,transparent_1px)] bg-[size:50px_50px]" />
-                    <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-orange-500/10/30 blur-[130px] rounded-full -translate-y-1/2 translate-x-1/3 animate-pulse duration-[8000ms]" />
+                    <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-orange-500/10 blur-[130px] rounded-full -translate-y-1/2 translate-x-1/3 animate-pulse duration-[8000ms]" />
                     <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-cyan-100/20 blur-[100px] rounded-full translate-y-1/2 -translate-x-1/3" />
                 </div>
 
@@ -104,7 +104,7 @@ export default async function CategoryPage({ params }: Props) {
                                     {t('allProducts')}
                                 </Link>
                                 <span className="text-slate-300">/</span>
-                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/5/80 border border-orange-500/15 text-orange-600 text-xs font-bold uppercase tracking-widest backdrop-blur-md shadow-sm ring-1 ring-orange-400/10">
+                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/5 border border-orange-500/15 text-orange-600 text-xs font-bold uppercase tracking-widest backdrop-blur-md shadow-sm ring-1 ring-orange-400/10">
                                     {t(`${category.titleKey}.title`)}
                                 </div>
                             </div>
@@ -143,7 +143,7 @@ export default async function CategoryPage({ params }: Props) {
                         {/* Right Column: Hero Image (Enhanced Float & Shadow) */}
                         <div className="relative order-1 lg:order-2 flex justify-center animate-in zoom-in-95 fade-in duration-1000 delay-200">
                             {/* Decorative Circle with Border */}
-                            <div className="absolute w-[95%] aspect-square rounded-full bg-gradient-to-br from-blue-50 to-indigo-50/30 border border-orange-500/15/50 -z-10 animate-spin-slow duration-[30s]" />
+                            <div className="absolute w-[95%] aspect-square rounded-full bg-gradient-to-br from-blue-50 to-indigo-50/30 border border-orange-500/15 -z-10 animate-spin-slow duration-[30s]" />
 
                             <div className="relative w-full aspect-square max-w-[450px] p-6 flex items-center justify-center filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.12)] hover:drop-shadow-[0_30px_60px_rgba(0,0,0,0.15)] transition-all duration-500 hover:scale-[1.02]">
                                 <Image
@@ -223,7 +223,7 @@ export default async function CategoryPage({ params }: Props) {
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link
                                 href={`/${locale}/urunlerimiz`}
-                                className="px-8 py-4 bg-orange-500/5 text-orange-600 border-2 border-orange-500/15 rounded-xl font-bold hover:bg-orange-500/10/50 hover:border-orange-500/20 transition-all flex items-center justify-center gap-2 shadow-sm hover:shadow"
+                                className="px-8 py-4 bg-orange-500/5 text-orange-600 border-2 border-orange-500/15 rounded-xl font-bold hover:bg-orange-500/10 hover:border-orange-500/20 transition-all flex items-center justify-center gap-2 shadow-sm hover:shadow"
                             >
                                 {t('allProducts')}
                             </Link>
