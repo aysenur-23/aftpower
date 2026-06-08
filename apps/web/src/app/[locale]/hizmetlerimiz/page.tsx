@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props) {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'services' });
     return {
-        title: `${t('title')} | Revium`,
+        title: `${t('title')} | AFT Power`,
         description: t('subtitle'),
     };
 }

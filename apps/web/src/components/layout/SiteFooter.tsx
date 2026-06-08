@@ -1,45 +1,69 @@
 import Link from 'next/link';
-import { useLocale, useTranslations } from 'next-intl';
 import { getLocale, getTranslations } from 'next-intl/server';
+import { Zap } from 'lucide-react';
 
 export default async function SiteFooter() {
     const locale = await getLocale();
     const t = await getTranslations('footer');
-
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="border-t border-neutral-300 bg-neutral-100">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-10">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 max-w-6xl mx-auto">
+        <footer style={{ background: 'linear-gradient(180deg, #0a0f1e 0%, #080d18 100%)', borderTop: '1px solid rgba(249, 115, 22, 0.2)' }}>
+            {/* Top accent */}
+            <div className="h-[2px] bg-gradient-to-r from-transparent via-orange-500 to-transparent" />
+
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-12 pb-8">
+                {/* Brand row */}
+                <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-10 pb-8" style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
+                    <div className="mb-6 md:mb-0">
+                        <div className="flex items-center gap-2 mb-2">
+                            <div className="w-8 h-8 flex items-center justify-center" style={{ background: 'rgba(249,115,22,0.15)', border: '1px solid rgba(249,115,22,0.3)' }}>
+                                <Zap className="w-4 h-4 text-orange-500" />
+                            </div>
+                            <span className="font-brand text-white font-bold tracking-[0.2em] text-lg">AFT POWER</span>
+                        </div>
+                        <p className="text-neutral-500 text-xs tracking-[0.15em] uppercase font-body">Energy Solutions</p>
+                    </div>
+                    <div className="flex items-center gap-6">
+                        <a href="tel:+905518291613" className="text-neutral-400 hover:text-orange-400 transition-colors text-sm font-body">
+                            +90 (551) 829-1613
+                        </a>
+                        <a href="mailto:info@aftpowertech.com" className="text-neutral-400 hover:text-orange-400 transition-colors text-sm font-body">
+                            info@aftpowertech.com
+                        </a>
+                    </div>
+                </div>
+
+                {/* Links grid */}
+                <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
                     {/* Products */}
                     <div>
-                        <h3 className="text-xs sm:text-sm font-semibold tracking-wider uppercase mb-3 sm:mb-4 text-neutral-900">
+                        <h3 className="text-[10px] font-semibold tracking-[0.2em] uppercase mb-4 text-orange-500 font-brand">
                             {t('products')}
                         </h3>
-                        <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-neutral-600">
+                        <ul className="space-y-2.5 text-xs text-neutral-500 font-body">
                             <li>
-                                <Link href={`/${locale}/urunlerimiz/kategori/portable/`} className="hover:text-blue-600 transition-colors">
+                                <Link href={`/${locale}/urunlerimiz/kategori/portable/`} className="hover:text-orange-400 transition-colors">
                                     {t('portablePower')}
                                 </Link>
                             </li>
                             <li>
-                                <Link href={`/${locale}/urunlerimiz/kategori/cabin/`} className="hover:text-blue-600 transition-colors">
+                                <Link href={`/${locale}/urunlerimiz/kategori/cabin/`} className="hover:text-orange-400 transition-colors">
                                     {t('cabinPower')}
                                 </Link>
                             </li>
                             <li>
-                                <Link href={`/${locale}/urunlerimiz/kategori/vehicle/`} className="hover:text-blue-600 transition-colors">
+                                <Link href={`/${locale}/urunlerimiz/kategori/vehicle/`} className="hover:text-orange-400 transition-colors">
                                     {t('vehiclePower')}
                                 </Link>
                             </li>
                             <li>
-                                <Link href={`/${locale}/urunlerimiz/kategori/ges/`} className="hover:text-blue-600 transition-colors">
+                                <Link href={`/${locale}/urunlerimiz/kategori/ges/`} className="hover:text-orange-400 transition-colors">
                                     {t('gesProducts')}
                                 </Link>
                             </li>
                             <li>
-                                <Link href={`/${locale}/urunlerimiz/kategori/battery/`} className="hover:text-blue-600 transition-colors">
+                                <Link href={`/${locale}/urunlerimiz/kategori/battery/`} className="hover:text-orange-400 transition-colors">
                                     {t('batteryPower')}
                                 </Link>
                             </li>
@@ -48,17 +72,17 @@ export default async function SiteFooter() {
 
                     {/* Services */}
                     <div>
-                        <h3 className="text-xs sm:text-sm font-semibold tracking-wider uppercase mb-3 sm:mb-4 text-neutral-900">
+                        <h3 className="text-[10px] font-semibold tracking-[0.2em] uppercase mb-4 text-orange-500 font-brand">
                             {t('services')}
                         </h3>
-                        <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-neutral-600">
+                        <ul className="space-y-2.5 text-xs text-neutral-500 font-body">
                             <li>
-                                <Link href={`/${locale}/hizmetlerimiz/ges-kurulumu/`} className="hover:text-blue-600 transition-colors">
+                                <Link href={`/${locale}/hizmetlerimiz/ges-kurulumu/`} className="hover:text-orange-400 transition-colors">
                                     {t('gesInstallation')}
                                 </Link>
                             </li>
                             <li>
-                                <Link href={`/${locale}/hizmetlerimiz/endustriyel-kurulum/`} className="hover:text-blue-600 transition-colors">
+                                <Link href={`/${locale}/hizmetlerimiz/endustriyel-kurulum/`} className="hover:text-orange-400 transition-colors">
                                     {t('industrialInstallation')}
                                 </Link>
                             </li>
@@ -67,22 +91,22 @@ export default async function SiteFooter() {
 
                     {/* Quick Links */}
                     <div>
-                        <h3 className="text-xs sm:text-sm font-semibold tracking-wider uppercase mb-3 sm:mb-4 text-neutral-900">
+                        <h3 className="text-[10px] font-semibold tracking-[0.2em] uppercase mb-4 text-orange-500 font-brand">
                             {t('quickLinks')}
                         </h3>
-                        <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-neutral-600">
+                        <ul className="space-y-2.5 text-xs text-neutral-500 font-body">
                             <li>
-                                <Link href={`/${locale}/kurumsal/`} className="hover:text-blue-600 transition-colors">
+                                <Link href={`/${locale}/kurumsal/`} className="hover:text-orange-400 transition-colors">
                                     {t('corporate')}
                                 </Link>
                             </li>
                             <li>
-                                <Link href={`/${locale}/iletisim/`} className="hover:text-blue-600 transition-colors">
+                                <Link href={`/${locale}/iletisim/`} className="hover:text-orange-400 transition-colors">
                                     {t('contact')}
                                 </Link>
                             </li>
                             <li>
-                                <Link href={`/${locale}/fiyat-teklifi/`} className="hover:text-blue-600 transition-colors">
+                                <Link href={`/${locale}/fiyat-teklifi/`} className="hover:text-orange-400 transition-colors">
                                     {t('getQuote')}
                                 </Link>
                             </li>
@@ -91,32 +115,31 @@ export default async function SiteFooter() {
 
                     {/* Contact */}
                     <div>
-                        <h3 className="text-xs sm:text-sm font-semibold tracking-wider uppercase mb-3 sm:mb-4 text-neutral-900">
+                        <h3 className="text-[10px] font-semibold tracking-[0.2em] uppercase mb-4 text-orange-500 font-brand">
                             {t('contact')}
                         </h3>
-                        <ul className="space-y-1 sm:space-y-2 text-xs sm:text-sm text-neutral-600">
+                        <ul className="space-y-2.5 text-xs text-neutral-500 font-body">
                             <li>
-                                <a href="tel:+905518291613" className="hover:text-blue-600 transition-colors">
+                                <a href="tel:+905518291613" className="hover:text-orange-400 transition-colors">
                                     {locale === 'ar' ? '+٩٠ (٥٥١) ٨٢٩-١٦١٣' : '+90 (551) 829-1613'}
                                 </a>
                             </li>
                             <li>
-                                {t.has('email') && <span className="font-bold text-slate-700">{t('email')}: </span>}
-                                <a href="mailto:info@reviumtech.com" dir="ltr" className="hover:text-blue-600 transition-colors">
-                                    info@reviumtech.com
+                                <a href="mailto:info@aftpowertech.com" dir="ltr" className="hover:text-orange-400 transition-colors">
+                                    info@aftpowertech.com
                                 </a>
                             </li>
-                            <li className="text-neutral-600">
-                                {t.has('address') ? t('address') : 'Fevzi Çakmak Mahallesi Milenyum Caddesi No:81\nKaratay/KONYA'}
+                            <li className="text-neutral-600 leading-relaxed">
+                                {t.has('address') ? t('address') : 'Fevzi Çakmak Mahallesi Milenyum Caddesi No:81 Karatay/KONYA'}
                             </li>
                             <li>
                                 <a
                                     href="https://maps.app.goo.gl/dEJViRBejc7dpB3WA"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-blue-600 hover:text-blue-700 hover:underline transition-colors text-xs sm:text-sm font-medium"
+                                    className="text-orange-500 hover:text-orange-400 transition-colors font-medium"
                                 >
-                                    {t('getDirections')}
+                                    {t('getDirections')} →
                                 </a>
                             </li>
                         </ul>
@@ -124,14 +147,16 @@ export default async function SiteFooter() {
                 </div>
 
                 {/* Copyright */}
-                <div className="mt-8 sm:mt-10 border-t border-neutral-200 pt-4 sm:pt-6 text-xs text-neutral-600">
-                    <p className="text-center">
-                        © {
-                            locale === 'ar'
-                                ? String(currentYear).replace(/\d/g, d => '٠١٢٣٤٥٦٧٨٩'[parseInt(d)])
-                                : currentYear
-                        } Revium — {t('copyright')}
+                <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-2" style={{ borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+                    <p className="text-xs text-neutral-600 font-body">
+                        © {locale === 'ar'
+                            ? String(currentYear).replace(/\d/g, d => '٠١٢٣٤٥٦٧٨٩'[parseInt(d)])
+                            : currentYear} AFT Power — {t('copyright')}
                     </p>
+                    <div className="flex items-center gap-1 text-neutral-700 text-xs font-body">
+                        <Zap className="w-3 h-3 text-orange-600" />
+                        <span>Powered by clean energy</span>
+                    </div>
                 </div>
             </div>
         </footer>

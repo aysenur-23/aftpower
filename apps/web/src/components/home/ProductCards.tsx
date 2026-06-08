@@ -87,8 +87,8 @@ export default function ProductCards() {
                     "mb-8 lg:mb-10 text-center transition-all duration-1000 ease-out transform",
                     isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 )} ref={sectionRef}>
-                    <span className="text-blue-600 font-bold tracking-widest text-xs uppercase mb-4 block">
-                        {locale === 'tr' ? 'REVİUM ENERJİ' : locale === 'ar' ? 'ريفيوم للطاقة' : 'REVIUM ENERGY'}
+                    <span className="text-orange-500 font-brand font-bold tracking-[0.2em] text-[10px] uppercase mb-4 block">
+                        {locale === 'tr' ? 'AFT POWER ENERJİ' : locale === 'ar' ? 'AFT Power للطاقة' : 'AFT POWER ENERGY'}
                     </span>
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900">
                         {t('categories.title')}
@@ -123,18 +123,18 @@ function CategoryCard({ category, index, locale, t }: { category: any, index: nu
             ref={cardRef}
             href={`/${locale}/urunlerimiz/kategori/${category.slug}/`}
             className={cn(
-                "group relative aspect-[1.35/1] flex flex-col overflow-hidden rounded-3xl border border-slate-200/80 shadow-md transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] transform bg-white",
+                "group relative aspect-[1.35/1] flex flex-col overflow-hidden rounded-none border border-slate-200/80 shadow-md transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] transform bg-white",
                 isVisible
                     ? "opacity-100 translate-y-0 translate-x-0 scale-100"
                     : cn(
                         "opacity-0 scale-95",
                         index % 2 === 0 ? "-translate-x-12" : "translate-x-12"
                     ),
-                "hover:z-10 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-100/50 hover:border-blue-200"
+                "hover:z-10 hover:-translate-y-2 hover:shadow-xl hover:shadow-orange-500/10 hover:border-orange-500/30"
             )}
         >
             {/* Full-Bleed Background Image */}
-            <div className="absolute inset-0 z-0 overflow-hidden rounded-3xl">
+            <div className="absolute inset-0 z-0 overflow-hidden rounded-none">
                 <Image
                     alt={t.has(`${category.key}.title`) ? t(`${category.key}.title`) : category.defaultTitle}
                     src={category.image}
@@ -142,12 +142,12 @@ function CategoryCard({ category, index, locale, t }: { category: any, index: nu
                     className="object-cover transition-transform duration-1000 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105 brightness-105"
                     priority={category.priority}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/85 via-slate-900/25 to-transparent z-10" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-slate-900/25 to-transparent z-10" />
             </div>
 
             {/* Content */}
             <div className="absolute bottom-5 left-6 sm:bottom-7 sm:left-8 z-20 flex flex-col items-start text-left max-w-[90%] pointer-events-none">
-                <h3 className="text-2xl sm:text-3xl font-bold text-white tracking-tight leading-tight group-hover:text-blue-300 transition-colors duration-300 drop-shadow-lg">
+                <h3 className="text-2xl sm:text-3xl font-bold text-white tracking-tight leading-tight group-hover:text-orange-300 transition-colors duration-300 drop-shadow-lg">
                     {t.has(`${category.key}.title`) ? t(`${category.key}.title`) : category.defaultTitle}
                 </h3>
 

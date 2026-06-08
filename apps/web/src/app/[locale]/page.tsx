@@ -43,7 +43,7 @@ export default async function HomePage({ params }: Props) {
                     <Services />
                 </section>
 
-                {/* Features (Neden Revium) - Moved Above Featured Project */}
+                {/* Features (Neden AFT Power) - Moved Above Featured Project */}
                 <section className="relative z-20 overflow-hidden">
                     <Features />
                 </section>

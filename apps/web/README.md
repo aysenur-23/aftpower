@@ -1,6 +1,6 @@
-# Revium Tech Website
+# AFT Power Website
 
-This is the official website for **Revium Tech**, built with **Next.js 14**, **Tailwind CSS**, and **next-intl** for internationalization.
+This is the official website for **AFT Power**, built with **Next.js 14**, **Tailwind CSS**, and **next-intl** for internationalization.
 
 ## 🚀 Features
 
@@ -30,10 +30,10 @@ Create a `.env.local` file in the root directory and add your SMTP credentials t
 SMTP_HOST=smtp.hostinger.com
 SMTP_PORT=587
 SMTP_SECURE=false
-SMTP_USER=aysenuraslan@reviumtech.com
+SMTP_USER=aysenuraslan@aftpowertech.com
 SMTP_PASS=YOUR_PASSWORD_HERE
-SMTP_FROM_EMAIL=aysenuraslan@reviumtech.com
-SMTP_TO_EMAIL=info@reviumtech.com
+SMTP_FROM_EMAIL=aysenuraslan@aftpowertech.com
+SMTP_TO_EMAIL=info@aftpowertech.com
 ```
 
 ### 4. Run the development server
@@ -60,4 +60,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## 📝 License
 
-© 2024 Revium Tech. All rights reserved.
+© 2024 AFT Power. All rights reserved.

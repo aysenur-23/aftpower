@@ -30,11 +30,11 @@ export default function CustomSolutions() {
         {
             key: 'consulting',
             icon: Lightbulb,
-            color: 'text-blue-600',
-            bgColor: 'bg-blue-50',
-            borderColor: 'border-blue-200',
+            color: 'text-orange-500',
+            bgColor: 'bg-orange-500/5',
+            borderColor: 'border-orange-500/20',
             hoverBorder: 'hover:border-blue-400',
-            accentColor: 'bg-blue-600'
+            accentColor: 'bg-orange-500'
         },
         {
             key: 'design',
@@ -74,7 +74,7 @@ export default function CustomSolutions() {
             <div className="absolute inset-0 opacity-[0.015] bg-[radial-gradient(circle_at_1px_1px,_rgb(0,0,0)_1px,_transparent_0)] bg-[size:32px_32px]" />
 
             {/* Decorative Elements */}
-            <div className="absolute top-20 right-20 w-72 h-72 bg-blue-100/30 rounded-full blur-3xl" />
+            <div className="absolute top-20 right-20 w-72 h-72 bg-orange-500/10/30 rounded-full blur-3xl" />
             <div className="absolute bottom-20 left-20 w-80 h-80 bg-purple-100/30 rounded-full blur-3xl" />
 
             <div className="container px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative z-10">
@@ -84,9 +84,9 @@ export default function CustomSolutions() {
                     "max-w-3xl mx-auto text-center mb-14 transition-all duration-700 transform",
                     isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 )}>
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 mb-6">
-                        <Sparkles className="w-4 h-4 text-blue-500" />
-                        <span className="text-xs font-bold text-blue-600 uppercase tracking-widest">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/5 border border-orange-500/15 mb-6">
+                        <Sparkles className="w-4 h-4 text-orange-400" />
+                        <span className="text-xs font-bold text-orange-500 uppercase tracking-widest">
                             {locale === 'tr' ? 'Profesyonel Hizmetler' : locale === 'ar' ? 'خدمات احترافية' : 'Professional Services'}
                         </span>
                     </div>
@@ -104,7 +104,7 @@ export default function CustomSolutions() {
                         <div
                             key={solution.key}
                             className={cn(
-                                "group relative rounded-2xl p-6 lg:p-8 bg-white border-2 transition-all duration-500 transform cursor-pointer",
+                                "group relative rounded-sm p-6 lg:p-8 bg-white border-2 transition-all duration-500 transform cursor-pointer",
                                 solution.borderColor,
                                 solution.hoverBorder,
                                 "hover:shadow-xl hover:-translate-y-1",
@@ -159,7 +159,7 @@ export default function CustomSolutions() {
                 )} style={{ transitionDelay: '400ms' }}>
                     <Link
                         href={`/${locale}/iletisim/`}
-                        className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-slate-900 text-white font-semibold hover:bg-blue-600 transition-all shadow-lg shadow-slate-200 group"
+                        className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-slate-900 text-white font-semibold hover:bg-orange-500 transition-all shadow-lg shadow-slate-200 group"
                     >
                         <span>{t('requestConsultation')}</span>
                         <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />

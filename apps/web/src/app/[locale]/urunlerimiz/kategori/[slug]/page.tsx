@@ -15,50 +15,50 @@ const categoryData: Record<string, { titleKey: string; heroImage: string; produc
         titleKey: 'portablePower',
         heroImage: '/images/categories/portable-power-new.webp',
         products: [
-            { slug: 'revium-2-7-kwh', name: '2.7 kWh Çanta Tipi Güç Paketi', image: '/images/products/2-7kwh-a-1.webp', description: 'Dayanıklı çanta tipi tasarımı ile saha çözümü.' },
-            { slug: 'revium-2-7-kwh-bag', name: '2.7 kWh Güç Paketi', image: '/images/products/2-7kwh-b-1.webp', description: 'Taşınabilir enerji depolama çözümlerinde yeni standart.' },
-            { slug: 'revium-5-4-kwh', name: '5.4 kWh Güç Paketi', image: '/images/products/5-4kwh-h-1.webp', description: 'Yüksek kapasiteli profesyonel taşınabilir güç.' },
+            { slug: 'aftpower-2-7-kwh', name: '2.7 kWh Çanta Tipi Güç Paketi', image: '/images/products/2-7kwh-a-1.webp', description: 'Dayanıklı çanta tipi tasarımı ile saha çözümü.' },
+            { slug: 'aftpower-2-7-kwh-bag', name: '2.7 kWh Güç Paketi', image: '/images/products/2-7kwh-b-1.webp', description: 'Taşınabilir enerji depolama çözümlerinde yeni standart.' },
+            { slug: 'aftpower-5-4-kwh', name: '5.4 kWh Güç Paketi', image: '/images/products/5-4kwh-h-1.webp', description: 'Yüksek kapasiteli profesyonel taşınabilir güç.' },
         ],
     },
     vehicle: {
         titleKey: 'vehiclePower',
         heroImage: '/images/products/vehicle-category-new.jpg',
         products: [
-            { slug: 'revium-pickup-power-pack', name: 'Pick Up Güç Paketi', image: '/images/products/hilux-21-6kwh-1.webp', description: 'Revium Pick Up araçlar için özel güç çözümü.' },
+            { slug: 'aftpower-pickup-power-pack', name: 'Pick Up Güç Paketi', image: '/images/products/hilux-21-6kwh-1.webp', description: 'AFT Power Pick Up araçlar için özel güç çözümü.' },
         ],
     },
     charging: {
         titleKey: 'charging',
         heroImage: '/images/categories/charging-category.webp',
         products: [
-            { slug: 'revium-grid-core', name: 'Grid Core', image: '/images/products/grid-core.webp', description: 'Yüksek hızlı ve akıllı EV şarj yönetim ünitesi.' },
-            { slug: 'revium-grid-pulse', name: 'Grid Pulse', image: '/images/products/grid-pulse.webp', description: 'Dinamik yük dengeleme ve enerji izleme modülü.' },
-            { slug: 'revium-grid-pulse-gen2', name: 'Grid Pulse Gen2', image: '/images/products/grid-pulse-gen2.webp', description: 'Gelişmiş bağlantı özellikleriyle yeni nesil enerji yönetimi.' },
+            { slug: 'aftpower-grid-core', name: 'Grid Core', image: '/images/products/grid-core.webp', description: 'Yüksek hızlı ve akıllı EV şarj yönetim ünitesi.' },
+            { slug: 'aftpower-grid-pulse', name: 'Grid Pulse', image: '/images/products/grid-pulse.webp', description: 'Dinamik yük dengeleme ve enerji izleme modülü.' },
+            { slug: 'aftpower-grid-pulse-gen2', name: 'Grid Pulse Gen2', image: '/images/products/grid-pulse-gen2.webp', description: 'Gelişmiş bağlantı özellikleriyle yeni nesil enerji yönetimi.' },
         ],
     },
     cabin: {
         titleKey: 'cabinPower',
         heroImage: '/images/categories/cabin-category.jpg',
         products: [
-            { slug: 'revium-power-cabinet', name: 'Güç Kabini', image: '/images/products/cabin-power.webp', description: 'Endüstriyel tek kabin enerji depolama sistemi.' },
-            { slug: 'revium-power-layer', name: 'Güç Katmanı', image: '/images/products/stack-21-6kwh-1.webp', description: 'Ölçeklenebilir endüstriyel batarya ünitesi.' },
-            { slug: 'revium-gridpack', name: 'GRIDPACK', image: '/images/products/gridpack.webp', description: 'Şebeke ölçekli BESS ve yenilenebilir enerji depolama.' },
+            { slug: 'aftpower-power-cabinet', name: 'Güç Kabini', image: '/images/products/cabin-power.webp', description: 'Endüstriyel tek kabin enerji depolama sistemi.' },
+            { slug: 'aftpower-power-layer', name: 'Güç Katmanı', image: '/images/products/stack-21-6kwh-1.webp', description: 'Ölçeklenebilir endüstriyel batarya ünitesi.' },
+            { slug: 'aftpower-gridpack', name: 'GRIDPACK', image: '/images/products/gridpack.webp', description: 'Şebeke ölçekli BESS ve yenilenebilir enerji depolama.' },
         ],
     },
     ges: {
         titleKey: 'gesProducts',
         heroImage: '/images/categories/solar-category.jpg',
         products: [
-            { slug: 'revium-powerstation-series', name: 'Powerstation Serisi', image: '/images/products/ges-power-station.webp', description: 'Konteyner tipi GES entegre depolama.' },
-            { slug: 'revium-solarport', name: 'Solarport', image: '/images/products/solarport-duo.webp', description: 'Solar carport ve EV şarj entegrasyonu.' },
+            { slug: 'aftpower-powerstation-series', name: 'Powerstation Serisi', image: '/images/products/ges-power-station.webp', description: 'Konteyner tipi GES entegre depolama.' },
+            { slug: 'aftpower-solarport', name: 'Solarport', image: '/images/products/solarport-duo.webp', description: 'Solar carport ve EV şarj entegrasyonu.' },
         ],
     },
     battery: {
         titleKey: 'batteryPower',
         heroImage: '/images/categories/battery-category.jpg',
         products: [
-            { slug: 'revium-2-7-kwh-lfp', name: '2.7 kWh LFP Batarya', image: '/images/products/2.7-lfp.webp', description: 'Güneş enerjisi sistemleri için kompakt LFP çözüm.' },
-            { slug: 'revium-5-4-kwh-lfp', name: '5.4 kWh LFP Batarya', image: '/images/products/5.4-lfp.webp', description: 'Ticari ve profesyonel kullanım için yüksek kapasiteli depolama.' },
+            { slug: 'aftpower-2-7-kwh-lfp', name: '2.7 kWh LFP Batarya', image: '/images/products/2.7-lfp.webp', description: 'Güneş enerjisi sistemleri için kompakt LFP çözüm.' },
+            { slug: 'aftpower-5-4-kwh-lfp', name: '5.4 kWh LFP Batarya', image: '/images/products/5.4-lfp.webp', description: 'Ticari ve profesyonel kullanım için yüksek kapasiteli depolama.' },
         ],
     },
 };
@@ -90,7 +90,7 @@ export default async function CategoryPage({ params }: Props) {
                 {/* Refined Background Pattern */}
                 <div className="absolute inset-0 z-0 pointer-events-none">
                     <div className="absolute inset-0 opacity-[0.035] bg-[linear-gradient(rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.1)_1px,transparent_1px)] bg-[size:50px_50px]" />
-                    <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-100/30 blur-[130px] rounded-full -translate-y-1/2 translate-x-1/3 animate-pulse duration-[8000ms]" />
+                    <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-orange-500/10/30 blur-[130px] rounded-full -translate-y-1/2 translate-x-1/3 animate-pulse duration-[8000ms]" />
                     <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-cyan-100/20 blur-[100px] rounded-full translate-y-1/2 -translate-x-1/3" />
                 </div>
 
@@ -100,11 +100,11 @@ export default async function CategoryPage({ params }: Props) {
                         <div className="max-w-2xl text-center lg:text-left mx-auto lg:mx-0 order-2 lg:order-1 animate-in slide-in-from-bottom-6 fade-in duration-700">
                             {/* Breadcrumb / Badge */}
                             <div className="flex items-center gap-3 mb-8 justify-center lg:justify-start">
-                                <Link href={`/${locale}/urunlerimiz`} className="text-sm font-semibold text-slate-500 hover:text-blue-600 transition-colors uppercase tracking-wide">
+                                <Link href={`/${locale}/urunlerimiz`} className="text-sm font-semibold text-slate-500 hover:text-orange-500 transition-colors uppercase tracking-wide">
                                     {t('allProducts')}
                                 </Link>
                                 <span className="text-slate-300">/</span>
-                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50/80 border border-blue-100 text-blue-700 text-xs font-bold uppercase tracking-widest backdrop-blur-md shadow-sm ring-1 ring-blue-500/10">
+                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/5/80 border border-orange-500/15 text-orange-600 text-xs font-bold uppercase tracking-widest backdrop-blur-md shadow-sm ring-1 ring-orange-400/10">
                                     {t(`${category.titleKey}.title`)}
                                 </div>
                             </div>
@@ -121,8 +121,8 @@ export default async function CategoryPage({ params }: Props) {
 
                             {/* Enhanced Feature Pills */}
                             <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-                                <div className="px-6 py-3 rounded-2xl bg-white/60 border border-slate-200/60 shadow-md backdrop-blur-xl text-slate-700 font-semibold text-sm flex items-center gap-3 hover:scale-105 transition-transform duration-300 hover:border-blue-200 cursor-default">
-                                    <span className={`w-2.5 h-2.5 rounded-full ring-2 ring-offset-1 ring-offset-slate-50 ${slug === 'portable' ? 'bg-blue-500 ring-blue-300' :
+                                <div className="px-6 py-3 rounded-2xl bg-white/60 border border-slate-200/60 shadow-md backdrop-blur-xl text-slate-700 font-semibold text-sm flex items-center gap-3 hover:scale-105 transition-transform duration-300 hover:border-orange-500/20 cursor-default">
+                                    <span className={`w-2.5 h-2.5 rounded-full ring-2 ring-offset-1 ring-offset-slate-50 ${slug === 'portable' ? 'bg-orange-400 ring-blue-300' :
                                         slug === 'vehicle' ? 'bg-orange-500 ring-orange-300' :
                                             slug === 'cabin' ? 'bg-emerald-500 ring-emerald-300' :
                                                 slug === 'charging' ? 'bg-cyan-500 ring-cyan-300' :
@@ -143,7 +143,7 @@ export default async function CategoryPage({ params }: Props) {
                         {/* Right Column: Hero Image (Enhanced Float & Shadow) */}
                         <div className="relative order-1 lg:order-2 flex justify-center animate-in zoom-in-95 fade-in duration-1000 delay-200">
                             {/* Decorative Circle with Border */}
-                            <div className="absolute w-[95%] aspect-square rounded-full bg-gradient-to-br from-blue-50 to-indigo-50/30 border border-blue-100/50 -z-10 animate-spin-slow duration-[30s]" />
+                            <div className="absolute w-[95%] aspect-square rounded-full bg-gradient-to-br from-blue-50 to-indigo-50/30 border border-orange-500/15/50 -z-10 animate-spin-slow duration-[30s]" />
 
                             <div className="relative w-full aspect-square max-w-[450px] p-6 flex items-center justify-center filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.12)] hover:drop-shadow-[0_30px_60px_rgba(0,0,0,0.15)] transition-all duration-500 hover:scale-[1.02]">
                                 <Image
@@ -189,16 +189,16 @@ export default async function CategoryPage({ params }: Props) {
                                     </div>
 
                                     <div className="p-8 flex flex-col flex-grow">
-                                        <h3 className="text-xl font-bold text-slate-900 leading-tight group-hover:text-blue-600 transition-colors mb-3">
+                                        <h3 className="text-xl font-bold text-slate-900 leading-tight group-hover:text-orange-500 transition-colors mb-3">
                                             {productName}
                                         </h3>
                                         <p className="text-slate-500 text-sm leading-relaxed mb-6 line-clamp-2">
                                             {productDesc}
                                         </p>
 
-                                        <div className="mt-auto pt-6 border-t border-slate-100 flex items-center justify-between text-sm font-semibold text-slate-600 group-hover:text-blue-600 transition-colors">
+                                        <div className="mt-auto pt-6 border-t border-slate-100 flex items-center justify-between text-sm font-semibold text-slate-600 group-hover:text-orange-500 transition-colors">
                                             <span>{t('viewDetails')}</span>
-                                            <div className="w-8 h-8 rounded-full bg-slate-100 group-hover:bg-blue-100 text-slate-600 group-hover:text-blue-600 flex items-center justify-center transition-colors">
+                                            <div className="w-8 h-8 rounded-full bg-slate-100 group-hover:bg-orange-500/10 text-slate-600 group-hover:text-orange-500 flex items-center justify-center transition-colors">
                                                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
                                             </div>
                                         </div>
@@ -223,7 +223,7 @@ export default async function CategoryPage({ params }: Props) {
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link
                                 href={`/${locale}/urunlerimiz`}
-                                className="px-8 py-4 bg-blue-50 text-blue-700 border-2 border-blue-100 rounded-xl font-bold hover:bg-blue-100/50 hover:border-blue-200 transition-all flex items-center justify-center gap-2 shadow-sm hover:shadow"
+                                className="px-8 py-4 bg-orange-500/5 text-orange-600 border-2 border-orange-500/15 rounded-xl font-bold hover:bg-orange-500/10/50 hover:border-orange-500/20 transition-all flex items-center justify-center gap-2 shadow-sm hover:shadow"
                             >
                                 {t('allProducts')}
                             </Link>
@@ -256,7 +256,7 @@ export async function generateMetadata({ params }: Props) {
     const categoryName = category ? t(`${category.titleKey}.title`) : 'Kategori';
 
     return {
-        title: `${categoryName} | Revium`,
-        description: `Revium ${categoryName} - Enerji depolama çözümleri.`,
+        title: `${categoryName} | AFT Power`,
+        description: `AFT Power ${categoryName} - Enerji depolama çözümleri.`,
     };
 }

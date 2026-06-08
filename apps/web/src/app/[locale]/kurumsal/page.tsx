@@ -29,7 +29,7 @@ export default function Kurumsal() {
     }, []);
 
     const valuesData = [
-        { icon: Shield, title: t('values.reliability.title'), desc: t('values.reliability.description'), color: 'bg-blue-500' },
+        { icon: Shield, title: t('values.reliability.title'), desc: t('values.reliability.description'), color: 'bg-orange-400' },
         { icon: Lightbulb, title: t('values.innovation.title'), desc: t('values.innovation.description'), color: 'bg-amber-500' },
         { icon: Users, title: t('values.customer.title'), desc: t('values.customer.description'), color: 'bg-emerald-500' },
         { icon: Award, title: t('values.quality.title'), desc: t('values.quality.description'), color: 'bg-purple-500' }
@@ -86,7 +86,7 @@ export default function Kurumsal() {
                             <div className="relative aspect-square max-w-md mx-auto">
                                 <Image
                                     src="/images/corporate/about-visual.webp"
-                                    alt="Revium Enerji Depolama Sistemi"
+                                    alt="AFT Power Enerji Depolama Sistemi"
                                     fill
                                     className="object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700"
                                 />
@@ -106,7 +106,7 @@ export default function Kurumsal() {
 
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 <div className="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                                    <div className="w-12 h-12 rounded-xl bg-blue-500 flex items-center justify-center text-white mb-4 shadow-lg shadow-blue-500/30">
+                                    <div className="w-12 h-12 rounded-xl bg-orange-400 flex items-center justify-center text-white mb-4 shadow-lg shadow-blue-500/30">
                                         <Battery className="w-6 h-6" strokeWidth={1.5} />
                                     </div>
                                     <h3 className="text-lg font-bold text-slate-900 mb-2">{t('techTitle')}</h3>
@@ -129,9 +129,9 @@ export default function Kurumsal() {
             <section className="py-16 lg:py-24">
                 <div className="container px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-                        <div className="p-8 lg:p-12 bg-gradient-to-br from-blue-50 to-white border border-blue-100 rounded-3xl shadow-sm hover:shadow-lg transition-all duration-300">
+                        <div className="p-8 lg:p-12 bg-gradient-to-br from-blue-50 to-white border border-orange-500/15 rounded-3xl shadow-sm hover:shadow-lg transition-all duration-300">
                             <div className="flex items-center gap-4 mb-6">
-                                <div className="w-14 h-14 rounded-2xl bg-blue-600 flex items-center justify-center shadow-xl shadow-blue-600/20">
+                                <div className="w-14 h-14 rounded-2xl bg-orange-500 flex items-center justify-center shadow-xl shadow-blue-600/20">
                                     <Target className="w-7 h-7 text-white" strokeWidth={1.5} />
                                 </div>
                                 <h2 className="text-2xl font-bold text-slate-900">{t('missionTitle')}</h2>
@@ -164,7 +164,7 @@ export default function Kurumsal() {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                         {valuesData.map((value, idx) => (
-                            <div key={idx} className="group bg-white p-8 rounded-3xl border border-slate-200 hover:border-blue-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
+                            <div key={idx} className="group bg-white p-8 rounded-3xl border border-slate-200 hover:border-orange-500/20 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
                                 <div className={cn("w-14 h-14 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-lg transition-transform group-hover:scale-110", value.color)}>
                                     <value.icon className="w-7 h-7 text-white" strokeWidth={1.5} />
                                 </div>
@@ -181,7 +181,7 @@ export default function Kurumsal() {
                 <div className="container px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center">
                     <div className="bg-slate-900 rounded-3xl p-10 sm:p-16 lg:p-20 relative overflow-hidden shadow-2xl">
                         {/* Glow Gradient */}
-                        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/20 blur-[120px] rounded-full translate-x-1/3 -translate-y-1/3" />
+                        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-orange-400/20 blur-[120px] rounded-full translate-x-1/3 -translate-y-1/3" />
                         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-purple-500/20 blur-[100px] rounded-full -translate-x-1/3 translate-y-1/3" />
 
                         <div className="relative z-10">
@@ -190,7 +190,7 @@ export default function Kurumsal() {
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <Link
                                     href={`/${locale}/iletisim/`}
-                                    className="px-10 py-5 bg-blue-600 text-white rounded-2xl font-bold hover:bg-blue-500 transition-all flex items-center justify-center gap-3 shadow-lg shadow-blue-600/30 hover:scale-105"
+                                    className="px-10 py-5 bg-orange-500 text-white rounded-2xl font-bold hover:bg-orange-500/80 transition-all flex items-center justify-center gap-3 shadow-lg shadow-blue-600/30 hover:scale-105"
                                 >
                                     {t('ctaButton1')}
                                     <ArrowRight className="w-5 h-5" />

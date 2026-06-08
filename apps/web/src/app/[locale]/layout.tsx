@@ -8,16 +8,16 @@ import type { Metadata } from 'next';
 import '@/app/globals.css';
 
 export const metadata: Metadata = {
-    // metadataBase: new URL('https://reviumtech.com'),
+    // metadataBase: new URL('https://aftpowertech.com'),
     title: {
-        default: 'Revium Tech - Yenilenebilir Enerji Çözümleri',
-        template: '%s | Revium Tech'
+        default: 'AFT Power - Yenilenebilir Enerji Çözümleri',
+        template: '%s | AFT Power'
     },
     description: 'Kurumsal kalitede modern web uygulaması - Yenilenebilir enerji teknolojileri ve çözümleri',
-    keywords: ['enerji', 'yenilenebilir enerji', 'teknoloji', 'revium'],
-    authors: [{ name: 'Revium Tech' }],
-    creator: 'Revium Tech',
-    publisher: 'Revium Tech',
+    keywords: ['enerji', 'yenilenebilir enerji', 'teknoloji', 'aftpower'],
+    authors: [{ name: 'AFT Power' }],
+    creator: 'AFT Power',
+    publisher: 'AFT Power',
     formatDetection: {
         email: false,
         address: false,
@@ -36,19 +36,19 @@ export const metadata: Metadata = {
     appleWebApp: {
         capable: true,
         statusBarStyle: 'default',
-        title: 'Revium Tech',
+        title: 'AFT Power',
     },
     openGraph: {
         type: 'website',
         locale: 'tr_TR',
-        url: 'https://reviumtech.com',
-        siteName: 'Revium Tech',
-        title: 'Revium Tech - Yenilenebilir Enerji Çözümleri',
+        url: 'https://aftpowertech.com',
+        siteName: 'AFT Power',
+        title: 'AFT Power - Yenilenebilir Enerji Çözümleri',
         description: 'Kurumsal kalitede modern web uygulaması',
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Revium Tech - Yenilenebilir Enerji Çözümleri',
+        title: 'AFT Power - Yenilenebilir Enerji Çözümleri',
         description: 'Kurumsal kalitede modern web uygulaması',
     },
     robots: {
@@ -89,7 +89,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             <head>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-                <meta name="theme-color" content="#1E3A5F" />
+                <meta name="theme-color" content="#0f172a" />
             </head>
             <body className="font-sans antialiased" suppressHydrationWarning>
                 <NextIntlClientProvider messages={messages}>

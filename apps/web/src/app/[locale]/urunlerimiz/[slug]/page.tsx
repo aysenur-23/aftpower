@@ -39,8 +39,8 @@ const products: Record<string, {
     runtimeStats?: { label: string; power: string; duration: string; icon: string }[];
     runtimeSummary?: string;
 }> = {
-    'revium-2-7-kwh': {
-        name: 'Revium 2.7 kWh Çanta Tipi Güç Paketi',
+    'aftpower-2-7-kwh': {
+        name: 'AFT Power 2.7 kWh Çanta Tipi Güç Paketi',
         modelId: 'R-SB2700',
         capacity: '2.7 kWh',
         power: '2000 W',
@@ -82,10 +82,10 @@ const products: Record<string, {
             { label: 'TV + Modem', power: '120 W', duration: '≈ 22 saat', icon: 'Tv' },
             { label: 'Genel Ev', power: '400 W', duration: '≈ 6–7 saat', icon: 'Home' },
         ],
-        runtimeSummary: 'Revium taşınabilir güç paketleri; 2.7 kWh modelinde bir hiltiyi yaklaşık 2.7 saat, ev tipi bir buzdolabını 18 saate kadar kesintisiz besleyebilmektedir.'
+        runtimeSummary: 'AFT Power taşınabilir güç paketleri; 2.7 kWh modelinde bir hiltiyi yaklaşık 2.7 saat, ev tipi bir buzdolabını 18 saate kadar kesintisiz besleyebilmektedir.'
     },
-    'revium-2-7-kwh-bag': {
-        name: 'Revium 2.7 kWh Depolanabilir Güç Paketi',
+    'aftpower-2-7-kwh-bag': {
+        name: 'AFT Power 2.7 kWh Depolanabilir Güç Paketi',
         modelId: 'R-P2700',
         capacity: '2.7 kWh',
         power: '2000 W',
@@ -127,11 +127,11 @@ const products: Record<string, {
             { label: 'TV + Modem', power: '120 W', duration: '≈ 22 saat', icon: 'Tv' },
             { label: 'Genel Ev', power: '400 W', duration: '≈ 6–7 saat', icon: 'Home' },
         ],
-        runtimeSummary: 'Revium taşınabilir güç paketleri; 2.7 kWh modelinde bir hiltiyi yaklaşık 2.7 saat, ev tipi bir buzdolabını 18 saate kadar kesintisiz besleyebilmektedir.'
+        runtimeSummary: 'AFT Power taşınabilir güç paketleri; 2.7 kWh modelinde bir hiltiyi yaklaşık 2.7 saat, ev tipi bir buzdolabını 18 saate kadar kesintisiz besleyebilmektedir.'
     },
 
-    'revium-storage-battery': {
-        name: 'Revium Storage Battery (2.7 / 5.4 kWh)',
+    'aftpower-storage-battery': {
+        name: 'AFT Power Storage Battery (2.7 / 5.4 kWh)',
         modelId: 'R-STORAGE',
         capacity: '2.7 / 5.4 kWh',
         power: 'VDC System',
@@ -162,8 +162,8 @@ const products: Record<string, {
             { label: 'Off-grid Sistemler', icon: 'Sun' },
         ]
     },
-    'revium-5-4-kwh': {
-        name: 'Revium 5.4 kWh Depolanabilir Güç Paketi',
+    'aftpower-5-4-kwh': {
+        name: 'AFT Power 5.4 kWh Depolanabilir Güç Paketi',
         modelId: 'R-P5400',
         capacity: '5.4 kWh',
         power: '3000 W',
@@ -205,10 +205,10 @@ const products: Record<string, {
             { label: 'TV + Modem', power: '120 W', duration: '≈ 45 saat', icon: 'Tv' },
             { label: 'Genel Ev', power: '400 W', duration: '≈ 13–14 saat', icon: 'Home' },
         ],
-        runtimeSummary: 'Revium taşınabilir güç paketleri; 5.4 kWh modelinde bir hiltiyi 5.4 saat, bir evi ise 14–16 saat aralığında kesintisiz besleyebilmektedir.'
+        runtimeSummary: 'AFT Power taşınabilir güç paketleri; 5.4 kWh modelinde bir hiltiyi 5.4 saat, bir evi ise 14–16 saat aralığında kesintisiz besleyebilmektedir.'
     },
-    'revium-power-cabinet': {
-        name: 'Revium Güç Kabini',
+    'aftpower-power-cabinet': {
+        name: 'AFT Power Güç Kabini',
         modelId: 'R-CABINET',
         capacity: '5.4 – 21.6 kWh',
         power: '3 – 20 kW',
@@ -240,8 +240,8 @@ const products: Record<string, {
             { label: 'Fabrika', icon: 'Factory' },
         ]
     },
-    'revium-pickup-power-pack': {
-        name: 'Revium Pick Up Güç Paketi',
+    'aftpower-pickup-power-pack': {
+        name: 'AFT Power Pick Up Güç Paketi',
         modelId: 'R-PICKUP',
         capacity: '60 – 100 kWh',
         power: '30 kW (3-Phase)',
@@ -270,8 +270,8 @@ const products: Record<string, {
             { label: 'Askeri Saha', icon: 'Shield' },
         ]
     },
-    'revium-power-layer': {
-        name: 'Revium Güç Katmanı – Modüler Enerji Depolama Ünitesi',
+    'aftpower-power-layer': {
+        name: 'AFT Power Güç Katmanı – Modüler Enerji Depolama Ünitesi',
         modelId: 'R-LAYER',
         capacity: '5.4 – 172 kWh',
         power: 'Scalable',
@@ -299,8 +299,8 @@ const products: Record<string, {
             { label: 'Telekomünikasyon', icon: 'RadioTower' },
         ]
     },
-    'revium-gridpack': {
-        name: 'Revium GRIDPACK',
+    'aftpower-gridpack': {
+        name: 'AFT Power GRIDPACK',
         modelId: 'GRIDPACK',
         capacity: '500 kWh – 5 MWh',
         power: '250 kW – 2.5 MW',
@@ -332,8 +332,8 @@ const products: Record<string, {
             { label: 'Enerji Parkı', icon: 'Sun' },
         ]
     },
-    'revium-powerstation-series': {
-        name: 'Revium Powerstation Serisi',
+    'aftpower-powerstation-series': {
+        name: 'AFT Power Powerstation Serisi',
         modelId: 'POWERSTATION',
         capacity: '500 kWh – 5 MW',
         power: '200 kW – 1 MW',
@@ -362,8 +362,8 @@ const products: Record<string, {
             { label: 'Mikro Şebeke', icon: 'Zap' },
         ]
     },
-    'revium-voltwagon': {
-        name: 'Revium VoltWagon',
+    'aftpower-voltwagon': {
+        name: 'AFT Power VoltWagon',
         modelId: 'VOLTWAGON',
         capacity: '192 kWh',
         power: '20 kW',
@@ -394,8 +394,8 @@ const products: Record<string, {
             { label: 'Etkinlik Alanı', icon: 'Globe' },
         ]
     },
-    'revium-solarport': {
-        name: 'Revium SolarPort',
+    'aftpower-solarport': {
+        name: 'AFT Power SolarPort',
         modelId: 'SOLARPORT',
         capacity: '2 – 8 Araç',
         power: '6 – 24 kW AC',
@@ -427,8 +427,8 @@ const products: Record<string, {
             { label: 'Ofis Binası', icon: 'Briefcase' },
         ]
     },
-    'revium-grid-core': {
-        name: 'Revium Grid Core',
+    'aftpower-grid-core': {
+        name: 'AFT Power Grid Core',
         modelId: 'R-GRID-CORE',
         capacity: 'DC Şarj',
         power: '45 – 180 kW',
@@ -461,8 +461,8 @@ const products: Record<string, {
             { label: 'Akaryakıt İstasyonu', icon: 'Briefcase' },
         ]
     },
-    'revium-grid-pulse': {
-        name: 'Revium Grid Pulse',
+    'aftpower-grid-pulse': {
+        name: 'AFT Power Grid Pulse',
         modelId: 'R-GRID-PULSE',
         capacity: 'DC Şarj',
         power: '90 – 270 kW',
@@ -494,8 +494,8 @@ const products: Record<string, {
             { label: 'Plazalar', icon: 'Building' },
         ]
     },
-    'revium-2-7-kwh-lfp': {
-        name: 'Revium 2.7 kWh LFP Batarya',
+    'aftpower-2-7-kwh-lfp': {
+        name: 'AFT Power 2.7 kWh LFP Batarya',
         modelId: '2.7-LFP',
         capacity: '2.7 kWh',
         power: '12 / 24 VDC',
@@ -527,8 +527,8 @@ const products: Record<string, {
             { label: 'Solar Sistem', icon: 'Sun' },
         ]
     },
-    'revium-5-4-kwh-lfp': {
-        name: 'Revium 5.4 kWh LFP Batarya',
+    'aftpower-5-4-kwh-lfp': {
+        name: 'AFT Power 5.4 kWh LFP Batarya',
         modelId: '5.4-LFP',
         capacity: '5.4 kWh',
         power: '24 / 48 VDC',
@@ -561,8 +561,8 @@ const products: Record<string, {
         ]
     },
 
-    'revium-grid-pulse-gen2': {
-        name: 'Revium Grid Pulse Gen2',
+    'aftpower-grid-pulse-gen2': {
+        name: 'AFT Power Grid Pulse Gen2',
         modelId: 'R-GRID-PULSE-G2',
         capacity: 'DC Şarj',
         power: '90 – 270 kW',
@@ -892,7 +892,7 @@ export default async function ProductDetailPage({ params }: Props) {
                     {/* Background Pattern */}
                     <div className="absolute inset-0 z-0">
                         <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.1)_1px,transparent_1px)] bg-[size:60px_60px]" />
-                        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-100/40 blur-[150px] rounded-full -translate-y-1/2 translate-x-1/3" />
+                        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-orange-500/10/40 blur-[150px] rounded-full -translate-y-1/2 translate-x-1/3" />
                         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-cyan-100/30 blur-[120px] rounded-full translate-y-1/2 -translate-x-1/3" />
                     </div>
 
@@ -902,9 +902,9 @@ export default async function ProductDetailPage({ params }: Props) {
                             {/* Left Content - Wider Text Area */}
                             <div className="lg:col-span-7 space-y-6 sm:space-y-8 text-center lg:text-left order-2 lg:order-1">
                                 <div className="space-y-6">
-                                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 border border-blue-200">
-                                        <span className="flex h-2 w-2 rounded-full bg-blue-500 animate-pulse" />
-                                        <span className="text-xs font-bold text-blue-700 uppercase tracking-wider">
+                                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 border border-orange-500/20">
+                                        <span className="flex h-2 w-2 rounded-full bg-orange-400 animate-pulse" />
+                                        <span className="text-xs font-bold text-orange-600 uppercase tracking-wider">
                                             {locale === 'en' ? ({
                                                 'Taşınabilir Enerji Depolama': 'Portable Energy Storage',
                                                 'Yüksek Kapasiteli Taşınabilir Güç': 'High-Capacity Portable Power',
@@ -944,7 +944,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                     </div>
                                     <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black text-slate-900 tracking-tight leading-[1.05]">
                                         {localizedName.split(' ').slice(0, -2).join(' ')}{' '}
-                                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
+                                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-cyan-500">
                                             {localizedName.split(' ').slice(-2).join(' ')}
                                         </span>
                                     </h1>
@@ -956,7 +956,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                 {/* Key Specs - Light Theme */}
                                 <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-10 py-4 sm:py-6 px-4 sm:px-6 rounded-xl sm:rounded-2xl bg-white/80 backdrop-blur-sm border border-slate-200 shadow-sm max-w-fit mx-auto lg:mx-0">
                                     <div className="space-y-1 text-left">
-                                        <div className="flex items-center gap-1.5 sm:gap-2 text-blue-600">
+                                        <div className="flex items-center gap-1.5 sm:gap-2 text-orange-500">
                                             <Battery className="h-4 w-4 sm:h-5 sm:w-5" />
                                             <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-slate-500">{locale === 'en' ? 'Energy' : locale === 'ar' ? 'الطاقة' : 'Enerji'}</span>
                                         </div>
@@ -993,7 +993,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                 <div className="flex flex-col sm:flex-row gap-4 pt-2 justify-center lg:justify-start">
                                     <Link
                                         href={`/${locale}/fiyat-teklifi/`}
-                                        className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm transition-all duration-300 shadow-lg shadow-blue-600/25 hover:shadow-xl hover:shadow-blue-600/30"
+                                        className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-bold text-sm transition-all duration-300 shadow-lg shadow-blue-600/25 hover:shadow-xl hover:shadow-blue-600/30"
                                     >
                                         <span>{tDetail('labels.getQuote') || 'Teklif Talep Et'}</span>
                                         <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
@@ -1011,7 +1011,7 @@ export default async function ProductDetailPage({ params }: Props) {
                             <div className="lg:col-span-5 relative order-1 lg:order-2 mb-4 lg:mb-0">
                                 <div className="relative flex items-center justify-center max-w-[280px] sm:max-w-[350px] lg:max-w-none mx-auto">
                                     {/* Decorative Circle - Hidden on mobile */}
-                                    <div className="absolute w-[90%] aspect-square rounded-full bg-gradient-to-br from-blue-100 to-cyan-50 border border-blue-100 hidden sm:block" />
+                                    <div className="absolute w-[90%] aspect-square rounded-full bg-gradient-to-br from-blue-100 to-cyan-50 border border-orange-500/15 hidden sm:block" />
 
                                     {/* Product Image */}
                                     <div className="relative w-full max-w-[500px] p-2 sm:p-4 lg:p-8 transition-transform duration-700 hover:scale-[1.03] transform-gpu">
@@ -1027,7 +1027,7 @@ export default async function ProductDetailPage({ params }: Props) {
 
                                     {/* Model Badge */}
                                     <div className="absolute -bottom-2 right-4 sm:right-8 p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-white border border-slate-200 shadow-lg hidden sm:block">
-                                        <div className="text-[10px] font-black text-blue-600 uppercase tracking-widest mb-1">{locale === 'ar' ? 'رقم الموديل' : 'Model ID'}</div>
+                                        <div className="text-[10px] font-black text-orange-500 uppercase tracking-widest mb-1">{locale === 'ar' ? 'رقم الموديل' : 'Model ID'}</div>
                                         <div className="text-lg sm:text-xl font-bold text-slate-900">{translateModelId(product.modelId, locale)}</div>
                                     </div>
                                 </div>
@@ -1050,7 +1050,7 @@ export default async function ProductDetailPage({ params }: Props) {
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                             {localizedFeatures.map((feature, index) => (
-                                <div key={index} className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 card hover-lift border border-blue-200 rounded-lg sm:rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105">
+                                <div key={index} className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 card hover-lift border border-orange-500/20 rounded-lg sm:rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105">
                                     <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-emerald-500 flex-shrink-0" />
                                     <span className="text-sm sm:text-base text-neutral-700 font-medium">{formatNumber(translateLabel(feature, locale), locale)}</span>
                                 </div>
@@ -1066,9 +1066,9 @@ export default async function ProductDetailPage({ params }: Props) {
 
                         <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
                             <div className="mx-auto max-w-3xl text-center mb-8 sm:mb-10 px-4">
-                                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-100 border border-blue-200 mb-3">
-                                    <Clock className="w-3.5 h-3.5 text-blue-600" />
-                                    <span className="text-[10px] font-bold text-blue-700 uppercase tracking-wider">
+                                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/20 mb-3">
+                                    <Clock className="w-3.5 h-3.5 text-orange-500" />
+                                    <span className="text-[10px] font-bold text-orange-600 uppercase tracking-wider">
                                         {locale === 'en' ? 'Real-World Performance' : locale === 'ar' ? 'أداء عالم حقيقي' : 'Gerçek Dünya Performansı'}
                                     </span>
                                 </div>
@@ -1093,11 +1093,11 @@ export default async function ProductDetailPage({ params }: Props) {
                                 {product.runtimeStats.map((stat, index) => {
                                     const Icon = getIcon(stat.icon);
                                     return (
-                                        <div key={index} className="group relative p-4 sm:p-5 rounded-2xl bg-white border border-slate-200 hover:border-blue-300 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
+                                        <div key={index} className="group relative p-4 sm:p-5 rounded-2xl bg-white border border-slate-200 hover:border-orange-500/40 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
                                             <div className="relative z-10">
                                                 <div className="flex items-center justify-between mb-3">
-                                                    <div className="p-2 rounded-xl bg-blue-100 group-hover:bg-blue-200 transition-colors">
-                                                        <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" />
+                                                    <div className="p-2 rounded-xl bg-orange-500/10 group-hover:bg-blue-200 transition-colors">
+                                                        <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-orange-500" />
                                                     </div>
                                                     <div className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">{formatNumber(stat.power, locale)
                                                         .replace('MWh', locale === 'ar' ? ' ميغاواط ساعة' : 'MWh')
@@ -1108,7 +1108,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                                 </div>
                                                 <div className="space-y-0.5">
                                                     <h4 className="text-slate-500 font-bold text-[10px] uppercase tracking-wider">{translateLabel(stat.label, locale)}</h4>
-                                                    <div className="text-lg sm:text-xl font-black text-slate-900 tracking-tight group-hover:text-blue-600 transition-colors">
+                                                    <div className="text-lg sm:text-xl font-black text-slate-900 tracking-tight group-hover:text-orange-500 transition-colors">
                                                         {formatNumber(translateLabel(stat.duration, locale), locale)}
                                                     </div>
                                                 </div>
@@ -1162,7 +1162,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                                     { label: 'LED Aydınlatma', power: '80W' }
                                                 ]).map((item, i) => (
                                                     <div key={i} className="flex items-center gap-2 text-slate-600 font-medium text-sm">
-                                                        <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
+                                                        <div className="w-1.5 h-1.5 rounded-full bg-orange-400" />
                                                         {item.label}: <span className="font-bold text-slate-900 ml-auto">{item.power}</span>
                                                     </div>
                                                 ))}
@@ -1170,7 +1170,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                                     <span className="text-slate-500 font-bold uppercase text-[10px] tracking-widest">
                                                         {locale === 'en' ? 'Total Load' : locale === 'ar' ? 'الحمل الإجمالي' : 'Toplam Yük'}
                                                     </span>
-                                                    <span className="text-xl font-black text-blue-600">≈ {formatNumber('350', locale)} {locale === 'ar' ? 'واط' : 'W'}</span>
+                                                    <span className="text-xl font-black text-orange-500">≈ {formatNumber('350', locale)} {locale === 'ar' ? 'واط' : 'W'}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -1262,9 +1262,9 @@ export default async function ProductDetailPage({ params }: Props) {
                                     {product.usageAreas.map((area, index) => {
                                         const IconComponent = getIcon(area.icon);
                                         return (
-                                            <div key={index} className="flex items-center gap-2 sm:gap-3 md:gap-4 p-3 sm:p-4 md:p-6 card hover-lift border-2 border-blue-200 rounded-lg sm:rounded-xl md:rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-gradient-to-r from-blue-50 to-slate-50 min-h-[60px] sm:min-h-[70px]">
+                                            <div key={index} className="flex items-center gap-2 sm:gap-3 md:gap-4 p-3 sm:p-4 md:p-6 card hover-lift border-2 border-orange-500/20 rounded-lg sm:rounded-xl md:rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-gradient-to-r from-blue-50 to-slate-50 min-h-[60px] sm:min-h-[70px]">
                                                 <div className="flex-shrink-0">
-                                                    <div className="flex h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 items-center justify-center rounded-lg sm:rounded-xl bg-gradient-to-r from-blue-500 to-slate-600 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                                    <div className="flex h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 items-center justify-center rounded-lg sm:rounded-xl bg-gradient-to-r from-orange-400 to-slate-600 shadow-lg group-hover:scale-110 transition-transform duration-300">
                                                         <IconComponent className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-white" />
                                                     </div>
                                                 </div>
@@ -1280,12 +1280,12 @@ export default async function ProductDetailPage({ params }: Props) {
                     )
                 }
 
-                {/* Why Revium Section */}
+                {/* Why AFT Power Section */}
                 <section className="py-8 sm:py-10 md:py-12 bg-gradient-to-br from-blue-50 via-white to-teal-50">
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="mx-auto max-w-3xl text-center mb-8 sm:mb-10">
                             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-neutral-900 mb-3 sm:mb-4">
-                                {locale === 'tr' ? 'Neden Revium?' : locale === 'ar' ? 'لماذا ريفيوم؟' : 'Why Revium?'}
+                                {locale === 'tr' ? 'Neden AFT Power?' : locale === 'ar' ? 'لماذا ريفيوم؟' : 'Why AFT Power?'}
                             </h2>
                             <p className="text-base sm:text-lg md:text-xl text-neutral-600 leading-relaxed px-4">
                                 {localizedName} {locale === 'tr' ? 'ürününü seçmeniz için güçlü nedenler' : locale === 'ar' ? 'أسباب قوية لاختيار هذا المنتج' : 'reasons to choose this product'}
@@ -1295,12 +1295,12 @@ export default async function ProductDetailPage({ params }: Props) {
                             {/* Card 1 */}
                             <div className="text-center group border border-purple-300 rounded-xl sm:rounded-2xl p-4 sm:p-6 hover:border-purple-500 transition-all duration-300 hover:shadow-lg w-full max-w-xs bg-white">
                                 <div className="relative inline-block mb-4 sm:mb-6">
-                                    <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-teal-500 rounded-xl sm:rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
-                                    <div className="relative flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-xl sm:rounded-2xl bg-gradient-to-r from-blue-500 to-teal-500 shadow-xl group-hover:scale-110 transition-transform duration-500">
+                                    <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-orange-500 rounded-xl sm:rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
+                                    <div className="relative flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-xl sm:rounded-2xl bg-gradient-to-r from-orange-400 to-orange-500 shadow-xl group-hover:scale-110 transition-transform duration-500">
                                         <Shield className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
                                     </div>
                                 </div>
-                                <h3 className="text-lg sm:text-xl font-bold text-neutral-900 transition-colors duration-300 mb-3 sm:mb-4 group-hover:text-blue-600">
+                                <h3 className="text-lg sm:text-xl font-bold text-neutral-900 transition-colors duration-300 mb-3 sm:mb-4 group-hover:text-orange-500">
                                     {locale === 'tr' ? 'Güvenilir Teknoloji' : locale === 'ar' ? 'تقنية موثوقة' : 'Reliable Technology'}
                                 </h3>
                                 <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
@@ -1311,12 +1311,12 @@ export default async function ProductDetailPage({ params }: Props) {
                             {/* Card 2 */}
                             <div className="text-center group border border-purple-300 rounded-xl sm:rounded-2xl p-4 sm:p-6 hover:border-purple-500 transition-all duration-300 hover:shadow-lg w-full max-w-xs bg-white">
                                 <div className="relative inline-block mb-4 sm:mb-6">
-                                    <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-slate-600 rounded-xl sm:rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
-                                    <div className="relative flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-xl sm:rounded-2xl bg-gradient-to-r from-blue-500 to-slate-600 shadow-xl group-hover:scale-110 transition-transform duration-500">
+                                    <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-slate-600 rounded-xl sm:rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
+                                    <div className="relative flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-xl sm:rounded-2xl bg-gradient-to-r from-orange-400 to-slate-600 shadow-xl group-hover:scale-110 transition-transform duration-500">
                                         <Battery className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
                                     </div>
                                 </div>
-                                <h3 className="text-lg sm:text-xl font-bold text-neutral-900 transition-colors duration-300 mb-3 sm:mb-4 group-hover:text-blue-600">
+                                <h3 className="text-lg sm:text-xl font-bold text-neutral-900 transition-colors duration-300 mb-3 sm:mb-4 group-hover:text-orange-500">
                                     {locale === 'tr' ? 'Yüksek Performans' : locale === 'ar' ? 'أداء عالي' : 'High Performance'}
                                 </h3>
                                 <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
@@ -1356,14 +1356,14 @@ export default async function ProductDetailPage({ params }: Props) {
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">
                                 <Link
                                     href={`/${locale}/fiyat-teklifi/`}
-                                    className="btn btn-primary w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 sm:gap-3"
+                                    className="btn btn-primary w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg bg-gradient-to-r from-cyan-500 to-orange-600 hover:from-cyan-600 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 sm:gap-3"
                                 >
                                     <span>{tDetail('labels.getQuote') || 'Fiyat Teklifi Talep Et'}</span>
                                     <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" />
                                 </Link>
                                 <Link
                                     href={`/${locale}/iletisim/`}
-                                    className="btn btn-primary w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 sm:gap-3"
+                                    className="btn btn-primary w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg bg-gradient-to-r from-orange-500 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 sm:gap-3"
                                 >
                                     <span>{locale === 'tr' ? 'Uzman Danışmanlığı' : locale === 'ar' ? 'استشارة الخبراء' : 'Expert Consultation'}</span>
                                 </Link>
@@ -1381,7 +1381,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     if (!slug) {
         return {
-            title: 'Ürün Bulunamadı | Revium',
+            title: 'Ürün Bulunamadı | AFT Power',
         };
     }
 
@@ -1391,7 +1391,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const capacity = product?.capacity || '';
 
     return {
-        title: `${name} | Revium`,
-        description: `Revium ${name} - ${capacity} kapasiteli enerji depolama sistemi`,
+        title: `${name} | AFT Power`,
+        description: `AFT Power ${name} - ${capacity} kapasiteli enerji depolama sistemi`,
     };
 }

@@ -161,15 +161,15 @@
             "subtitle": "حلول الطاقة الصناعية",
             "description": "أنظمة طاقة من نوع الكابينة عالية السعة للمشاريع الكبيرة.",
             "products": {
-                "revium-power-cabinet": {
+                "aftpower-power-cabinet": {
                     "name": "خزانة الطاقة",
                     "description": "نظام تخزين طاقة صناعي بكابينة واحدة."
                 },
-                "revium-power-layer": {
+                "aftpower-power-layer": {
                     "name": "طبقة الطاقة",
                     "description": "وحدة بطارية صناعية قابلة للتوسع."
                 },
-                "revium-gridpack": {
+                "aftpower-gridpack": {
                     "name": "جريد باك",
                     "description": "نظام BESS على نطاق الشبكة وتخزين الطاقة المتجددة."
                 }
@@ -180,15 +180,15 @@
             "subtitle": "شحن المركبات الكهربائية",
             "description": "حلول شحن AC و DC عالية الأداء.",
             "products": {
-                "revium-grid-core": {
+                "aftpower-grid-core": {
                     "name": "جريد كور",
                     "description": "وحدة إدارة شحن EV عالية السرعة وذكية."
                 },
-                "revium-grid-pulse": {
+                "aftpower-grid-pulse": {
                     "name": "جريد بلس",
                     "description": "وحدة موازنة الحمل الديناميكي ومراقبة الطاقة."
                 },
-                "revium-grid-pulse-gen2": {
+                "aftpower-grid-pulse-gen2": {
                     "name": "جريد بلس الجيل الثاني",
                     "description": "إدارة طاقة من الجيل الجديد مع ميزات اتصال متقدمة."
                 }
@@ -199,11 +199,11 @@
             "subtitle": "حلول الطاقة الشمسية",
             "description": "مجموعة منتجات كاملة لتركيب محطات الطاقة الشمسية.",
             "products": {
-                "revium-powerstation-series": {
+                "aftpower-powerstation-series": {
                     "name": "سلسلة Powerstation",
                     "description": "تخزين متكامل من نوع الحاوية مع الطاقة الشمسية."
                 },
-                "revium-solarport": {
+                "aftpower-solarport": {
                     "name": "سولار بورت",
                     "description": "تكامل مظلة شمسية وشحن EV."
                 }
@@ -214,11 +214,11 @@
             "subtitle": "تخزين عالي التقنية",
             "description": "تقنيات بطاريات متقدمة لطاقة موثوقة في كل مجال.",
             "products": {
-                "revium-2-7-kwh-lfp": {
+                "aftpower-2-7-kwh-lfp": {
                     "name": "بطارية ليثيوم فوسفات الحديد ٢.٧ كيلوواط ساعة",
                     "description": "حل ليثيوم فوسفات الحديد مدمج لأنظمة الطاقة الشمسية."
                 },
-                "revium-5-4-kwh-lfp": {
+                "aftpower-5-4-kwh-lfp": {
                     "name": "بطارية ليثيوم فوسفات الحديد ٥.٤ كيلوواط ساعة",
                     "description": "تخزين عالي السعة للاستخدام التجاري والمهني."
                 }
@@ -229,15 +229,15 @@
             "subtitle": "حلول طاقة مدمجة وقوية",
             "description": "مصادر طاقة محمولة مثالية للأنشطة الخارجية والعمل الميداني وحالات الطوارئ.",
             "products": {
-                "revium-2-7-kwh": {
+                "aftpower-2-7-kwh": {
                     "name": "حقيبة ٢.٧ كيلوواط ساعة",
                     "description": "حل ميداني بتصميم حقيبة متين."
                 },
-                "revium-2-7-kwh-bag": {
+                "aftpower-2-7-kwh-bag": {
                     "name": "حزمة طاقة ٢.٧ كيلوواط ساعة",
                     "description": "معيار جديد في حلول تخزين الطاقة المحمولة."
                 },
-                "revium-5-4-kwh": {
+                "aftpower-5-4-kwh": {
                     "name": "حزمة طاقة ٥.٤ كيلوواط ساعة",
                     "description": "طاقة محمولة احترافية عالية السعة."
                 }
@@ -248,9 +248,9 @@
             "subtitle": "حلول الطاقة المتنقلة",
             "description": "أنظمة تخزين طاقة عالية السعة مصممة خصيصًا لمركباتك.",
             "products": {
-                "revium-pickup-power-pack": {
+                "aftpower-pickup-power-pack": {
                     "name": "حزمة طاقة بيك آب",
-                    "description": "حل طاقة خاص لمركبات Revium Pick Up."
+                    "description": "حل طاقة خاص لمركبات AFT Power Pick Up."
                 }
             }
         },
@@ -566,7 +566,7 @@
             "premiumEnergy": "طاقة ممتازة"
         },
         "products": {
-            "revium-2-7-kwh": {
+            "aftpower-2-7-kwh": {
                 "name": "حزمة طاقة حقيبة ريفيوم ٢.٧ كيلوواط ساعة",
                 "description": "وحدة طاقة متينة من نوع الحقيبة مصممة خصيصًا للعمليات الخارجية والميدانية.",
                 "runtimeSummary": "حزم الطاقة المحمولة من ريفيوم؛ في طراز ٢.٧ كيلوواط ساعة، يمكنها تشغيل مثقاب هدم لمدة ٢.٧ ساعة تقريبًا وثلاجة منزلية لمدة تصل إلى ١٨ ساعة بشكل مستمر.",
@@ -579,7 +579,7 @@
                     "عمر البطارية: ٦٠٠٠ دورة"
                 ]
             },
-            "revium-2-7-kwh-bag": {
+            "aftpower-2-7-kwh-bag": {
                 "name": "حزمة طاقة محمولة ريفيوم ٢.٧ كيلوواط ساعة",
                 "description": "المعيار الجديد في تخزين الطاقة المحمولة. مدمج وخفيف الوزن وعالي الأداء.",
                 "runtimeSummary": "حزم الطاقة المحمولة من ريفيوم؛ في طراز ٢.٧ كيلوواط ساعة، يمكنها تشغيل مثقاب هدم لمدة ٢.٧ ساعة تقريبًا وثلاجة منزلية لمدة تصل إلى ١٨ ساعة بشكل مستمر.",
@@ -597,7 +597,7 @@
                     "نظام إدارة بطارية ذكي"
                 ]
             },
-            "revium-storage-battery": {
+            "aftpower-storage-battery": {
                 "name": "بطارية تخزين ريفيوم",
                 "description": "أنظمة بطاريات معيارية وقابلة للتطوير. توسيع السعة حسب الاحتياجات.",
                 "features": [
@@ -608,7 +608,7 @@
                     "طويلة الأمد"
                 ]
             },
-            "revium-5-4-kwh": {
+            "aftpower-5-4-kwh": {
                 "name": "حزمة طاقة محمولة ريفيوم ٥.٤ كيلوواط ساعة",
                 "description": "حل طاقة مستمر وعالي السعة للاستخدام المهني.",
                 "runtimeSummary": "حزم الطاقة المحمولة من ريفيوم؛ في طراز ٥.٤ كيلوواط ساعة، يمكنها تشغيل مثقاب هدم لمدة ٥.٤ ساعة ومنزل لمدة ١٤-١٦ ساعة بشكل مستمر.",
@@ -624,7 +624,7 @@
                     "استخدام احترافي"
                 ]
             },
-            "revium-power-cabinet": {
+            "aftpower-power-cabinet": {
                 "name": "كابينة طاقة ريفيوم",
                 "description": "حل كابينة شامل لاحتياجات تخزين الطاقة ذات السعة الكبيرة.",
                 "features": [
@@ -635,7 +635,7 @@
                     "مراقبة عن بعد"
                 ]
             },
-            "revium-pickup-power-pack": {
+            "aftpower-pickup-power-pack": {
                 "name": "حزمة طاقة ريفيوم بيك أب",
                 "description": "نظام طاقة فائق بقدرة ٦٠-١٠٠ كيلوواط ساعة مصمم للتطبيقات المثبتة على المركبات.",
                 "features": [
@@ -647,7 +647,7 @@
                     "عمر دورة ٦٠٠٠+"
                 ]
             },
-            "revium-power-layer": {
+            "aftpower-power-layer": {
                 "name": "طبقة طاقة ريفيوم",
                 "description": "طاقة تخزين على نطاق صناعي مع طبقات طاقة قابلة للتكديس.",
                 "features": [
@@ -659,7 +659,7 @@
                     "تصميم معياري"
                 ]
             },
-            "revium-powerstation-series": {
+            "aftpower-powerstation-series": {
                 "name": "سلسلة محطات طاقة ريفيوم",
                 "description": "محطات ذكية تجمع بين الطاقة الشمسية والتخزين في وحدة واحدة.",
                 "features": [
@@ -672,7 +672,7 @@
                     "العزل: فئة ٢"
                 ]
             },
-            "revium-voltwagon": {
+            "aftpower-voltwagon": {
                 "name": "ريفيوم فولت واغون",
                 "description": "مقطورة تعمل بالطاقة الشمسية تحمل الطاقة من الشمس، مناسبة لجميع التضاريس.",
                 "features": [
@@ -688,7 +688,7 @@
                     "مراقبة عن بعد"
                 ]
             },
-            "revium-gridpack": {
+            "aftpower-gridpack": {
                 "name": "GRIDPACK",
                 "description": "حل BESS عالي السعة لتخزين الطاقة على مستوى الشبكة وتكامل الطاقة المتجددة.",
                 "features": [
@@ -703,7 +703,7 @@
                     "تكامل الشبكة"
                 ]
             },
-            "revium-2-7-kwh-lfp": {
+            "aftpower-2-7-kwh-lfp": {
                 "name": "بطارية ريفيوم ٢.٧ كيلوواط ساعة ليثيوم فوسفات الحديد",
                 "description": "بطارية LFP مضغوطة وطويلة العمر لأنظمة الطاقة الشمسية وحلول الطاقة المتنقلة.",
                 "features": [
@@ -723,7 +723,7 @@
                     "cellType": "LiFePO4"
                 }
             },
-            "revium-5-4-kwh-lfp": {
+            "aftpower-5-4-kwh-lfp": {
                 "name": "بطارية ريفيوم ٥.٤ كيلوواط ساعة ليثيوم فوسفات الحديد",
                 "description": "حل تخزين طاقة عالي السعة وطويل العمر للاستخدام التجاري والمهني.",
                 "features": [
@@ -743,7 +743,7 @@
                     "cellType": "LiFePO4"
                 }
             },
-            "revium-grid-core": {
+            "aftpower-grid-core": {
                 "name": "غريد كور",
                 "description": "محطة شحن سريع تيار مستمر عالية الطاقة في نطاق ٤٥-١٨٠ كيلوواط.",
                 "features": [
@@ -755,7 +755,7 @@
                     "إيثرنت / اتصال ٤ جي"
                 ]
             },
-            "revium-grid-pulse": {
+            "aftpower-grid-pulse": {
                 "name": "غريد بلس",
                 "description": "محطة شحن تيار مستمر مرنة مزدوجة الإخراج بقدرة ٩٠-٢٧٠ كيلوواط.",
                 "features": [
@@ -767,7 +767,7 @@
                     "حماية IP54"
                 ]
             },
-            "revium-grid-pulse-gen2": {
+            "aftpower-grid-pulse-gen2": {
                 "name": "غريد بلس الجيل الثاني",
                 "description": "محطة شحن تيار مستمر عالية السرعة متصلة وذكية من الجيل التالي.",
                 "features": [
@@ -779,7 +779,7 @@
                     "بروتوكول OCPP ١.٦"
                 ]
             },
-            "revium-solarport": {
+            "aftpower-solarport": {
                 "name": "ريفيوم سولاربورت",
                 "description": "محطة شحن المركبات الكهربائية وحل مرآب الطاقة الشمسية. اشحن مركباتك بالطاقة النظيفة مع حمايتها.",
                 "features": [
@@ -792,7 +792,7 @@
                 ]
             }
         },
-        "revium-power-cabinet": {
+        "aftpower-power-cabinet": {
             "name": "كابينة الطاقة ريفيوم",
             "description": "كابينة تخزين طاقة مدمجة شاملة للمنشآت الصناعية.",
             "features": [
@@ -807,7 +807,7 @@
                 "سهولة التركيب"
             ]
         },
-        "revium-pickup-power-pack": {
+        "aftpower-pickup-power-pack": {
             "name": "حزمة طاقة ريفيوم بيك أب",
             "description": "نظام فائق القوة بسعة ٦٠-١٠٠ كيلوواط ساعة مطور لتطبيقات المركبات.",
             "features": [
@@ -820,7 +820,7 @@
                 "حماية IP67"
             ]
         },
-        "revium-power-layer": {
+        "aftpower-power-layer": {
             "name": "طبقة الطاقة ريفيوم",
             "description": "طبقات بطارية قابلة للتطوير بلا حدود للمشاريع الصناعية واسعة النطاق.",
             "features": [

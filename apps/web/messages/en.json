@@ -12,9 +12,9 @@
     "corporatePage": {
         "badge": "CORPORATE",
         "heroTitle": "Visionary Steps in Energy Transformation",
-        "heroSubtitle": "As Revium, we develop innovative energy storage and renewable energy solutions for a sustainable future.",
+        "heroSubtitle": "As AFT Power, we develop innovative energy storage and renewable energy solutions for a sustainable future.",
         "aboutTitle": "Bringing Cleaner Energy to the World",
-        "aboutDescription": "Revium is a technology company specializing in energy storage systems and renewable energy technologies. Using LiFePO4 battery technologies, we offer high-performance solutions in a wide range from campers to industrial facilities.",
+        "aboutDescription": "AFT Power is a technology company specializing in energy storage systems and renewable energy technologies. Using LiFePO4 battery technologies, we offer high-performance solutions in a wide range from campers to industrial facilities.",
         "techTitle": "High Technology",
         "techDesc": "Maximum safety and efficiency with the latest battery management systems (BMS).",
         "integrationTitle": "Fast Integration",
@@ -175,7 +175,7 @@
     },
     "features": {
         "title1": "Why",
-        "title2": "Revium?",
+        "title2": "AFT Power?",
         "subtitle": "The right choice for powerful, durable, and free energy solutions",
         "performance": {
             "title": "High Performance",
@@ -203,15 +203,15 @@
             "subtitle": "Compact and Powerful",
             "description": "Portable power for camping, field, and emergencies.",
             "products": {
-                "revium-2-7-kwh": {
+                "aftpower-2-7-kwh": {
                     "name": "2.7 kWh Case Type",
                     "description": "Durable bag-type design field solution."
                 },
-                "revium-2-7-kwh-bag": {
+                "aftpower-2-7-kwh-bag": {
                     "name": "2.7 kWh Power Pack",
                     "description": "New standard in portable energy storage solutions."
                 },
-                "revium-5-4-kwh": {
+                "aftpower-5-4-kwh": {
                     "name": "5.4 kWh Power Pack",
                     "description": "High-capacity professional portable power."
                 }
@@ -222,9 +222,9 @@
             "subtitle": "Mobile Energy",
             "description": "High-capacity vehicle-mounted systems.",
             "products": {
-                "revium-pickup-power-pack": {
+                "aftpower-pickup-power-pack": {
                     "name": "Pick Up Power Pack",
-                    "description": "Special power solution for Revium Pick Up vehicles."
+                    "description": "Special power solution for AFT Power Pick Up vehicles."
                 }
             }
         },
@@ -233,15 +233,15 @@
             "subtitle": "EV Charging",
             "description": "High-performance AC and DC charging solutions.",
             "products": {
-                "revium-grid-core": {
+                "aftpower-grid-core": {
                     "name": "Grid Core",
                     "description": "High-speed and smart EV charge management unit."
                 },
-                "revium-grid-pulse": {
+                "aftpower-grid-pulse": {
                     "name": "Grid Pulse",
                     "description": "Dynamic load balancing and energy monitoring module."
                 },
-                "revium-grid-pulse-gen2": {
+                "aftpower-grid-pulse-gen2": {
                     "name": "Grid Pulse Gen2",
                     "description": "Next-generation energy management with advanced connectivity."
                 }
@@ -252,15 +252,15 @@
             "subtitle": "Industrial Power",
             "description": "High-capacity cabin-type energy systems for large-scale projects.",
             "products": {
-                "revium-power-cabinet": {
+                "aftpower-power-cabinet": {
                     "name": "Power Cabinet",
                     "description": "Industrial single-cabin energy storage system."
                 },
-                "revium-power-layer": {
+                "aftpower-power-layer": {
                     "name": "Power Layer",
                     "description": "Scalable industrial battery unit."
                 },
-                "revium-gridpack": {
+                "aftpower-gridpack": {
                     "name": "GRIDPACK",
                     "description": "Grid-scale BESS and renewable energy storage."
                 }
@@ -271,11 +271,11 @@
             "subtitle": "Solar energy solutions",
             "description": "Complete product range for solar power plant installation.",
             "products": {
-                "revium-powerstation-series": {
+                "aftpower-powerstation-series": {
                     "name": "Powerstation Series",
                     "description": "Container-type solar integrated storage."
                 },
-                "revium-solarport": {
+                "aftpower-solarport": {
                     "name": "Solarport",
                     "description": "Solar carport and EV charging integration."
                 }
@@ -286,11 +286,11 @@
             "subtitle": "High-Tech Storage",
             "description": "Advanced battery technologies for reliable energy in every field.",
             "products": {
-                "revium-2-7-kwh-lfp": {
+                "aftpower-2-7-kwh-lfp": {
                     "name": "2.7 kWh LFP Battery",
                     "description": "Compact LFP solution for solar energy systems."
                 },
-                "revium-5-4-kwh-lfp": {
+                "aftpower-5-4-kwh-lfp": {
                     "name": "5.4 kWh LFP Battery",
                     "description": "High-capacity storage for commercial and professional use."
                 }
@@ -309,7 +309,7 @@
     },
     "portablePower": {
         "badge": "High Capacity",
-        "title1": "Revium 5.4 kWh",
+        "title1": "AFT Power 5.4 kWh",
         "title2": "Power Pack",
         "subtitle": "High Capacity Portable Energy Solution",
         "optimized": "LiFePO4 Optimized",
@@ -345,7 +345,7 @@
                 "Maintenance and Support"
             ],
             "whyUs": {
-                "title": "Why Revium?",
+                "title": "Why AFT Power?",
                 "description": "We make a difference with our expert team and quality service understanding in solar installation",
                 "items": [
                     {
@@ -530,12 +530,12 @@
         "backHome": "Back to home"
     },
     "metadata": {
-        "title": "Revium - Energy Storage and Renewable Energy Solutions | Reviumtech",
-        "description": "As Revium and Reviumtech, we offer energy storage, battery systems, solar power (GES) installation, and renewable energy solutions. Reliable energy storage systems with LiFePO4 technology.",
-        "keywords": "Revium,Reviumtech,energy storage,battery systems,solar energy,GES installation,renewable energy,LiFePO4",
+        "title": "AFT Power - Energy Storage and Renewable Energy Solutions | AFT Powertech",
+        "description": "As AFT Power and AFT Powertech, we offer energy storage, battery systems, solar power (GES) installation, and renewable energy solutions. Reliable energy storage systems with LiFePO4 technology.",
+        "keywords": "AFT Power,AFT Powertech,energy storage,battery systems,solar energy,GES installation,renewable energy,LiFePO4",
         "home": {
-            "title": "Revium - Energy Storage and Renewable Energy Solutions",
-            "description": "As Revium and Reviumtech, we offer energy storage, battery systems, solar energy (GES) installation and renewable energy solutions."
+            "title": "AFT Power - Energy Storage and Renewable Energy Solutions",
+            "description": "As AFT Power and AFT Powertech, we offer energy storage, battery systems, solar energy (GES) installation and renewable energy solutions."
         },
         "contact": {
             "title": "Contact",
@@ -570,43 +570,43 @@
             "premiumEnergy": "Premium Energy"
         },
         "products": {
-            "revium-2-7-kwh": {
+            "aftpower-2-7-kwh": {
                 "name": "2.7 kWh Case Type Power Pack",
                 "description": "Rugged case-type power unit specially designed for outdoor and field operations."
             },
-            "revium-2-7-kwh-bag": {
+            "aftpower-2-7-kwh-bag": {
                 "name": "2.7 kWh Portable Power Pack",
                 "description": "The new standard in portable energy storage. Compact, lightweight, and high-performance."
             },
-            "revium-storage-battery": {
+            "aftpower-storage-battery": {
                 "name": "Storage Battery",
                 "description": "Modular and scalable battery systems. Capacity expansion based on needs."
             },
-            "revium-5-4-kwh": {
+            "aftpower-5-4-kwh": {
                 "name": "5.4 kWh Portable Power Pack",
                 "description": "High-capacity, uninterrupted energy solution for professional use."
             },
-            "revium-power-cabinet": {
+            "aftpower-power-cabinet": {
                 "name": "Power Cabinet",
                 "description": "All-in-one cabinet solution for large-capacity energy storage needs."
             },
-            "revium-pickup-power-pack": {
+            "aftpower-pickup-power-pack": {
                 "name": "Pick Up Power Pack",
                 "description": "Ultra-high power system with 60-100 kWh capacity designed for vehicle-mounted applications."
             },
-            "revium-power-layer": {
+            "aftpower-power-layer": {
                 "name": "Power Layer",
                 "description": "Industrial-scale storage power with stackable power layers."
             },
-            "revium-powerstation-series": {
+            "aftpower-powerstation-series": {
                 "name": "Powerstation Series",
                 "description": "Smart stations combining solar energy and storage in a single unit."
             },
-            "revium-voltwagon": {
+            "aftpower-voltwagon": {
                 "name": "VoltWagon",
                 "description": "Solar-powered trailer carrying energy from the sun, suitable for all terrains."
             },
-            "revium-gridpack": {
+            "aftpower-gridpack": {
                 "name": "GRIDPACK",
                 "description": "High-capacity BESS solution for utility-scale energy storage and renewable energy integration.",
                 "techSpecs": {
@@ -618,7 +618,7 @@
                     "cycleLife": "6000+ Cycles"
                 }
             },
-            "revium-2-7-kwh-lfp": {
+            "aftpower-2-7-kwh-lfp": {
                 "name": "2.7 kWh LFP Battery",
                 "description": "Compact, long-life LFP battery for solar energy systems and mobile power solutions.",
                 "techSpecs": {
@@ -630,7 +630,7 @@
                     "cellType": "LiFePO4"
                 }
             },
-            "revium-5-4-kwh-lfp": {
+            "aftpower-5-4-kwh-lfp": {
                 "name": "5.4 kWh LFP Battery",
                 "description": "High-capacity, long-life energy storage solution for commercial and professional use.",
                 "techSpecs": {
@@ -642,19 +642,19 @@
                     "cellType": "LiFePO4"
                 }
             },
-            "revium-grid-core": {
+            "aftpower-grid-core": {
                 "name": "Grid Core",
                 "description": "High-power DC fast charging station in the 45-180 kW range."
             },
-            "revium-grid-pulse": {
+            "aftpower-grid-pulse": {
                 "name": "Grid Pulse",
                 "description": "90-270 kW dual-output flexible DC charging station."
             },
-            "revium-grid-pulse-gen2": {
+            "aftpower-grid-pulse-gen2": {
                 "name": "Grid Pulse Gen2",
                 "description": "Next-generation connected and smart high-speed DC charging station."
             },
-            "revium-solarport": {
+            "aftpower-solarport": {
                 "name": "Solarport",
                 "description": "EV charging station and solar carport solution. Charge your vehicles with clean energy while protecting them."
             }

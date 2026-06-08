@@ -49,7 +49,7 @@ export default function Services() {
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 mb-6">
                         {t('title')}
                     </h2>
-                    <div className="w-16 h-1 bg-blue-600 mx-auto rounded-full opacity-20" />
+                    <div className="w-16 h-1 bg-orange-500 mx-auto rounded-full opacity-20" />
                 </div>
                 {/* Services Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto px-4">
@@ -89,18 +89,18 @@ function AnimatedServiceCard({ service, index, locale, t }: { service: any, inde
             ref={cardRef}
             href={`/${locale}/hizmetlerimiz/${service.slug}/`}
             className={cn(
-                "group relative aspect-[1.35/1] flex flex-col overflow-hidden rounded-3xl border border-slate-200/80 shadow-md transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] transform bg-white",
+                "group relative aspect-[1.35/1] flex flex-col overflow-hidden rounded-sm border border-slate-200/80 shadow-md transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] transform bg-white",
                 isVisible
                     ? "opacity-100 translate-y-0 translate-x-0 scale-100"
                     : cn(
                         "opacity-0 scale-95",
                         index % 2 === 0 ? "-translate-x-12" : "translate-x-12"
                     ),
-                "hover:z-10 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-100/50 hover:border-blue-200"
+                "hover:z-10 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-100/50 hover:border-orange-500/20"
             )}
         >
             {/* Full-Bleed Background Image */}
-            <div className="absolute inset-0 z-0 overflow-hidden rounded-3xl">
+            <div className="absolute inset-0 z-0 overflow-hidden rounded-sm">
                 <Image
                     alt={t(`${service.key}.title`)}
                     src={service.image}

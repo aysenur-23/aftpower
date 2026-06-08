@@ -46,7 +46,7 @@ export default function FeaturedProject() {
                         "relative group order-2 lg:order-1 transition-all duration-700 transform",
                         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                     )}>
-                        <div className="relative rounded-3xl overflow-hidden bg-slate-50 border border-slate-200 shadow-2xl">
+                        <div className="relative rounded-sm overflow-hidden bg-slate-50 border border-slate-200 shadow-2xl">
                             <div className="aspect-[4/5] relative flex items-center justify-center bg-slate-50">
                                 {/* Watermark Logo - Behind */}
                                 <div className="absolute inset-0 flex items-center justify-center z-0 pointer-events-none opacity-20 select-none">
@@ -70,7 +70,7 @@ export default function FeaturedProject() {
 
                                 {/* Capacity Badge */}
                                 <div className="absolute bottom-8 left-8 z-30">
-                                    <div className="px-5 py-2.5 bg-white shadow-xl rounded-2xl border border-slate-100">
+                                    <div className="px-5 py-2.5 bg-white shadow-xl rounded-sm border border-slate-100">
                                         <span className="text-slate-900 font-bold tracking-tight text-base italic">
                                             {t('capacityValue')}
                                         </span>
@@ -87,9 +87,9 @@ export default function FeaturedProject() {
                     )}>
                         <div className="space-y-10">
                             <div>
-                                <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-blue-50 border border-blue-100">
-                                    <div className="w-1.5 h-1.5 rounded-full bg-blue-600 animate-pulse" />
-                                    <span className="text-[10px] font-bold text-blue-700 uppercase tracking-widest">
+                                <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-orange-500/5 border border-orange-500/15">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
+                                    <span className="text-[10px] font-bold text-orange-600 uppercase tracking-widest">
                                         {t('badge')}
                                     </span>
                                 </div>
@@ -104,8 +104,8 @@ export default function FeaturedProject() {
                             {/* Features Grid */}
                             <div className="grid grid-cols-2 gap-4">
                                 {features.map((feature, idx) => (
-                                    <div key={idx} className="flex items-center gap-4 p-5 bg-slate-50 border border-slate-100 rounded-2xl group/item hover:bg-white hover:shadow-xl hover:border-blue-100 transition-all duration-300">
-                                        <div className="w-11 h-11 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-blue-600 group-hover/item:bg-blue-600 group-hover/item:text-white group-hover/item:border-blue-600 transition-all shadow-sm">
+                                    <div key={idx} className="flex items-center gap-4 p-5 bg-slate-50 border border-slate-100 rounded-sm group/item hover:bg-white hover:shadow-xl hover:border-orange-500/15 transition-all duration-300">
+                                        <div className="w-11 h-11 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-orange-500 group-hover/item:bg-orange-500 group-hover/item:text-white group-hover/item:border-orange-500 transition-all shadow-sm">
                                             <feature.icon className="w-5 h-5" strokeWidth={1.5} />
                                         </div>
                                         <span className="text-sm font-bold text-slate-900">{feature.title}</span>
@@ -114,7 +114,7 @@ export default function FeaturedProject() {
                             </div>
 
                             {/* Stats Bar - Light Theme */}
-                            <div className="p-6 bg-gradient-to-r from-blue-600 to-blue-500 rounded-2xl shadow-lg">
+                            <div className="p-6 bg-gradient-to-r from-orange-500 to-orange-500 rounded-sm shadow-lg">
                                 <div className="grid grid-cols-3 gap-4 divide-x divide-white/20">
                                     {stats.map((stat, idx) => (
                                         <div key={idx} className="flex flex-col items-center justify-center px-2 first:pl-0 last:pr-0">

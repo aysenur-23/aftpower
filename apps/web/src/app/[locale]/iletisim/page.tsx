@@ -38,7 +38,7 @@ export default function Iletisim() {
 
             // Firebase Extension "Trigger Email" için mail collection'a ekle
             await addDoc(collection(db, 'mail'), {
-                to: ['info@reviumtech.com'],
+                to: ['info@aftpowertech.com'],
                 message: {
                     subject: `Yeni İletişim Formu: ${formData.get('subject')}`,
                     html: `
@@ -50,7 +50,7 @@ export default function Iletisim() {
                         <p><strong>Mesaj:</strong></p>
                         <p>${formData.get('message')}</p>
                         <hr>
-                        <p><small>Bu mesaj reviumtech.com iletişim formundan gönderildi.</small></p>
+                        <p><small>Bu mesaj aftpowertech.com iletişim formundan gönderildi.</small></p>
                     `,
                 },
             });
@@ -71,14 +71,14 @@ export default function Iletisim() {
             title: t('phone'),
             value: locale === 'ar' ? '+٩٠ (٥٥١) ٨٢٩-١٦١٣' : '+90 (551) 829-1613',
             href: 'tel:+905518291613',
-            color: 'text-blue-600',
-            bg: 'bg-blue-50'
+            color: 'text-orange-500',
+            bg: 'bg-orange-500/5'
         },
         {
             icon: Mail,
             title: t('email'),
-            value: 'info@reviumtech.com',
-            href: 'mailto:info@reviumtech.com',
+            value: 'info@aftpowertech.com',
+            href: 'mailto:info@aftpowertech.com',
             color: 'text-emerald-600',
             bg: 'bg-emerald-50'
         },
@@ -97,13 +97,13 @@ export default function Iletisim() {
             {/* Hero Section - Clean & Simple */}
             <section className="relative pt-28 pb-12 lg:pt-32 lg:pb-16 flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50">
                 <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.1)_1px,transparent_1px)] bg-[size:40px_40px]" />
-                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-100/40 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/3" />
+                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-orange-500/10/40 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/3" />
 
                 <div className="container relative z-10 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto text-center">
                     <div className="space-y-4">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 border border-blue-200">
-                            <span className="flex h-2 w-2 rounded-full bg-blue-500 animate-pulse" />
-                            <span className="text-xs font-bold text-blue-700 uppercase tracking-wider">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 border border-orange-500/20">
+                            <span className="flex h-2 w-2 rounded-full bg-orange-400 animate-pulse" />
+                            <span className="text-xs font-bold text-orange-600 uppercase tracking-wider">
                                 {locale === 'tr' ? 'İletişim' : locale === 'ar' ? 'اتصل بنا' : 'Contact'}
                             </span>
                         </div>
@@ -140,7 +140,7 @@ export default function Iletisim() {
                                         type="text"
                                         name="name"
                                         required
-                                        className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900"
+                                        className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-orange-400/10 focus:border-blue-500 transition-all font-medium text-slate-900"
                                     />
                                 </div>
                                 <div className="space-y-1.5">
@@ -149,7 +149,7 @@ export default function Iletisim() {
                                         type="email"
                                         name="email"
                                         required
-                                        className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900"
+                                        className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-orange-400/10 focus:border-blue-500 transition-all font-medium text-slate-900"
                                     />
                                 </div>
                             </div>
@@ -159,7 +159,7 @@ export default function Iletisim() {
                                     type="tel"
                                     name="phone"
                                     placeholder={locale === 'ar' ? '+٩٠ ٥XX XXX XX XX' : '+90 5XX XXX XX XX'}
-                                    className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900"
+                                    className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-orange-400/10 focus:border-blue-500 transition-all font-medium text-slate-900"
                                     dir="ltr"
                                 />
                             </div>
@@ -169,7 +169,7 @@ export default function Iletisim() {
                                     type="text"
                                     name="subject"
                                     required
-                                    className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900"
+                                    className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-orange-400/10 focus:border-blue-500 transition-all font-medium text-slate-900"
                                 />
                             </div>
                             <div className="space-y-1.5">
@@ -178,13 +178,13 @@ export default function Iletisim() {
                                     name="message"
                                     rows={5}
                                     required
-                                    className="w-full p-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500/10 focus:border-blue-500 transition-all font-medium text-slate-900 resize-none"
+                                    className="w-full p-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-orange-400/10 focus:border-blue-500 transition-all font-medium text-slate-900 resize-none"
                                 />
                             </div>
                             <button
                                 type="submit"
                                 disabled={isSubmitting}
-                                className="inline-flex items-center justify-center gap-3 h-14 px-10 bg-blue-600 text-white rounded-xl font-bold hover:bg-slate-900 transition-all shadow-lg shadow-blue-100 disabled:opacity-50"
+                                className="inline-flex items-center justify-center gap-3 h-14 px-10 bg-orange-500 text-white rounded-xl font-bold hover:bg-slate-900 transition-all shadow-lg shadow-blue-100 disabled:opacity-50"
                             >
                                 {isSubmitting ? (
                                     <div className="w-5 h-5 border-3 border-white/30 border-t-white rounded-full animate-spin" />
@@ -204,7 +204,7 @@ export default function Iletisim() {
                         <div className="relative aspect-[16/10] rounded-2xl overflow-hidden shadow-lg group">
                             <Image
                                 src="/images/contact/contact-visual.webp"
-                                alt="Revium Support"
+                                alt="AFT Power Support"
                                 fill
                                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                             />
@@ -224,7 +224,7 @@ export default function Iletisim() {
                                             target={method.icon === MapPin ? "_blank" : undefined}
                                             rel={method.icon === MapPin ? "noopener noreferrer" : undefined}
                                             dir={method.icon === MapPin ? undefined : "ltr"}
-                                            className="text-[17px] font-bold text-slate-900 hover:text-blue-600 transition-colors"
+                                            className="text-[17px] font-bold text-slate-900 hover:text-orange-500 transition-colors"
                                         >
                                             {method.value}
                                         </a>

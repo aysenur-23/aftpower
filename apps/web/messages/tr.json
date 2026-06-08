@@ -12,9 +12,9 @@
   "corporatePage": {
     "badge": "KURUMSAL",
     "heroTitle": "Enerji Dönüşümünde Vizyoner Adımlar",
-    "heroSubtitle": "Revium olarak, sürdürülebilir bir gelecek için yenilikçi enerji depolama ve yenilenebilir enerji çözümleri geliştiriyoruz.",
+    "heroSubtitle": "AFT Power olarak, sürdürülebilir bir gelecek için yenilikçi enerji depolama ve yenilenebilir enerji çözümleri geliştiriyoruz.",
     "aboutTitle": "Dünyayı Daha Temiz Bir Enerjiyle Buluşturuyoruz",
-    "aboutDescription": "Revium, enerji depolama sistemleri ve yenilenebilir enerji teknolojileri alanında faaliyet gösteren bir teknoloji şirketidir. LiFePO4 batarya teknolojilerini kullanarak, kampçılardan endüstriyel tesislere kadar geniş bir yelpazede yüksek performanslı çözümler sunuyoruz.",
+    "aboutDescription": "AFT Power, enerji depolama sistemleri ve yenilenebilir enerji teknolojileri alanında faaliyet gösteren bir teknoloji şirketidir. LiFePO4 batarya teknolojilerini kullanarak, kampçılardan endüstriyel tesislere kadar geniş bir yelpazede yüksek performanslı çözümler sunuyoruz.",
     "techTitle": "Yüksek Teknoloji",
     "techDesc": "En yeni batarya yönetim sistemleri (BMS) ile maksimum güvenlik ve verimlilik.",
     "integrationTitle": "Hızlı Entegrasyon",
@@ -175,7 +175,7 @@
   },
   "features": {
     "title1": "Neden",
-    "title2": "Revium?",
+    "title2": "AFT Power?",
     "subtitle": "Güçlü, dayanıklı ve özgür enerji çözümleri için doğru tercih",
     "performance": {
       "title": "Yüksek Performans",
@@ -203,15 +203,15 @@
       "subtitle": "Kompakt ve Güçlü",
       "description": "Kamp, saha ve acil durumlar için taşınabilir güç.",
       "products": {
-        "revium-2-7-kwh": {
+        "aftpower-2-7-kwh": {
           "name": "2.7 kWh Çanta Tip",
           "description": "Dayanıklı çanta tipi tasarımı ile saha çözümü."
         },
-        "revium-2-7-kwh-bag": {
+        "aftpower-2-7-kwh-bag": {
           "name": "2.7 kWh Güç Paketi",
           "description": "Taşınabilir enerji depolama çözümlerinde yeni standart."
         },
-        "revium-5-4-kwh": {
+        "aftpower-5-4-kwh": {
           "name": "5.4 kWh Güç Paketi",
           "description": "Yüksek kapasiteli profesyonel taşınabilir güç."
         }
@@ -222,9 +222,9 @@
       "subtitle": "Mobil Enerji",
       "description": "Yüksek kapasiteli araç üstü sistemler.",
       "products": {
-        "revium-pickup-power-pack": {
+        "aftpower-pickup-power-pack": {
           "name": "Pick Up Güç Paketi",
-          "description": "Revium Pick Up araçlar için özel güç çözümü."
+          "description": "AFT Power Pick Up araçlar için özel güç çözümü."
         }
       }
     },
@@ -233,15 +233,15 @@
       "subtitle": "Elektrikli Araç Şarjı",
       "description": "AC ve DC yüksek performanslı şarj çözümleri.",
       "products": {
-        "revium-grid-core": {
+        "aftpower-grid-core": {
           "name": "Grid Core",
           "description": "Yüksek hızlı ve akıllı EV şarj yönetim ünitesi."
         },
-        "revium-grid-pulse": {
+        "aftpower-grid-pulse": {
           "name": "Grid Pulse",
           "description": "Dinamik yük dengeleme ve enerji izleme modülü."
         },
-        "revium-grid-pulse-gen2": {
+        "aftpower-grid-pulse-gen2": {
           "name": "Grid Pulse Gen2",
           "description": "Gelişmiş bağlantı özellikleriyle yeni nesil enerji yönetimi."
         }
@@ -252,15 +252,15 @@
       "subtitle": "Endüstriyel güç çözümleri",
       "description": "Büyük ölçekli projeler için yüksek kapasiteli kabin tipi enerji sistemleri.",
       "products": {
-        "revium-power-cabinet": {
+        "aftpower-power-cabinet": {
           "name": "Güç Kabini",
           "description": "Endüstriyel tek kabin enerji depolama sistemi."
         },
-        "revium-power-layer": {
+        "aftpower-power-layer": {
           "name": "Güç Katmanı",
           "description": "Ölçeklenebilir endüstriyel batarya ünitesi."
         },
-        "revium-gridpack": {
+        "aftpower-gridpack": {
           "name": "GRIDPACK",
           "description": "Şebeke ölçekli BESS ve yenilenebilir enerji depolama."
         }
@@ -271,11 +271,11 @@
       "subtitle": "Güneş enerjisi çözümleri",
       "description": "Enerjisini güneşten alan güçlü komponentler.",
       "products": {
-        "revium-powerstation-series": {
+        "aftpower-powerstation-series": {
           "name": "Powerstation Serisi",
           "description": "Konteyner tipi GES entegre depolama."
         },
-        "revium-solarport": {
+        "aftpower-solarport": {
           "name": "Solarport",
           "description": "Solar carport ve EV şarj entegrasyonu."
         }
@@ -286,11 +286,11 @@
       "subtitle": "Yüksek Teknolojili Depolama",
       "description": "Her alanda güvenilir enerji için gelişmiş batarya teknolojileri.",
       "products": {
-        "revium-2-7-kwh-lfp": {
+        "aftpower-2-7-kwh-lfp": {
           "name": "2.7 kWh LFP Batarya",
           "description": "Güneş enerjisi sistemleri için kompakt LFP çözüm."
         },
-        "revium-5-4-kwh-lfp": {
+        "aftpower-5-4-kwh-lfp": {
           "name": "5.4 kWh LFP Batarya",
           "description": "Ticari ve profesyonel kullanım için yüksek kapasiteli depolama."
         }
@@ -309,7 +309,7 @@
   },
   "portablePower": {
     "badge": "Yüksek Kapasite",
-    "title1": "Revium 5,4 kWh",
+    "title1": "AFT Power 5,4 kWh",
     "title2": "Güç Paketi",
     "subtitle": "Yüksek Kapasiteli Taşınabilir Enerji Çözümü",
     "optimized": "LiFePO4 Optimize Edilmiş",
@@ -345,7 +345,7 @@
         "Bakım ve Destek"
       ],
       "whyUs": {
-        "title": "Neden Revium?",
+        "title": "Neden AFT Power?",
         "description": "GES kurulumunda uzman ekibimiz ve kaliteli hizmet anlayışımızla fark yaratıyoruz",
         "items": [
           {
@@ -530,12 +530,12 @@
     "backHome": "Ana sayfaya dön"
   },
   "metadata": {
-    "title": "Revium - Enerji Depolama ve Yenilenebilir Enerji Çözümleri | Reviumtech",
-    "description": "Revium ve Reviumtech olarak enerji depolama, batarya sistemleri, güneş enerjisi (GES) kurulumu ve yenilenebilir enerji çözümleri sunuyoruz. LiFePO4 teknolojisi ile güvenilir enerji depolama sistemleri.",
-    "keywords": "Revium,Reviumtech,enerji depolama,batarya sistemleri,güneş enerjisi,GES kurulumu,yenilenebilir enerji,LiFePO4",
+    "title": "AFT Power - Enerji Depolama ve Yenilenebilir Enerji Çözümleri | AFT Powertech",
+    "description": "AFT Power ve AFT Powertech olarak enerji depolama, batarya sistemleri, güneş enerjisi (GES) kurulumu ve yenilenebilir enerji çözümleri sunuyoruz. LiFePO4 teknolojisi ile güvenilir enerji depolama sistemleri.",
+    "keywords": "AFT Power,AFT Powertech,enerji depolama,batarya sistemleri,güneş enerjisi,GES kurulumu,yenilenebilir enerji,LiFePO4",
     "home": {
-      "title": "Revium - Enerji Depolama ve Yenilenebilir Enerji Çözümleri",
-      "description": "Revium ve Reviumtech olarak enerji depolama, batarya sistemleri, güneş enerjisi (GES) kurulumu ve yenilenebilir enerji çözümleri sunuyoruz."
+      "title": "AFT Power - Enerji Depolama ve Yenilenebilir Enerji Çözümleri",
+      "description": "AFT Power ve AFT Powertech olarak enerji depolama, batarya sistemleri, güneş enerjisi (GES) kurulumu ve yenilenebilir enerji çözümleri sunuyoruz."
     },
     "contact": {
       "title": "İletişim",
@@ -570,7 +570,7 @@
       "premiumEnergy": "Premium Enerji"
     },
     "products": {
-      "revium-2-7-kwh": {
+      "aftpower-2-7-kwh": {
         "name": "2.7 kWh Çanta Tip Güç Paketi",
         "description": "Dış mekan ve saha çalışmaları için özel olarak tasarlanmış, dayanıklı çanta tipi güç ünitesi.",
         "features": [
@@ -584,7 +584,7 @@
           "Ağırlık: 35 kg"
         ]
       },
-      "revium-2-7-kwh-bag": {
+      "aftpower-2-7-kwh-bag": {
         "name": "2.7 kWh Depolanabilir Güç Paketi",
         "description": "Taşınabilir enerji depolama çözümlerinde yeni standart. Kompakt, hafif ve yüksek performanslı.",
         "features": [
@@ -598,7 +598,7 @@
           "Ağırlık: 35 kg"
         ]
       },
-      "revium-storage-battery": {
+      "aftpower-storage-battery": {
         "name": "Storage Battery",
         "description": "Modüler ve ölçeklenebilir batarya sistemleri. İhtiyaca göre kapasite artırımı imkanı.",
         "features": [
@@ -611,7 +611,7 @@
           "Bluetooth: Mevcut"
         ]
       },
-      "revium-5-4-kwh": {
+      "aftpower-5-4-kwh": {
         "name": "5.4 kWh Depolanabilir Güç Paketi",
         "description": "Profesyonel kullanım için yüksek kapasiteli, kesintisiz enerji çözümü.",
         "features": [
@@ -625,7 +625,7 @@
           "Ağırlık: 60 kg"
         ]
       },
-      "revium-power-cabinet": {
+      "aftpower-power-cabinet": {
         "name": "Güç Kabini",
         "description": "Büyük kapasiteli enerji depolama ihtiyaçları için hepsi bir arada kabin çözümü.",
         "features": [
@@ -638,7 +638,7 @@
           "Ağırlık: 70 – 270 kg"
         ]
       },
-      "revium-pickup-power-pack": {
+      "aftpower-pickup-power-pack": {
         "name": "Pick Up Güç Paketi",
         "description": "Araç üstü uygulamalar için geliştirilmiş 60-100 kWh kapasiteli ultra yüksek güçlü sistem.",
         "features": [
@@ -650,7 +650,7 @@
           "Dalga Tipi: Saf Sinüs"
         ]
       },
-      "revium-power-layer": {
+      "aftpower-power-layer": {
         "name": "Güç Katmanı",
         "description": "İstiflenebilir güç katmanları ile endüstriyel ölçekte depolama gücü.",
         "features": [
@@ -661,7 +661,7 @@
           "Ağırlık: 66 – 950 kg"
         ]
       },
-      "revium-powerstation-series": {
+      "aftpower-powerstation-series": {
         "name": "Powerstation Serisi",
         "description": "Güneş enerjisi ve depolamayı tek bir ünitede birleştiren akıllı istasyonlar.",
         "features": [
@@ -673,7 +673,7 @@
           "Uzaktan İzleme"
         ]
       },
-      "revium-voltwagon": {
+      "aftpower-voltwagon": {
         "name": "VoltWagon",
         "description": "Güneşten aldığı gücü mobil olarak taşıyan, her türlü araziye uygun güneş enerjili römork.",
         "features": [
@@ -685,7 +685,7 @@
           "Kolay Taşınabilir"
         ]
       },
-      "revium-gridpack": {
+      "aftpower-gridpack": {
         "name": "GRIDPACK",
         "description": "Şebeke ölçekli enerji depolama ve yenilenebilir enerji entegrasyonu için yüksek kapasiteli BESS çözümü.",
         "features": [
@@ -706,7 +706,7 @@
           "cycleLife": "6000+ Çevrim"
         }
       },
-      "revium-2-7-kwh-lfp": {
+      "aftpower-2-7-kwh-lfp": {
         "name": "2.7 kWh LFP Batarya",
         "description": "Güneş enerjisi sistemleri ve mobil güç çözümleri için kompakt, uzun ömürlü LFP batarya.",
         "features": [
@@ -727,7 +727,7 @@
           "cellType": "LiFePO4"
         }
       },
-      "revium-5-4-kwh-lfp": {
+      "aftpower-5-4-kwh-lfp": {
         "name": "5.4 kWh LFP Batarya",
         "description": "Ticari ve profesyonel kullanım için yüksek kapasiteli, uzun ömürlü enerji depolama çözümü.",
         "features": [
@@ -748,7 +748,7 @@
           "cellType": "LiFePO4"
         }
       },
-      "revium-grid-core": {
+      "aftpower-grid-core": {
         "name": "Grid Core",
         "description": "45-180 kW aralığında yüksek güçlü DC hızlı şarj istasyonu.",
         "features": [
@@ -762,7 +762,7 @@
           "Koruma: IP54"
         ]
       },
-      "revium-grid-pulse": {
+      "aftpower-grid-pulse": {
         "name": "Grid Pulse",
         "description": "90-270 kW çift çıkışlı esnek DC şarj istasyonu.",
         "features": [
@@ -775,7 +775,7 @@
           "Koruma: IP54"
         ]
       },
-      "revium-grid-pulse-gen2": {
+      "aftpower-grid-pulse-gen2": {
         "name": "Grid Pulse Gen2",
         "description": "Yeni nesil bağlantılı ve akıllı yüksek hızlı DC şarj istasyonu.",
         "features": [
@@ -789,7 +789,7 @@
           "Koruma: IP54"
         ]
       },
-      "revium-solarport": {
+      "aftpower-solarport": {
         "name": "Solarport",
         "description": "Elektrikli araç şarj istasyonu ve güneş enerjisi carport çözümü. Araçlarınızı korurken temiz enerji ile şarj edin.",
         "features": [
