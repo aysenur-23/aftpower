@@ -91,7 +91,7 @@ export default async function LocaleLayout({ children, params }: Props) {
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
                 <meta name="theme-color" content="#0f172a" />
             </head>
-            <body className="font-sans antialiased" suppressHydrationWarning>
+            <body className="antialiased" suppressHydrationWarning>
                 <NextIntlClientProvider messages={messages}>
                     <div className="min-h-screen flex flex-col">
                         <SiteHeader />
