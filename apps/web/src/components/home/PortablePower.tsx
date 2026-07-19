@@ -1,29 +1,16 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { ArrowRight, CheckCircle2, Zap, ShieldCheck, Battery, Gauge } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useInView } from '@/lib/useInView';
 
 export default function PortablePower() {
     const t = useTranslations('portablePower');
     const locale = useLocale();
-    const [isVisible, setIsVisible] = useState(false);
-    const sectionRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                setIsVisible(entry.isIntersecting);
-            },
-            { threshold: 0.2 }
-        );
-
-        if (sectionRef.current) observer.observe(sectionRef.current);
-        return () => { if (sectionRef.current) observer.unobserve(sectionRef.current); };
-    }, []);
+    const { ref: sectionRef, inView: isVisible } = useInView<HTMLDivElement>({ threshold: 0.2 });
 
     const features = [
         { key: 'capacity', value: locale === 'ar' ? '٥.٤ كيلوواط ساعة' : '5.4 kWh', icon: Battery },

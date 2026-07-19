@@ -1,29 +1,16 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useInView } from '@/lib/useInView';
 
 export default function Services() {
     const t = useTranslations('services');
     const locale = useLocale();
-    const [isVisible, setIsVisible] = useState(false);
-    const headerRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                setIsVisible(entry.isIntersecting);
-            },
-            { threshold: 0.1 }
-        );
-
-        if (headerRef.current) observer.observe(headerRef.current);
-        return () => { if (headerRef.current) observer.unobserve(headerRef.current); };
-    }, []);
+    const { ref: headerRef, inView: isVisible } = useInView<HTMLDivElement>({ threshold: 0.1 });
 
     const services = [
         {
@@ -69,20 +56,7 @@ export default function Services() {
 }
 
 function AnimatedServiceCard({ service, index, locale, t }: { service: any, index: number, locale: string, t: any }) {
-    const [isVisible, setIsVisible] = useState(false);
-    const cardRef = useRef<HTMLAnchorElement>(null);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                setIsVisible(entry.isIntersecting);
-            },
-            { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
-        );
-
-        if (cardRef.current) observer.observe(cardRef.current);
-        return () => { if (cardRef.current) observer.unobserve(cardRef.current); };
-    }, []);
+    const { ref: cardRef, inView: isVisible } = useInView<HTMLAnchorElement>({ threshold: 0.1 });
 
     return (
         <Link

@@ -1,30 +1,18 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { ArrowRight, Lightbulb, Layers, Settings, Headphones, Check, Sparkles } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useInView } from '@/lib/useInView';
 
 export default function CustomSolutions() {
     const t = useTranslations('customSolutions');
     const locale = useLocale();
-    const [isVisible, setIsVisible] = useState(false);
     const [activeCard, setActiveCard] = useState(0);
-    const sectionRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                setIsVisible(entry.isIntersecting);
-            },
-            { threshold: 0.1 }
-        );
-
-        if (sectionRef.current) observer.observe(sectionRef.current);
-        return () => { if (sectionRef.current) observer.unobserve(sectionRef.current); };
-    }, []);
+    const { ref: sectionRef, inView: isVisible } = useInView<HTMLDivElement>({ threshold: 0.1 });
 
     const solutions = [
         {

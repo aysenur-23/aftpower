@@ -1,27 +1,14 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Battery, Backpack, Move, Plug } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useInView } from '@/lib/useInView';
 
 export default function FeaturedProject() {
     const t = useTranslations('featuredProject');
-    const [isVisible, setIsVisible] = useState(false);
-    const sectionRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                setIsVisible(entry.isIntersecting);
-            },
-            { threshold: 0.15 }
-        );
-
-        if (sectionRef.current) observer.observe(sectionRef.current);
-        return () => { if (sectionRef.current) observer.unobserve(sectionRef.current); };
-    }, []);
+    const { ref: sectionRef, inView: isVisible } = useInView<HTMLDivElement>({ threshold: 0.15 });
 
     const features = [
         { icon: Battery, title: t('capacity') },
