@@ -118,13 +118,13 @@ export default function EnergyJourney() {
         <section
             ref={containerRef}
             className="relative w-full"
-            style={{ height: `${STEPS.length * 100}vh`, background: 'linear-gradient(180deg, #f8fafc 0%, #e0f2fe 50%, #f8fafc 100%)' }}
+            style={{ height: `${STEPS.length * 100}vh`, background: 'linear-gradient(180deg, #e0f2fe 0%, #bae6fd 50%, #e0f2fe 100%)' }}
             aria-label={heading}
         >
             {/* Sticky viewport */}
             <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col">
                 {/* Top accent */}
-                <div className="h-px w-full bg-gradient-to-r from-transparent via-sky-500/60 to-transparent shrink-0" />
+                <div className="h-[3px] w-full bg-gradient-to-r from-transparent via-sky-500 to-transparent shrink-0" />
 
                 {/* Progress bar */}
                 <div className="absolute top-0 left-0 h-[3px] bg-gradient-to-r from-sky-500 to-sky-400 z-30 transition-[width] duration-150" style={{ width: `${progress * 100}%` }} />
@@ -209,7 +209,7 @@ export default function EnergyJourney() {
                                     i === active ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
                                 )}
                             >
-                                <div className="relative w-full h-full overflow-hidden border border-slate-200" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))' }}>
+                                <div className="relative w-full h-full overflow-hidden bg-white shadow-2xl shadow-sky-900/20 ring-1 ring-white/60" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))' }}>
                                     <Image
                                         src={s.image}
                                         alt={title(s)}
