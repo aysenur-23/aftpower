@@ -4,32 +4,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { ArrowRight, ShieldCheck, Leaf, Cpu, ChevronDown } from 'lucide-react';
-import { useInView } from '@/lib/useInView';
-import { useCountUp } from '@/lib/useCountUp';
-
-function Stat({ value, label, start, delay }: { value: string; label: string; start: boolean; delay: number }) {
-    const display = useCountUp(value, start);
-    return (
-        <div className="text-center reveal-up" style={{ ['--delay' as string]: `${delay}ms` }}>
-            <div className="text-2xl sm:text-3xl lg:text-4xl font-bold font-brand text-sky-700">{display}</div>
-            <div className="text-[10px] sm:text-xs text-slate-500 uppercase tracking-[0.15em] mt-1 font-body">{label}</div>
-        </div>
-    );
-}
 
 export default function Hero() {
     const t = useTranslations('hero');
     const locale = useLocale();
-    const { ref, inView } = useInView<HTMLDivElement>({ threshold: 0.2 });
 
     const title1Words = t('title1').split(' ');
     const title2Words = t('title2').split(' ');
-
-    const stats = [
-        { value: '500+', label: locale === 'ar' ? 'مشروع' : locale === 'en' ? 'Projects' : 'Proje' },
-        { value: '10+', label: locale === 'ar' ? 'سنوات' : locale === 'en' ? 'Years' : 'Yıl' },
-        { value: '99%', label: locale === 'ar' ? 'رضا' : locale === 'en' ? 'Satisfaction' : 'Memnuniyet' },
-    ];
 
     const trust = [
         { icon: ShieldCheck, label: locale === 'ar' ? 'ضمان' : locale === 'en' ? 'Warranty' : 'Garantili' },
@@ -40,7 +21,7 @@ export default function Hero() {
     let wordIndex = 0;
 
     return (
-        <section ref={ref} className="relative overflow-hidden">
+        <section className="relative overflow-hidden">
             {/* Photographic background */}
             <div className="absolute inset-0" aria-hidden>
                 <Image
@@ -128,15 +109,8 @@ export default function Hero() {
                         ))}
                     </div>
 
-                    {/* Stats */}
-                    <div className="grid grid-cols-3 gap-8 sm:gap-14 mt-12 pt-10 border-t border-slate-200/70 w-full max-w-lg">
-                        {stats.map((stat, i) => (
-                            <Stat key={stat.label} value={stat.value} label={stat.label} start={inView} delay={860 + i * 90} />
-                        ))}
-                    </div>
-
                     {/* Scroll hint */}
-                    <div className="mt-14 flex flex-col items-center gap-1 text-sky-600">
+                    <div className="mt-16 flex flex-col items-center gap-1 text-sky-600">
                         <span className="text-[9px] uppercase tracking-[0.3em] text-slate-400 font-body">
                             {locale === 'ar' ? 'مرر للأسفل' : locale === 'en' ? 'Scroll' : 'Keşfet'}
                         </span>

@@ -139,20 +139,6 @@ export default function CustomSolutions() {
                         </div>
                     ))}
                 </div>
-
-                {/* CTA Button */}
-                <div className={cn(
-                    "text-center mt-12 transition-all duration-700 transform",
-                    isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-                )} style={{ transitionDelay: '400ms' }}>
-                    <Link
-                        href={`/${locale}/iletisim/`}
-                        className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-sky-500 text-white font-semibold hover:bg-sky-500 transition-all shadow-lg shadow-slate-200 group"
-                    >
-                        <span>{t('requestConsultation')}</span>
-                        <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-                    </Link>
-                </div>
             </div>
         </section>
     );

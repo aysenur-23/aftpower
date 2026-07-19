@@ -175,19 +175,19 @@
     },
     "features": {
         "title1": "Why",
-        "title2": "AFT Power?",
-        "subtitle": "The right choice for powerful, durable, and free energy solutions",
+        "title2": "AFT Power & Software?",
+        "subtitle": "Your end-to-end partner uniting energy hardware and intelligent software under one roof",
         "performance": {
-            "title": "High Performance",
-            "description": "4000+ cycle life and maximum reliability with LiFePO₄ technology"
+            "title": "Integrated Solution",
+            "description": "Battery and energy hardware delivered together with our own software for end-to-end harmony"
         },
         "durability": {
-            "title": "Durable Design",
-            "description": "Excellent performance even in harsh conditions with IP54 protection class"
+            "title": "Reliable Hardware",
+            "description": "LiFePO₄ technology, 4000+ cycle life and IP54 protection for uninterrupted power in harsh conditions"
         },
         "speed": {
-            "title": "Quick Solution",
-            "description": "Systems ready to use in minutes with plug-and-play installation"
+            "title": "Smart Software",
+            "description": "Optimize your systems with real-time monitoring, remote management and data analytics"
         }
     },
     "products": {

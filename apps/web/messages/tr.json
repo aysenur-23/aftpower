@@ -175,19 +175,19 @@
   },
   "features": {
     "title1": "Neden",
-    "title2": "AFT Power?",
-    "subtitle": "Güçlü, dayanıklı ve özgür enerji çözümleri için doğru tercih",
+    "title2": "AFT Power & Software?",
+    "subtitle": "Enerji donanımı ve akıllı yazılımı tek çatı altında birleştiren uçtan uca çözüm ortağınız",
     "performance": {
-      "title": "Yüksek Performans",
-      "description": "LiFePO₄ teknolojisi ile 4000+ döngü ömrü ve maksimum güvenilirlik"
+      "title": "Entegre Çözüm",
+      "description": "Batarya ve enerji donanımını kendi yazılımımızla birlikte sunarak uçtan uca uyum sağlıyoruz"
     },
     "durability": {
-      "title": "Dayanıklı Tasarım",
-      "description": "IP54 koruma sınıfı ile zorlu koşullarda bile mükemmel performans"
+      "title": "Güvenilir Donanım",
+      "description": "LiFePO₄ teknolojisi, 4000+ döngü ömrü ve IP54 koruma ile zorlu koşullarda kesintisiz güç"
     },
     "speed": {
-      "title": "Hızlı Çözüm",
-      "description": "Plug-and-play kurulum ile dakikalar içinde kullanıma hazır sistemler"
+      "title": "Akıllı Yazılım",
+      "description": "Gerçek zamanlı izleme, uzaktan yönetim ve veri analitiği ile sistemlerinizi optimize edin"
     }
   },
   "products": {

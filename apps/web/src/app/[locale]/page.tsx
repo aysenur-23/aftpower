@@ -6,7 +6,8 @@ import EnergyJourney from '@/components/home/EnergyJourney';
 import PortablePower from '@/components/home/PortablePower';
 import Services from '@/components/home/Services';
 import CustomSolutions from '@/components/home/CustomSolutions';
-import FeaturedProject from '@/components/home/FeaturedProject';
+import SoftwareShowcase from '@/components/home/SoftwareShowcase';
+import FinalCTA from '@/components/home/FinalCTA';
 
 interface Props {
     params: Promise<{ locale: string }>;
@@ -43,20 +44,23 @@ export default async function HomePage({ params }: Props) {
                     <Services />
                 </section>
 
-                {/* Features (Neden AFT Power) - Moved Above Featured Project */}
+                {/* AFT Software — Smart energy management platform */}
+                <section className="relative z-75 overflow-hidden">
+                    <SoftwareShowcase />
+                </section>
+
+                {/* Features (Neden AFT Power) */}
                 <section className="relative z-20 overflow-hidden">
                     <Features />
                 </section>
 
-                {/* Featured Project */}
-                <section className="relative z-80 overflow-hidden">
-                    <FeaturedProject />
-                </section>
-
-                {/* Custom Solutions - Moved to Bottom */}
+                {/* Custom Solutions */}
                 <section className="relative z-70 overflow-hidden">
                     <CustomSolutions />
                 </section>
+
+                {/* Final CTA band */}
+                <FinalCTA />
             </div>
         </div>
     );
