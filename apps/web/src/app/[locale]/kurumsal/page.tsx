@@ -1,32 +1,16 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Shield, Lightbulb, Users, Award, ArrowRight, Target, Eye, Battery, Zap } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useInView } from '@/lib/useInView';
 
 export default function Kurumsal() {
     const t = useTranslations('corporatePage');
     const locale = useLocale();
-    const [isVisible, setIsVisible] = useState(false);
-    const heroRef = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    setIsVisible(true);
-                    observer.unobserve(entry.target);
-                }
-            },
-            { threshold: 0.1 }
-        );
-
-        if (heroRef.current) observer.observe(heroRef.current);
-        return () => { if (heroRef.current) observer.unobserve(heroRef.current); };
-    }, []);
+    const { ref: heroRef, inView: isVisible } = useInView<HTMLDivElement>({ threshold: 0.1 });
 
     const valuesData = [
         { icon: Shield, title: t('values.reliability.title'), desc: t('values.reliability.description'), color: 'bg-sky-400' },
