@@ -51,9 +51,9 @@ export default function Hero() {
                     className="object-cover"
                     sizes="100vw"
                 />
-                {/* Light corporate scrim — keeps it bright/white-forward, text legible */}
-                <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(255,255,255,0.90) 0%, rgba(255,255,255,0.80) 45%, rgba(255,255,255,0.88) 100%)' }} />
-                <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 60% 55% at 50% 42%, rgba(255,255,255,0.7), transparent 75%)' }} />
+                {/* Light corporate scrim — bright/white-forward but lets the photo read */}
+                <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(255,255,255,0.82) 0%, rgba(255,255,255,0.66) 45%, rgba(255,255,255,0.80) 100%)' }} />
+                <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse 62% 58% at 50% 44%, rgba(255,255,255,0.88), rgba(255,255,255,0.25) 70%, transparent 85%)' }} />
                 {/* bottom fade into next section */}
                 <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-white to-transparent" />
             </div>
