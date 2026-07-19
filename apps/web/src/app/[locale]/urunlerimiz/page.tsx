@@ -68,7 +68,7 @@ export default async function ProductsPage({ params }: Props) {
             titleLine1: 'الجيل القادم',
             titleLine2: 'شكّل مستقبل',
             titleHighlight: 'الطاقة',
-            description: 'تعرف على حلول تخزين الطاقة المتقدمة من ريفيوم. طاقة متواصلة مع أنظمة مستدامة وذكية.',
+            description: 'تعرف على حلول تخزين الطاقة المتقدمة من AFT Power. طاقة متواصلة مع أنظمة مستدامة وذكية.',
         }
     };
 

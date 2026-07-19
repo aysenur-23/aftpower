@@ -112,7 +112,7 @@ export default function PortablePower() {
                                     </div>
 
                                     <Image
-                                        alt={t.has('imageAlt') ? t('imageAlt') : (locale === 'ar' ? 'طاقة ريفيوم المحمولة ٥.٤ كيلوواط (انتاج عالي)' : 'AFT Power 5.4 kWh Portable (High Output)')}
+                                        alt={t.has('imageAlt') ? t('imageAlt') : (locale === 'ar' ? 'طاقة AFT Power المحمولة ٥.٤ كيلوواط (انتاج عالي)' : 'AFT Power 5.4 kWh Portable (High Output)')}
                                         src="/images/products/5-4kwh-h-1.webp"
                                         width={750}
                                         height={600}

@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useLocale } from 'next-intl';
-import { Activity, SlidersHorizontal, BarChart3, Smartphone, BellRing, Cloud, ArrowRight } from 'lucide-react';
+import { Database, Briefcase, Code2, Smartphone, Workflow, Cloud, ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useInView } from '@/lib/useInView';
 
@@ -14,24 +14,24 @@ export default function SoftwareShowcase() {
     const tr = locale === 'tr';
     const ar = locale === 'ar';
 
-    const eyebrow = tr ? 'AFT SOFTWARE' : ar ? 'AFT SOFTWARE' : 'AFT SOFTWARE';
-    const title = tr ? 'Akıllı Enerji Yönetim Yazılımı'
-        : ar ? 'برمجيات إدارة الطاقة الذكية'
-        : 'Smart Energy Management Software';
-    const desc = tr ? 'Donanımı yazılımla buluşturuyoruz. Enerji sistemlerinizi tek panelden izleyin, uzaktan yönetin ve verilerle optimize edin.'
-        : ar ? 'نجمع الأجهزة بالبرمجيات. راقب أنظمة الطاقة وتحكّم بها عن بُعد وحسّن الأداء بالبيانات من لوحة واحدة.'
-        : 'We bring hardware and software together. Monitor your energy systems, manage them remotely and optimize with data — all from one panel.';
+    const eyebrow = 'AFT SOFTWARE';
+    const title = tr ? 'Firmanıza Özel Yazılım Çözümleri'
+        : ar ? 'حلول برمجية مخصصة لشركتك'
+        : 'Custom Software Solutions for Your Business';
+    const desc = tr ? 'Enerjinin ötesinde: ERP, danışmanlık ve kurumsal yönetim yazılımlarından firmanıza özel projelere kadar iş süreçlerinizi uçtan uca dijitalleştiriyoruz.'
+        : ar ? 'ما وراء الطاقة: نُرقمن عملياتك من الألف إلى الياء، من أنظمة ERP وبرمجيات الاستشارات والإدارة المؤسسية إلى المشاريع المخصصة لشركتك.'
+        : 'Beyond energy: from ERP, consultancy and enterprise management software to fully bespoke projects, we digitalize your business end to end.';
 
     const features = [
-        { icon: Activity, title: tr ? 'Gerçek Zamanlı İzleme' : ar ? 'مراقبة فورية' : 'Real-Time Monitoring', desc: tr ? 'Üretim, tüketim ve batarya durumu anlık.' : ar ? 'الإنتاج والاستهلاك وحالة البطارية لحظيًا.' : 'Live production, consumption and battery status.' },
-        { icon: SlidersHorizontal, title: tr ? 'Uzaktan Yönetim' : ar ? 'تحكّم عن بُعد' : 'Remote Control', desc: tr ? 'Cihazları uzaktan yapılandırın ve kontrol edin.' : ar ? 'اضبط الأجهزة وتحكّم بها عن بُعد.' : 'Configure and control devices from anywhere.' },
-        { icon: BarChart3, title: tr ? 'Analitik & Raporlama' : ar ? 'تحليلات وتقارير' : 'Analytics & Reporting', desc: tr ? 'Detaylı grafikler ve otomatik raporlar.' : ar ? 'رسوم تفصيلية وتقارير تلقائية.' : 'Detailed charts and automated reports.' },
-        { icon: BellRing, title: tr ? 'Akıllı Uyarılar' : ar ? 'تنبيهات ذكية' : 'Smart Alerts', desc: tr ? 'Anomali ve arıza durumunda anında bildirim.' : ar ? 'إشعارات فورية عند الأعطال.' : 'Instant alerts on anomalies and faults.' },
-        { icon: Smartphone, title: tr ? 'Mobil Uygulama' : ar ? 'تطبيق جوال' : 'Mobile App', desc: tr ? 'iOS ve Android ile her yerden erişim.' : ar ? 'وصول من أي مكان عبر iOS و Android.' : 'Access anywhere via iOS and Android.' },
-        { icon: Cloud, title: tr ? 'Bulut Altyapı' : ar ? 'بنية سحابية' : 'Cloud Platform', desc: tr ? 'Güvenli, ölçeklenebilir bulut mimarisi.' : ar ? 'بنية سحابية آمنة وقابلة للتوسع.' : 'Secure, scalable cloud architecture.' },
+        { icon: Database, title: tr ? 'Kurumsal ERP' : ar ? 'أنظمة ERP' : 'Enterprise ERP', desc: tr ? 'Finanstan stok yönetimine entegre iş sistemleri.' : ar ? 'أنظمة متكاملة من المالية إلى إدارة المخزون.' : 'Integrated systems from finance to inventory.' },
+        { icon: Briefcase, title: tr ? 'Danışmanlık Yazılımı' : ar ? 'برمجيات استشارية' : 'Consultancy Software', desc: tr ? 'Süreç, CRM ve yönetim panelleri.' : ar ? 'العمليات وCRM ولوحات الإدارة.' : 'Process, CRM and management dashboards.' },
+        { icon: Code2, title: tr ? 'Firmaya Özel Yazılım' : ar ? 'برمجيات مخصصة' : 'Bespoke Software', desc: tr ? 'İhtiyacınıza göre sıfırdan geliştirme.' : ar ? 'تطوير من الصفر حسب احتياجك.' : 'Built from scratch to your needs.' },
+        { icon: Smartphone, title: tr ? 'Web & Mobil Uygulama' : ar ? 'تطبيقات ويب وجوال' : 'Web & Mobile Apps', desc: tr ? 'iOS, Android ve modern web uygulamaları.' : ar ? 'تطبيقات iOS و Android والويب الحديث.' : 'iOS, Android and modern web apps.' },
+        { icon: Workflow, title: tr ? 'Entegrasyon & API' : ar ? 'تكامل و API' : 'Integrations & API', desc: tr ? 'Mevcut sistemlerinizle sorunsuz bağlantı.' : ar ? 'ربط سلس مع أنظمتك الحالية.' : 'Seamless connection with your existing systems.' },
+        { icon: Cloud, title: tr ? 'Bulut & Bakım' : ar ? 'سحابة وصيانة' : 'Cloud & Maintenance', desc: tr ? 'Güvenli barındırma ve sürekli destek.' : ar ? 'استضافة آمنة ودعم مستمر.' : 'Secure hosting and ongoing support.' },
     ];
 
-    const cta = tr ? 'Yazılımı Keşfet' : ar ? 'استكشف البرنامج' : 'Explore the Software';
+    const cta = tr ? 'Yazılım Çözümlerini Keşfet' : ar ? 'استكشف حلول البرمجيات' : 'Explore Software Solutions';
 
     return (
         <section className="relative py-16 lg:py-24 bg-gradient-to-b from-white via-sky-50/40 to-white overflow-hidden" ref={ref}>

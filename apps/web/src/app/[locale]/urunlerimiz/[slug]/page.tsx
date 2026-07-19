@@ -1285,7 +1285,7 @@ export default async function ProductDetailPage({ params }: Props) {
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="mx-auto max-w-3xl text-center mb-8 sm:mb-10">
                             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-neutral-900 mb-3 sm:mb-4">
-                                {locale === 'tr' ? 'Neden AFT Power?' : locale === 'ar' ? 'لماذا ريفيوم؟' : 'Why AFT Power?'}
+                                {locale === 'tr' ? 'Neden AFT Power?' : locale === 'ar' ? 'لماذا AFT Power؟' : 'Why AFT Power?'}
                             </h2>
                             <p className="text-base sm:text-lg md:text-xl text-neutral-600 leading-relaxed px-4">
                                 {localizedName} {locale === 'tr' ? 'ürününü seçmeniz için güçlü nedenler' : locale === 'ar' ? 'أسباب قوية لاختيار هذا المنتج' : 'reasons to choose this product'}
