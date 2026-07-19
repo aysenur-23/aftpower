@@ -170,11 +170,8 @@ export default function EnergyJourney() {
                                     </p>
                                     <Link
                                         href={`/${locale}/urunlerimiz/kategori/${s.slug}/`}
-                                        className="inline-flex items-center gap-2 px-6 py-3 text-white font-semibold text-xs uppercase tracking-widest transition-all duration-300 hover:scale-[1.03]"
-                                        style={{
-                                            background: 'linear-gradient(135deg, #0ea5e9, #0284c7)',
-                                            clipPath: 'polygon(0 0, calc(100% - 9px) 0, 100% 9px, 100% 100%, 9px 100%, 0 calc(100% - 9px))',
-                                        }}
+                                        className="inline-flex items-center gap-2 px-6 py-3 rounded-md text-white font-semibold text-xs uppercase tracking-widest transition-all duration-300 hover:-translate-y-0.5"
+                                        style={{ background: 'linear-gradient(135deg, #0ea5e9, #0284c7)' }}
                                     >
                                         {exploreLabel}
                                         <ArrowRight className="w-4 h-4" />
@@ -209,7 +206,7 @@ export default function EnergyJourney() {
                                     i === active ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
                                 )}
                             >
-                                <div className="relative w-full h-full overflow-hidden bg-white shadow-2xl shadow-sky-900/20 ring-1 ring-white/60" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))' }}>
+                                <div className="relative w-full h-full overflow-hidden rounded-2xl bg-white shadow-2xl shadow-sky-900/20 ring-1 ring-white/60">
                                     <Image
                                         src={s.image}
                                         alt={title(s)}

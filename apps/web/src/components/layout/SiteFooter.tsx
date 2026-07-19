@@ -20,9 +20,9 @@ export default async function SiteFooter() {
                             <div className="w-8 h-8 flex items-center justify-center" style={{ background: 'rgba(14, 165, 233,0.15)', border: '1px solid rgba(14, 165, 233,0.3)' }}>
                                 <Zap className="w-4 h-4 text-sky-500" />
                             </div>
-                            <span className="font-brand text-slate-900 font-bold tracking-[0.2em] text-lg">AFT POWER</span>
+                            <span className="font-brand text-slate-900 font-bold tracking-[0.12em] text-lg">AFT POWER <span className="text-sky-600">&amp; SOFTWARE</span></span>
                         </div>
-                        <p className="text-slate-500 text-xs tracking-[0.15em] uppercase font-body">Energy Solutions</p>
+                        <p className="text-slate-500 text-xs tracking-[0.15em] uppercase font-body">Energy &amp; Software Solutions</p>
                     </div>
                     <div className="flex items-center gap-6">
                         <a href="tel:+905518291613" className="text-slate-600 hover:text-sky-400 transition-colors text-sm font-body">
@@ -151,7 +151,7 @@ export default async function SiteFooter() {
                     <p className="text-xs text-slate-500 font-body">
                         © {locale === 'ar'
                             ? String(currentYear).replace(/\d/g, d => '٠١٢٣٤٥٦٧٨٩'[parseInt(d)])
-                            : currentYear} AFT Power — {t('copyright')}
+                            : currentYear} AFT Power &amp; Software — {t('copyright')}
                     </p>
                     <div className="flex items-center gap-1 text-slate-400 text-xs font-body">
                         <Zap className="w-3 h-3 text-sky-600" />

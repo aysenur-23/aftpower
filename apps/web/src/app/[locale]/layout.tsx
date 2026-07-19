@@ -10,14 +10,14 @@ import '@/app/globals.css';
 export const metadata: Metadata = {
     // metadataBase: new URL('https://aftpowertech.com'),
     title: {
-        default: 'AFT Power - Yenilenebilir Enerji Çözümleri',
-        template: '%s | AFT Power'
+        default: 'AFT Power & Software - Enerji ve Yazılım Çözümleri',
+        template: '%s | AFT Power & Software'
     },
-    description: 'Kurumsal kalitede modern web uygulaması - Yenilenebilir enerji teknolojileri ve çözümleri',
-    keywords: ['enerji', 'yenilenebilir enerji', 'teknoloji', 'aftpower'],
-    authors: [{ name: 'AFT Power' }],
-    creator: 'AFT Power',
-    publisher: 'AFT Power',
+    description: 'Enerji depolama teknolojileri ve kurumsal yazılım çözümleri sunan AFT Power & Software.',
+    keywords: ['enerji', 'yenilenebilir enerji', 'yazılım', 'teknoloji', 'aftpower'],
+    authors: [{ name: 'AFT Power & Software' }],
+    creator: 'AFT Power & Software',
+    publisher: 'AFT Power & Software',
     formatDetection: {
         email: false,
         address: false,
@@ -36,20 +36,20 @@ export const metadata: Metadata = {
     appleWebApp: {
         capable: true,
         statusBarStyle: 'default',
-        title: 'AFT Power',
+        title: 'AFT Power & Software',
     },
     openGraph: {
         type: 'website',
         locale: 'tr_TR',
         url: 'https://aftpowertech.com',
-        siteName: 'AFT Power',
-        title: 'AFT Power - Yenilenebilir Enerji Çözümleri',
-        description: 'Kurumsal kalitede modern web uygulaması',
+        siteName: 'AFT Power & Software',
+        title: 'AFT Power & Software - Enerji ve Yazılım Çözümleri',
+        description: 'Enerji depolama teknolojileri ve kurumsal yazılım çözümleri.',
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'AFT Power - Yenilenebilir Enerji Çözümleri',
-        description: 'Kurumsal kalitede modern web uygulaması',
+        title: 'AFT Power & Software - Enerji ve Yazılım Çözümleri',
+        description: 'Enerji depolama teknolojileri ve kurumsal yazılım çözümleri.',
     },
     robots: {
         index: true,

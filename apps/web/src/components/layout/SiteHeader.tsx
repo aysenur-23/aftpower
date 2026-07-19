@@ -152,19 +152,13 @@ export default function SiteHeader() {
 
             <div className="container px-3 sm:px-4 lg:px-8 flex h-16 sm:h-18 items-center justify-between">
                 {/* Logo / Brand */}
-                <Link href={`/${locale}/`} className="flex items-center gap-3 group" onClick={handleLinkClick}>
-                    <Image
-                        src="/images/logo.png"
-                        alt="AFT Power Logo"
-                        width={80}
-                        height={40}
-                        className="h-9 w-auto sm:h-11 lg:h-12 w-auto"
-                        style={{ filter: 'none' }}
-                        priority
-                    />
+                <Link href={`/${locale}/`} className="flex items-center gap-2 group shrink-0" onClick={handleLinkClick}>
+                    <div className="w-9 h-9 rounded-md flex items-center justify-center shrink-0" style={{ background: 'linear-gradient(135deg, #0ea5e9, #0284c7)' }}>
+                        <Zap className="w-5 h-5 text-white" />
+                    </div>
                     <div className="hidden sm:flex flex-col leading-none">
-                        <span className="font-brand text-slate-900 font-bold tracking-widest text-sm lg:text-base group-hover:text-sky-400 transition-colors duration-300">AFT POWER</span>
-                        <span className="text-sky-500 text-[9px] tracking-[0.25em] uppercase font-body font-medium">Energy Solutions</span>
+                        <span className="font-brand text-slate-900 font-bold tracking-[0.1em] text-xs lg:text-sm whitespace-nowrap group-hover:text-sky-600 transition-colors duration-300">AFT POWER <span className="text-sky-600">&amp; SOFTWARE</span></span>
+                        <span className="text-sky-500 text-[9px] tracking-[0.22em] uppercase font-body font-medium">Energy &amp; Software</span>
                     </div>
                 </Link>
 
@@ -186,7 +180,7 @@ export default function SiteHeader() {
                             <Link
                                 href={item.href}
                                 className={cn(
-                                    "flex items-center gap-1 px-3 xl:px-4 py-2 text-sm font-medium tracking-wide transition-all duration-200 relative font-body",
+                                    "flex items-center gap-1 whitespace-nowrap px-3 xl:px-4 py-2 text-sm font-medium tracking-wide transition-all duration-200 relative font-body",
                                     "text-slate-600 hover:text-sky-400",
                                     activeMegaMenu === item.hasMegaMenu && "text-sky-400",
                                     "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-sky-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-center"
@@ -432,8 +426,8 @@ export default function SiteHeader() {
                     {/* CTA Button */}
                     <Link
                         href={`/${locale}/fiyat-teklifi/`}
-                        className="inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white uppercase tracking-wider transition-all duration-300 font-body"
-                        style={{ background: 'linear-gradient(135deg, #0ea5e9, #0284c7)', clipPath: 'polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px))' }}
+                        className="inline-flex items-center gap-2 whitespace-nowrap px-5 py-2.5 text-sm font-semibold text-white uppercase tracking-wider transition-all duration-300 font-body"
+                        style={{ background: 'linear-gradient(135deg, #0ea5e9, #0284c7)', borderRadius: '6px' }}
                         onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = '0 0 25px rgba(14, 165, 233, 0.5)'; }}
                         onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = 'none'; }}
                     >

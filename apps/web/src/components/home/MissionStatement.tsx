@@ -83,8 +83,7 @@ export default function MissionStatement() {
                 <div className="mt-12">
                     <Link
                         href={`/${locale}/kurumsal/`}
-                        className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-slate-900 text-white font-semibold text-sm uppercase tracking-widest transition-all duration-300 hover:bg-sky-600 hover:-translate-y-0.5"
-                        style={{ clipPath: 'polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px))' }}
+                        className="group inline-flex items-center justify-center gap-2 px-8 py-4 rounded-md bg-slate-900 text-white font-semibold text-sm uppercase tracking-widest transition-all duration-300 hover:bg-sky-600 hover:-translate-y-0.5"
                     >
                         {t('button')}
                         <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
