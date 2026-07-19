@@ -74,11 +74,11 @@ export default async function ServiceDetailPage({ params }: Props) {
                                 </span>
                             </div>
 
-                            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight mb-5 leading-[1.15]">
+                            <h1 className="reveal-up text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight mb-5 leading-[1.15]">
                                 {t(`${service.key}.title`)}
                             </h1>
 
-                            <p className="text-base lg:text-lg text-slate-600 leading-relaxed mb-8 max-w-lg">
+                            <p className="reveal-up text-base lg:text-lg text-slate-600 leading-relaxed mb-8 max-w-lg" style={{ ['--delay' as string]: '120ms' }}>
                                 {t(`${service.key}.subtitle`)}
                             </p>
 

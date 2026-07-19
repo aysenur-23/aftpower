@@ -942,7 +942,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                             }[product.categoryTitle] || product.categoryTitle) : product.categoryTitle}
                                         </span>
                                     </div>
-                                    <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black text-slate-900 tracking-tight leading-[1.05]">
+                                    <h1 className="reveal-up text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black text-slate-900 tracking-tight leading-[1.05]">
                                         {localizedName.split(' ').slice(0, -2).join(' ')}{' '}
                                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-cyan-500">
                                             {localizedName.split(' ').slice(-2).join(' ')}

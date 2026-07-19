@@ -88,7 +88,7 @@ export default async function ProductsPage({ params }: Props) {
 
                 <div className="container relative z-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
                     {/* Badge */}
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/5 border border-sky-500/15 mb-8">
+                    <div className="reveal-up inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/5 border border-sky-500/15 mb-8">
                         <span className="relative flex h-2 w-2">
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-sky-400"></span>
@@ -96,7 +96,7 @@ export default async function ProductsPage({ params }: Props) {
                         <span className="text-sm font-bold text-sky-500 tracking-widest uppercase">{t('allProductsTitle')}</span>
                     </div>
 
-                    <h1 className="font-bold text-slate-900 tracking-tight leading-[1.1] mb-6">
+                    <h1 className="reveal-up font-bold text-slate-900 tracking-tight leading-[1.1] mb-6" style={{ ['--delay' as string]: '90ms' }}>
                         <span className="block font-medium text-slate-500 text-base sm:text-lg lg:text-xl mb-3 tracking-normal">
                             {hero.titleLine1}
                         </span>

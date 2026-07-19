@@ -110,12 +110,12 @@ export default async function CategoryPage({ params }: Props) {
                             </div>
 
                             {/* Title with Gradient Accent */}
-                            <h1 className="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 tracking-tight leading-[1.05] mb-4 drop-shadow-sm">
+                            <h1 className="reveal-up text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 tracking-tight leading-[1.05] mb-4 drop-shadow-sm">
                                 {t(`${category.titleKey}.title`)}
                             </h1>
 
                             {/* Description */}
-                            <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0 font-medium">
+                            <p className="reveal-up text-sm sm:text-base text-slate-600 leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0 font-medium" style={{ ['--delay' as string]: '120ms' }}>
                                 {t(`${category.titleKey}.subtitle`)}
                             </p>
 
