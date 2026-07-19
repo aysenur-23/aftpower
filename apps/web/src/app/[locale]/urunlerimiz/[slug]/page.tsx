@@ -1038,13 +1038,13 @@ export default async function ProductDetailPage({ params }: Props) {
                 </section>
 
                 {/* Features / Specs Grid */}
-                <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-br from-neutral-50 via-white to-neutral-100">
+                <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-br from-slate-50 via-white to-slate-100">
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="mx-auto max-w-3xl text-center mb-8 sm:mb-10">
-                            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-neutral-900 mb-3 sm:mb-4">
+                            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 mb-3 sm:mb-4">
                                 {tDetail('labels.technicalSpecs') || 'Özellikler'}
                             </h2>
-                            <p className="text-base sm:text-lg md:text-xl text-neutral-600 leading-relaxed px-4">
+                            <p className="text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed px-4">
                                 {locale === 'tr' ? `${localizedName} ürününün teknik özellikleri ve avantajları` : locale === 'ar' ? `المواصفات الفنية والمزايا لـ ${localizedName}` : `${localizedName} technical specifications and advantages`}
                             </p>
                         </div>
@@ -1052,7 +1052,7 @@ export default async function ProductDetailPage({ params }: Props) {
                             {localizedFeatures.map((feature, index) => (
                                 <div key={index} className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 card hover-lift border border-sky-500/20 rounded-lg sm:rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105">
                                     <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-sky-500 flex-shrink-0" />
-                                    <span className="text-sm sm:text-base text-neutral-700 font-medium">{formatNumber(translateLabel(feature, locale), locale)}</span>
+                                    <span className="text-sm sm:text-base text-slate-700 font-medium">{formatNumber(translateLabel(feature, locale), locale)}</span>
                                 </div>
                             ))}
                         </div>
@@ -1251,10 +1251,10 @@ export default async function ProductDetailPage({ params }: Props) {
                         <section className="py-8 sm:py-10 md:py-12 bg-gradient-to-br from-slate-50 via-white to-sky-50">
                             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                                 <div className="mx-auto max-w-3xl text-center mb-8 sm:mb-10">
-                                    <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-neutral-900 mb-3 sm:mb-4">
+                                    <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 mb-3 sm:mb-4">
                                         {locale === 'tr' ? 'Kullanım Alanları' : locale === 'ar' ? 'مجالات الاستخدام' : 'Usage Areas'}
                                     </h2>
-                                    <p className="text-base sm:text-lg md:text-xl text-neutral-600 leading-relaxed px-4">
+                                    <p className="text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed px-4">
                                         {localizedName} {locale === 'tr' ? 'ürününün ideal kullanım alanları' : locale === 'ar' ? 'مجالات الاستخدام المثالية' : 'ideal usage areas'}
                                     </p>
                                 </div>
@@ -1268,7 +1268,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                                         <IconComponent className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-white" />
                                                     </div>
                                                 </div>
-                                                <span className="text-xs sm:text-sm md:text-base text-neutral-700 font-medium group-hover:text-neutral-900 transition-colors duration-300">
+                                                <span className="text-xs sm:text-sm md:text-base text-slate-700 font-medium group-hover:text-slate-900 transition-colors duration-300">
                                                     {translateLabel(area.label, locale)}
                                                 </span>
                                             </div>
@@ -1284,10 +1284,10 @@ export default async function ProductDetailPage({ params }: Props) {
                 <section className="py-8 sm:py-10 md:py-12 bg-gradient-to-br from-sky-50 via-white to-sky-50">
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="mx-auto max-w-3xl text-center mb-8 sm:mb-10">
-                            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-neutral-900 mb-3 sm:mb-4">
+                            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 mb-3 sm:mb-4">
                                 {locale === 'tr' ? 'Neden AFT Power?' : locale === 'ar' ? 'لماذا AFT Power؟' : 'Why AFT Power?'}
                             </h2>
-                            <p className="text-base sm:text-lg md:text-xl text-neutral-600 leading-relaxed px-4">
+                            <p className="text-base sm:text-lg md:text-xl text-slate-600 leading-relaxed px-4">
                                 {localizedName} {locale === 'tr' ? 'ürününü seçmeniz için güçlü nedenler' : locale === 'ar' ? 'أسباب قوية لاختيار هذا المنتج' : 'reasons to choose this product'}
                             </p>
                         </div>
@@ -1300,10 +1300,10 @@ export default async function ProductDetailPage({ params }: Props) {
                                         <Shield className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
                                     </div>
                                 </div>
-                                <h3 className="text-lg sm:text-xl font-bold text-neutral-900 transition-colors duration-300 mb-3 sm:mb-4 group-hover:text-sky-500">
+                                <h3 className="text-lg sm:text-xl font-bold text-slate-900 transition-colors duration-300 mb-3 sm:mb-4 group-hover:text-sky-500">
                                     {locale === 'tr' ? 'Güvenilir Teknoloji' : locale === 'ar' ? 'تقنية موثوقة' : 'Reliable Technology'}
                                 </h3>
-                                <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                                     {locale === 'tr' ? 'En son teknoloji ve güvenilir çözümlerle donatılmış ürünler' : locale === 'ar' ? 'منتجات مجهزة بأحدث التقنيات والحلول الموثوقة' : 'Equipped with the latest technology and reliable solutions'}
                                 </p>
                             </div>
@@ -1316,10 +1316,10 @@ export default async function ProductDetailPage({ params }: Props) {
                                         <Battery className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
                                     </div>
                                 </div>
-                                <h3 className="text-lg sm:text-xl font-bold text-neutral-900 transition-colors duration-300 mb-3 sm:mb-4 group-hover:text-sky-500">
+                                <h3 className="text-lg sm:text-xl font-bold text-slate-900 transition-colors duration-300 mb-3 sm:mb-4 group-hover:text-sky-500">
                                     {locale === 'tr' ? 'Yüksek Performans' : locale === 'ar' ? 'أداء عالي' : 'High Performance'}
                                 </h3>
-                                <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                                     {locale === 'tr' ? 'Uzun ömürlü ve yüksek verimlilikte enerji depolama çözümleri' : locale === 'ar' ? 'حلول تخزين طاقة طويلة الأمد وعالية الكفاءة' : 'Long-lasting and high-efficiency energy storage solutions'}
                                 </p>
                             </div>
@@ -1332,10 +1332,10 @@ export default async function ProductDetailPage({ params }: Props) {
                                         <Globe className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
                                     </div>
                                 </div>
-                                <h3 className="text-lg sm:text-xl font-bold text-neutral-900 transition-colors duration-300 mb-3 sm:mb-4 group-hover:text-sky-600">
+                                <h3 className="text-lg sm:text-xl font-bold text-slate-900 transition-colors duration-300 mb-3 sm:mb-4 group-hover:text-sky-600">
                                     {locale === 'tr' ? 'Global Kalite' : locale === 'ar' ? 'جودة عالمية' : 'Global Quality'}
                                 </h3>
-                                <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                                     {locale === 'tr' ? 'Uluslararası standartlarda kalite ve sertifikasyonlar' : locale === 'ar' ? 'معايير جودة وشهادات دولية' : 'International standards of quality and certifications'}
                                 </p>
                             </div>
@@ -1347,10 +1347,10 @@ export default async function ProductDetailPage({ params }: Props) {
                 <section className="py-8 sm:py-10 md:py-12 bg-gradient-to-br from-sky-50 via-sky-50 to-slate-50">
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="mx-auto max-w-4xl text-center">
-                            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-neutral-800 mb-3 sm:mb-4 px-4">
+                            <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-800 mb-3 sm:mb-4 px-4">
                                 {localizedName} {locale === 'tr' ? 'Hakkında Daha Fazla Bilgi' : locale === 'ar' ? 'مزيد من المعلومات حول' : 'More Information About'}
                             </h2>
-                            <p className="text-base sm:text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed mb-6 sm:mb-8 px-4">
+                            <p className="text-base sm:text-lg md:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed mb-6 sm:mb-8 px-4">
                                 {locale === 'tr' ? 'Bu ürün hakkında detaylı bilgi almak veya fiyat teklifi talep etmek için uzman ekibimizle iletişime geçin' : locale === 'ar' ? 'اتصل بفريق خبرائنا للحصول على معلومات مفصلة أو طلب عرض سعر لهذا المنتج' : 'Contact our expert team for detailed information or to request a quote for this product'}
                             </p>
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">

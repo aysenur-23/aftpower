@@ -85,7 +85,7 @@ function AnimatedServiceCard({ service, index, locale, t }: { service: any, inde
                 </h3>
 
                 <div className="h-0 opacity-0 group-hover:h-auto group-hover:opacity-100 transition-all duration-500 overflow-hidden">
-                    <p className="mt-2 text-xs sm:text-sm text-neutral-300 line-clamp-2 text-white/90">
+                    <p className="mt-2 text-xs sm:text-sm text-slate-300 line-clamp-2 text-white/90">
                         {t(`${service.key}.description`)}
                     </p>
                 </div>

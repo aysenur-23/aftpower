@@ -97,14 +97,14 @@ export default async function CategoryPage({ params }: Props) {
                 <div className="container relative z-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                         {/* Left Column: Text Content (Enhanced Typography & Animation) */}
-                        <div className="max-w-2xl text-center lg:text-left mx-auto lg:mx-0 order-2 lg:order-1 animate-in slide-in-from-bottom-6 fade-in duration-700">
+                        <div className="max-w-2xl text-center lg:text-left mx-auto lg:mx-0 order-2 lg:order-1 reveal-up">
                             {/* Breadcrumb / Badge */}
                             <div className="flex items-center gap-3 mb-8 justify-center lg:justify-start">
                                 <Link href={`/${locale}/urunlerimiz`} className="text-sm font-semibold text-slate-500 hover:text-sky-500 transition-colors uppercase tracking-wide">
                                     {t('allProducts')}
                                 </Link>
                                 <span className="text-slate-300">/</span>
-                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/5 border border-sky-500/15 text-sky-600 text-xs font-bold uppercase tracking-widest backdrop-blur-md shadow-sm ring-1 ring-sky-400/10">
+                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/5 border border-sky-500/15 text-sky-600 text-xs font-brand font-bold uppercase tracking-widest backdrop-blur-md shadow-sm ring-1 ring-sky-400/10">
                                     {t(`${category.titleKey}.title`)}
                                 </div>
                             </div>
@@ -141,9 +141,9 @@ export default async function CategoryPage({ params }: Props) {
                         </div>
 
                         {/* Right Column: Hero Image (Enhanced Float & Shadow) */}
-                        <div className="relative order-1 lg:order-2 flex justify-center animate-in zoom-in-95 fade-in duration-1000 delay-200">
+                        <div className="relative order-1 lg:order-2 flex justify-center reveal-up" style={{ ['--delay' as string]: '160ms' }}>
                             {/* Decorative Circle with Border */}
-                            <div className="absolute w-[95%] aspect-square rounded-full bg-gradient-to-br from-sky-50 to-sky-50/30 border border-sky-500/15 -z-10 animate-spin-slow duration-[30s]" />
+                            <div className="absolute w-[95%] aspect-square rounded-full bg-gradient-to-br from-sky-50 to-sky-50/30 border border-sky-500/15 -z-10" />
 
                             <div className="relative w-full aspect-square max-w-[450px] p-6 flex items-center justify-center filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.12)] hover:drop-shadow-[0_30px_60px_rgba(0,0,0,0.15)] transition-all duration-500 hover:scale-[1.02]">
                                 <Image
