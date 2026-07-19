@@ -48,20 +48,20 @@ export default function CustomSolutions() {
         {
             key: 'projectManagement',
             icon: Settings,
-            color: 'text-emerald-600',
-            bgColor: 'bg-emerald-50',
-            borderColor: 'border-emerald-200',
-            hoverBorder: 'hover:border-emerald-400',
-            accentColor: 'bg-emerald-500'
+            color: 'text-sky-600',
+            bgColor: 'bg-sky-50',
+            borderColor: 'border-sky-200',
+            hoverBorder: 'hover:border-sky-400',
+            accentColor: 'bg-sky-500'
         },
         {
             key: 'support',
             icon: Headphones,
-            color: 'text-purple-600',
-            bgColor: 'bg-purple-50',
-            borderColor: 'border-purple-200',
-            hoverBorder: 'hover:border-purple-400',
-            accentColor: 'bg-purple-500'
+            color: 'text-slate-700',
+            bgColor: 'bg-slate-100',
+            borderColor: 'border-slate-200',
+            hoverBorder: 'hover:border-sky-400',
+            accentColor: 'bg-slate-1000'
         },
     ];
 
@@ -75,7 +75,7 @@ export default function CustomSolutions() {
 
             {/* Decorative Elements */}
             <div className="absolute top-20 right-20 w-72 h-72 bg-sky-500/10 rounded-full blur-3xl" />
-            <div className="absolute bottom-20 left-20 w-80 h-80 bg-purple-100/30 rounded-full blur-3xl" />
+            <div className="absolute bottom-20 left-20 w-80 h-80 bg-sky-100/40 rounded-full blur-3xl" />
 
             <div className="container px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative z-10">
 

@@ -142,6 +142,58 @@ p, span, a, li, button, input, textarea, label {
   50% { box-shadow: 0 0 40px rgba(14, 165, 233, 0.6); }
 }
 
+/* --- Ana sayfa ortak animasyon sistemi --- */
+
+/* Hero arka planı: yumuşak gradyan blob süzülmesi */
+@keyframes aurora-drift {
+  0%   { transform: translate3d(0, 0, 0) scale(1); }
+  33%  { transform: translate3d(4%, -3%, 0) scale(1.08); }
+  66%  { transform: translate3d(-3%, 4%, 0) scale(0.96); }
+  100% { transform: translate3d(0, 0, 0) scale(1); }
+}
+.animate-aurora { animation: aurora-drift 18s ease-in-out infinite; }
+.animate-aurora-slow { animation: aurora-drift 26s ease-in-out infinite; }
+
+/* Hafif dikey süzülme */
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.animate-float { animation: float-y 5s ease-in-out infinite; }
+
+/* Buton parıltısı (hover) */
+@keyframes shimmer {
+  0% { transform: translateX(-120%); }
+  100% { transform: translateX(220%); }
+}
+
+/* Aşağı kaydırma göstergesi */
+@keyframes scroll-hint {
+  0% { transform: translateY(0); opacity: 0; }
+  40% { opacity: 1; }
+  80% { transform: translateY(10px); opacity: 0; }
+  100% { opacity: 0; }
+}
+.animate-scroll-hint { animation: scroll-hint 1.8s ease-in-out infinite; }
+
+/* Çizilerek beliren accent çizgi */
+@keyframes draw-line {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+.animate-draw-line { transform-origin: left center; animation: draw-line 0.7s cubic-bezier(0.22,1,0.36,1) 0.3s forwards; transform: scaleX(0); }
+
+/* Stagger destekli yukarı-belirme (reveal) */
+@keyframes reveal-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.reveal-up {
+  opacity: 0;
+  animation: reveal-up 0.7s cubic-bezier(0.22,1,0.36,1) forwards;
+  animation-delay: var(--delay, 0ms);
+}
+
 .animate-fade-in {
   animation: fade-in 0.6s ease-out forwards;
 }
@@ -333,3 +385,14 @@ p, span, a, li, button, input, textarea, label {
 ::-webkit-scrollbar-track { background: #e0f2fe; }
 ::-webkit-scrollbar-thumb { background: #0ea5e9; border-radius: 2px; }
 ::-webkit-scrollbar-thumb:hover { background: #38bdf8; }
+
+/* Erişilebilirlik: hareket azaltma tercihine saygı */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal-up { opacity: 1 !important; }
+}

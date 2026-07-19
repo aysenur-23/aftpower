@@ -1,98 +1,94 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { useTranslations, useLocale } from 'next-intl';
 import { ArrowRight } from 'lucide-react';
-import { cn } from '@/lib/utils';
 
 export default function MissionStatement() {
     const t = useTranslations('mission');
     const locale = useLocale();
-    const [isVisible, setIsVisible] = useState(false);
-    const [displayedText, setDisplayedText] = useState('');
     const sectionRef = useRef<HTMLDivElement>(null);
+    const [progress, setProgress] = useState(0);
 
-    const visionText = locale === 'tr'
-        ? 'Performans, dayanıklılık ve özgürlük — enerjiyi yeniden tanımlıyoruz.'
-        : locale === 'ar'
-            ? 'الأداء والمتانة والحرية — نحن نعيد تعريف الطاقة.'
-            : 'Performance, durability, and freedom — we are redefining energy.';
+    // Vurucu ifade: title + subtitle birleşik
+    const statement = `${t('title')} ${t('subtitle')}`.replace(/\s+/g, ' ').trim();
+    const words = statement.split(' ');
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                setIsVisible(entry.isIntersecting);
-            },
-            {
-                threshold: 0.1,
-                rootMargin: '0px',
-            }
-        );
-
-        if (sectionRef.current) {
-            observer.observe(sectionRef.current);
-        }
-
-        return () => {
-            if (sectionRef.current) {
-                observer.disconnect();
-            }
-        };
+    const onScroll = useCallback(() => {
+        const el = sectionRef.current;
+        if (!el) return;
+        const rect = el.getBoundingClientRect();
+        const vh = window.innerHeight;
+        // Bölüm ekranda yükseldikçe 0 -> 1
+        const start = vh * 0.9;
+        const end = vh * 0.35;
+        const p = (start - rect.top) / (start - end);
+        setProgress(Math.min(Math.max(p, 0), 1));
     }, []);
 
-    // Typewriter effect
     useEffect(() => {
-        if (!isVisible) return;
-
-        let index = 0;
-        const timer = setInterval(() => {
-            if (index <= visionText.length) {
-                setDisplayedText(visionText.slice(0, index));
-                index++;
-            } else {
-                clearInterval(timer);
+        let ticking = false;
+        const handler = () => {
+            if (!ticking) {
+                window.requestAnimationFrame(() => { onScroll(); ticking = false; });
+                ticking = true;
             }
-        }, 35); // Speed of typing
+        };
+        window.addEventListener('scroll', handler, { passive: true });
+        window.addEventListener('resize', handler);
+        onScroll();
+        return () => {
+            window.removeEventListener('scroll', handler);
+            window.removeEventListener('resize', handler);
+        };
+    }, [onScroll]);
 
-        return () => clearInterval(timer);
-    }, [isVisible, visionText]);
+    const filledCount = progress * words.length;
+    const eyebrow = locale === 'tr' ? 'VİZYONUMUZ' : locale === 'ar' ? 'رؤيتنا' : 'OUR VISION';
 
     return (
-        <section className="py-20 lg:py-32 bg-white border-b border-neutral-100" ref={sectionRef}>
-            <div className="container px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
-                <div className="text-center space-y-12">
-                    <div className="space-y-6">
-                        <span className="text-sky-500 font-bold tracking-widest text-xs uppercase block">
-                            {locale === 'tr' ? 'VİZYONUMUZ' : locale === 'ar' ? 'رؤيتنا' : 'OUR VISION'}
-                        </span>
+        <section ref={sectionRef} className="relative bg-white py-24 lg:py-36 overflow-hidden">
+            {/* üstten büyüyen ayraç çizgisi (hero'dan köprü) */}
+            <div
+                className="absolute top-0 left-1/2 -translate-x-1/2 h-[3px] bg-gradient-to-r from-transparent via-sky-500 to-transparent transition-[width] duration-300 ease-out"
+                style={{ width: `${20 + progress * 60}%` }}
+            />
 
-                        {/* Typewriter Text Container */}
-                        <div className="min-h-[3.5rem] sm:min-h-[4rem] lg:min-h-[5rem] flex items-center justify-center">
-                            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight tracking-tight">
-                                <span className={cn(
-                                    "bg-gradient-to-r from-sky-500 to-sky-500 bg-clip-text text-transparent transition-opacity duration-300",
-                                    isVisible ? "opacity-100" : "opacity-0"
-                                )}>
-                                    {displayedText}
-                                </span>
-                                {/* Blinking Cursor */}
-                                <span className={cn(
-                                    "inline-block w-[3px] h-[1em] bg-sky-500 ml-1 align-middle",
-                                    isVisible && displayedText.length < visionText.length ? "animate-pulse" : "opacity-0"
-                                )} />
-                            </h2>
-                        </div>
-                    </div>
-                    <div className="pt-2">
-                        <Link
-                            href={`/${locale}/kurumsal/`}
-                            className="inline-flex items-center justify-center px-8 py-4 bg-sky-500 text-white font-bold transition-all duration-300 shadow-xl shadow-slate-200 hover:bg-sky-600 hover:shadow-blue-100 transform hover:-translate-y-1"
-                        >
-                            {t('button')}
-                            <ArrowRight className="ml-2 h-5 w-5" />
-                        </Link>
-                    </div>
+            <div className="container px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center">
+                <span className="inline-block text-sky-600 font-brand font-bold tracking-[0.3em] text-[11px] uppercase mb-8">
+                    {eyebrow}
+                </span>
+
+                <h2 className="text-2xl sm:text-4xl lg:text-[3.25rem] font-bold leading-[1.25] tracking-tight">
+                    {words.map((word, i) => {
+                        const local = Math.min(Math.max(filledCount - i, 0), 1);
+                        const isAccent = i >= words.length - 3; // son kelimeler mavi vurgulu
+                        const filledColor = isAccent ? '#0ea5e9' : '#0f172a';
+                        return (
+                            <span
+                                key={i}
+                                className="inline-block mr-[0.28em] transition-colors duration-200"
+                                style={{
+                                    color: local > 0.5 ? filledColor : '#cbd5e1',
+                                    opacity: 0.5 + local * 0.5,
+                                }}
+                            >
+                                {word}
+                            </span>
+                        );
+                    })}
+                </h2>
+
+                <div className="mt-12">
+                    <Link
+                        href={`/${locale}/kurumsal/`}
+                        className="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-slate-900 text-white font-semibold text-sm uppercase tracking-widest transition-all duration-300 hover:bg-sky-600 hover:-translate-y-0.5"
+                        style={{ clipPath: 'polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px))' }}
+                    >
+                        {t('button')}
+                        <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </Link>
                 </div>
             </div>
         </section>

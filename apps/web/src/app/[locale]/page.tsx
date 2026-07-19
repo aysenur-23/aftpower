@@ -2,7 +2,6 @@ import { setRequestLocale, getTranslations } from 'next-intl/server';
 import Hero from '@/components/home/Hero';
 import MissionStatement from '@/components/home/MissionStatement';
 import Features from '@/components/home/Features';
-import ProductCards from '@/components/home/ProductCards';
 import EnergyJourney from '@/components/home/EnergyJourney';
 import PortablePower from '@/components/home/PortablePower';
 import Services from '@/components/home/Services';
@@ -29,12 +28,7 @@ export default async function HomePage({ params }: Props) {
                     <MissionStatement />
                 </section>
 
-                {/* Product Categories */}
-                <section className="relative z-40 overflow-hidden">
-                    <ProductCards />
-                </section>
-
-                {/* Energy Journey - Sticky scroll storytelling (Twilio-style) */}
+                {/* Product Categories - Sticky split scroll storytelling */}
                 <section className="relative z-40">
                     <EnergyJourney />
                 </section>
