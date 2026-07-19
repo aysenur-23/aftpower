@@ -888,12 +888,12 @@ export default async function ProductDetailPage({ params }: Props) {
         <div className="min-h-screen bg-white">
             <>
                 {/* Hero Section - Light Theme, Compact */}
-                <section className="relative pt-24 pb-12 lg:pt-28 lg:pb-16 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50">
+                <section className="relative pt-24 pb-12 lg:pt-28 lg:pb-16 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-sky-50">
                     {/* Background Pattern */}
                     <div className="absolute inset-0 z-0">
                         <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.1)_1px,transparent_1px)] bg-[size:60px_60px]" />
                         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-sky-500/10 blur-[150px] rounded-full -translate-y-1/2 translate-x-1/3" />
-                        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-cyan-100/30 blur-[120px] rounded-full translate-y-1/2 -translate-x-1/3" />
+                        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-sky-100/30 blur-[120px] rounded-full translate-y-1/2 -translate-x-1/3" />
                     </div>
 
                     <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
@@ -944,7 +944,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                     </div>
                                     <h1 className="reveal-up text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black text-slate-900 tracking-tight leading-[1.05]">
                                         {localizedName.split(' ').slice(0, -2).join(' ')}{' '}
-                                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-cyan-500">
+                                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-sky-500">
                                             {localizedName.split(' ').slice(-2).join(' ')}
                                         </span>
                                     </h1>
@@ -969,7 +969,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                     </div>
                                     <div className="w-px h-14 bg-slate-200 hidden sm:block" />
                                     <div className="space-y-1 text-left">
-                                        <div className="flex items-center gap-1.5 sm:gap-2 text-cyan-600">
+                                        <div className="flex items-center gap-1.5 sm:gap-2 text-sky-600">
                                             <Zap className="h-4 w-4 sm:h-5 sm:w-5" />
                                             <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-slate-500">{locale === 'en' ? 'Power' : locale === 'ar' ? 'القوة' : 'Güç'}</span>
                                         </div>
@@ -982,7 +982,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                     </div>
                                     <div className="w-px h-14 bg-slate-200 hidden sm:block" />
                                     <div className="space-y-1 text-left">
-                                        <div className="flex items-center gap-1.5 sm:gap-2 text-emerald-600">
+                                        <div className="flex items-center gap-1.5 sm:gap-2 text-sky-600">
                                             <Shield className="h-4 w-4 sm:h-5 sm:w-5" />
                                             <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-slate-500">{locale === 'en' ? 'Battery' : locale === 'ar' ? 'البطارية' : 'Batarya'}</span>
                                         </div>
@@ -993,7 +993,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                 <div className="flex flex-col sm:flex-row gap-4 pt-2 justify-center lg:justify-start">
                                     <Link
                                         href={`/${locale}/fiyat-teklifi/`}
-                                        className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-sky-500 hover:bg-sky-600 text-white font-bold text-sm transition-all duration-300 shadow-lg shadow-blue-600/25 hover:shadow-xl hover:shadow-blue-600/30"
+                                        className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-sky-500 hover:bg-sky-600 text-white font-bold text-sm transition-all duration-300 shadow-lg shadow-sky-600/25 hover:shadow-xl hover:shadow-sky-600/30"
                                     >
                                         <span>{tDetail('labels.getQuote') || 'Teklif Talep Et'}</span>
                                         <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
@@ -1011,7 +1011,7 @@ export default async function ProductDetailPage({ params }: Props) {
                             <div className="lg:col-span-5 relative order-1 lg:order-2 mb-4 lg:mb-0">
                                 <div className="relative flex items-center justify-center max-w-[280px] sm:max-w-[350px] lg:max-w-none mx-auto">
                                     {/* Decorative Circle - Hidden on mobile */}
-                                    <div className="absolute w-[90%] aspect-square rounded-full bg-gradient-to-br from-blue-100 to-cyan-50 border border-sky-500/15 hidden sm:block" />
+                                    <div className="absolute w-[90%] aspect-square rounded-full bg-gradient-to-br from-sky-100 to-sky-50 border border-sky-500/15 hidden sm:block" />
 
                                     {/* Product Image */}
                                     <div className="relative w-full max-w-[500px] p-2 sm:p-4 lg:p-8 transition-transform duration-700 hover:scale-[1.03] transform-gpu">
@@ -1051,7 +1051,7 @@ export default async function ProductDetailPage({ params }: Props) {
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                             {localizedFeatures.map((feature, index) => (
                                 <div key={index} className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 card hover-lift border border-sky-500/20 rounded-lg sm:rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105">
-                                    <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-emerald-500 flex-shrink-0" />
+                                    <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-sky-500 flex-shrink-0" />
                                     <span className="text-sm sm:text-base text-neutral-700 font-medium">{formatNumber(translateLabel(feature, locale), locale)}</span>
                                 </div>
                             ))}
@@ -1061,7 +1061,7 @@ export default async function ProductDetailPage({ params }: Props) {
 
                 {/* Performance and Runtime Stats - Light Theme */}
                 {product.runtimeStats && (
-                    <section className="py-12 sm:py-16 bg-gradient-to-br from-blue-50 via-white to-slate-50 relative overflow-hidden text-left">
+                    <section className="py-12 sm:py-16 bg-gradient-to-br from-sky-50 via-white to-slate-50 relative overflow-hidden text-left">
                         <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.1)_1px,transparent_1px)] bg-[size:40px_40px]" />
 
                         <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
@@ -1096,7 +1096,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                         <div key={index} className="group relative p-4 sm:p-5 rounded-2xl bg-white border border-slate-200 hover:border-sky-500/40 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
                                             <div className="relative z-10">
                                                 <div className="flex items-center justify-between mb-3">
-                                                    <div className="p-2 rounded-xl bg-sky-500/10 group-hover:bg-blue-200 transition-colors">
+                                                    <div className="p-2 rounded-xl bg-sky-500/10 group-hover:bg-sky-200 transition-colors">
                                                         <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-sky-500" />
                                                     </div>
                                                     <div className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">{formatNumber(stat.power, locale)
@@ -1138,7 +1138,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                     </div>
                                     <div className="relative z-10 space-y-8">
                                         <div className="space-y-4">
-                                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-[10px] font-bold uppercase tracking-widest">
+                                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-100 text-sky-700 text-[10px] font-bold uppercase tracking-widest">
                                                 {locale === 'en' ? 'Example Scenario 01' : locale === 'ar' ? 'سيناريو مثال ٠١' : 'Örnek Senaryo 01'}
                                             </div>
                                             <h3 className="text-3xl font-black text-slate-900 tracking-tight">
@@ -1178,11 +1178,11 @@ export default async function ProductDetailPage({ params }: Props) {
                                         <div className="space-y-4">
                                             <div className="flex items-center justify-between p-4 rounded-2xl bg-white shadow-sm border border-slate-100">
                                                 <span className="font-bold text-slate-900">{locale === 'ar' ? 'حزمة ٢.٧ كيلوواط ساعة' : formatNumber('2.7', locale) + ' kWh ' + (locale === 'en' ? 'Pack' : 'Paket')}</span>
-                                                <span className="text-emerald-600 font-black text-lg">≈ {formatNumber('7', locale)}–{formatNumber('8', locale)} {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
+                                                <span className="text-sky-600 font-black text-lg">≈ {formatNumber('7', locale)}–{formatNumber('8', locale)} {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
                                             </div>
                                             <div className="flex items-center justify-between p-4 rounded-2xl bg-white shadow-sm border border-slate-100">
                                                 <span className="font-bold text-slate-900">{locale === 'ar' ? 'حزمة ٥.٤ كيلوواط ساعة' : formatNumber('5.4', locale) + ' kWh ' + (locale === 'en' ? 'Pack' : 'Paket')}</span>
-                                                <span className="text-emerald-600 font-black text-lg">≈ {formatNumber('15', locale)}–{formatNumber('16', locale)} {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
+                                                <span className="text-sky-600 font-black text-lg">≈ {formatNumber('15', locale)}–{formatNumber('16', locale)} {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1248,7 +1248,7 @@ export default async function ProductDetailPage({ params }: Props) {
                 {/* Usage Areas Section (Only if available) */}
                 {
                     product.usageAreas && product.usageAreas.length > 0 && (
-                        <section className="py-8 sm:py-10 md:py-12 bg-gradient-to-br from-slate-50 via-white to-blue-50">
+                        <section className="py-8 sm:py-10 md:py-12 bg-gradient-to-br from-slate-50 via-white to-sky-50">
                             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                                 <div className="mx-auto max-w-3xl text-center mb-8 sm:mb-10">
                                     <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-neutral-900 mb-3 sm:mb-4">
@@ -1262,7 +1262,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                     {product.usageAreas.map((area, index) => {
                                         const IconComponent = getIcon(area.icon);
                                         return (
-                                            <div key={index} className="flex items-center gap-2 sm:gap-3 md:gap-4 p-3 sm:p-4 md:p-6 card hover-lift border-2 border-sky-500/20 rounded-lg sm:rounded-xl md:rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-gradient-to-r from-blue-50 to-slate-50 min-h-[60px] sm:min-h-[70px]">
+                                            <div key={index} className="flex items-center gap-2 sm:gap-3 md:gap-4 p-3 sm:p-4 md:p-6 card hover-lift border-2 border-sky-500/20 rounded-lg sm:rounded-xl md:rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-gradient-to-r from-sky-50 to-slate-50 min-h-[60px] sm:min-h-[70px]">
                                                 <div className="flex-shrink-0">
                                                     <div className="flex h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 items-center justify-center rounded-lg sm:rounded-xl bg-gradient-to-r from-sky-400 to-slate-600 shadow-lg group-hover:scale-110 transition-transform duration-300">
                                                         <IconComponent className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-white" />
@@ -1281,7 +1281,7 @@ export default async function ProductDetailPage({ params }: Props) {
                 }
 
                 {/* Why AFT Power Section */}
-                <section className="py-8 sm:py-10 md:py-12 bg-gradient-to-br from-blue-50 via-white to-teal-50">
+                <section className="py-8 sm:py-10 md:py-12 bg-gradient-to-br from-sky-50 via-white to-sky-50">
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="mx-auto max-w-3xl text-center mb-8 sm:mb-10">
                             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-neutral-900 mb-3 sm:mb-4">
@@ -1293,7 +1293,7 @@ export default async function ProductDetailPage({ params }: Props) {
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-items-center max-w-5xl mx-auto">
                             {/* Card 1 */}
-                            <div className="text-center group border border-purple-300 rounded-xl sm:rounded-2xl p-4 sm:p-6 hover:border-purple-500 transition-all duration-300 hover:shadow-lg w-full max-w-xs bg-white">
+                            <div className="text-center group border border-slate-300 rounded-xl sm:rounded-2xl p-4 sm:p-6 hover:border-slate-500 transition-all duration-300 hover:shadow-lg w-full max-w-xs bg-white">
                                 <div className="relative inline-block mb-4 sm:mb-6">
                                     <div className="absolute inset-0 bg-gradient-to-r from-sky-400 to-sky-500 rounded-xl sm:rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                                     <div className="relative flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-xl sm:rounded-2xl bg-gradient-to-r from-sky-400 to-sky-500 shadow-xl group-hover:scale-110 transition-transform duration-500">
@@ -1309,7 +1309,7 @@ export default async function ProductDetailPage({ params }: Props) {
                             </div>
 
                             {/* Card 2 */}
-                            <div className="text-center group border border-purple-300 rounded-xl sm:rounded-2xl p-4 sm:p-6 hover:border-purple-500 transition-all duration-300 hover:shadow-lg w-full max-w-xs bg-white">
+                            <div className="text-center group border border-slate-300 rounded-xl sm:rounded-2xl p-4 sm:p-6 hover:border-slate-500 transition-all duration-300 hover:shadow-lg w-full max-w-xs bg-white">
                                 <div className="relative inline-block mb-4 sm:mb-6">
                                     <div className="absolute inset-0 bg-gradient-to-r from-sky-400 to-slate-600 rounded-xl sm:rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                                     <div className="relative flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-xl sm:rounded-2xl bg-gradient-to-r from-sky-400 to-slate-600 shadow-xl group-hover:scale-110 transition-transform duration-500">
@@ -1325,7 +1325,7 @@ export default async function ProductDetailPage({ params }: Props) {
                             </div>
 
                             {/* Card 3 */}
-                            <div className="text-center group border border-purple-300 rounded-xl sm:rounded-2xl p-4 sm:p-6 hover:border-purple-500 transition-all duration-300 hover:shadow-lg w-full max-w-xs sm:col-span-2 lg:col-span-1 sm:max-w-md lg:max-w-xs bg-white">
+                            <div className="text-center group border border-slate-300 rounded-xl sm:rounded-2xl p-4 sm:p-6 hover:border-slate-500 transition-all duration-300 hover:shadow-lg w-full max-w-xs sm:col-span-2 lg:col-span-1 sm:max-w-md lg:max-w-xs bg-white">
                                 <div className="relative inline-block mb-4 sm:mb-6">
                                     <div className="absolute inset-0 bg-gradient-to-r from-sky-500 to-red-500 rounded-xl sm:rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
                                     <div className="relative flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-xl sm:rounded-2xl bg-gradient-to-r from-sky-500 to-red-500 shadow-xl group-hover:scale-110 transition-transform duration-500">
@@ -1344,7 +1344,7 @@ export default async function ProductDetailPage({ params }: Props) {
                 </section>
 
                 {/* Final CTA */}
-                <section className="py-8 sm:py-10 md:py-12 bg-gradient-to-br from-sky-50 via-blue-50 to-slate-50">
+                <section className="py-8 sm:py-10 md:py-12 bg-gradient-to-br from-sky-50 via-sky-50 to-slate-50">
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="mx-auto max-w-4xl text-center">
                             <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-neutral-800 mb-3 sm:mb-4 px-4">
@@ -1356,14 +1356,14 @@ export default async function ProductDetailPage({ params }: Props) {
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">
                                 <Link
                                     href={`/${locale}/fiyat-teklifi/`}
-                                    className="btn btn-primary w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg bg-gradient-to-r from-cyan-500 to-sky-600 hover:from-cyan-600 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 sm:gap-3"
+                                    className="btn btn-primary w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg bg-gradient-to-r from-sky-500 to-sky-600 hover:from-sky-600 hover:to-sky-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 sm:gap-3"
                                 >
                                     <span>{tDetail('labels.getQuote') || 'Fiyat Teklifi Talep Et'}</span>
                                     <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" />
                                 </Link>
                                 <Link
                                     href={`/${locale}/iletisim/`}
-                                    className="btn btn-primary w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg bg-gradient-to-r from-sky-500 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 sm:gap-3"
+                                    className="btn btn-primary w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg bg-gradient-to-r from-sky-500 to-sky-700 hover:from-sky-700 hover:to-sky-800 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 sm:gap-3"
                                 >
                                     <span>{locale === 'tr' ? 'Uzman Danışmanlığı' : locale === 'ar' ? 'استشارة الخبراء' : 'Expert Consultation'}</span>
                                 </Link>

@@ -82,7 +82,7 @@ export default async function ProductsPage({ params }: Props) {
                 {/* Premium Animated Background */}
                 <div className="absolute inset-0 z-0">
                     <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-sky-500/10 rounded-full blur-[120px] mix-blend-multiply animate-pulse" style={{ animationDuration: '8s' }} />
-                    <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-indigo-100/40 rounded-full blur-[100px] mix-blend-multiply animate-pulse" style={{ animationDuration: '10s', animationDelay: '2s' }} />
+                    <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-sky-100/40 rounded-full blur-[100px] mix-blend-multiply animate-pulse" style={{ animationDuration: '10s', animationDelay: '2s' }} />
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-sky-50/60 rounded-full blur-[80px]" />
                 </div>
 
@@ -90,7 +90,7 @@ export default async function ProductsPage({ params }: Props) {
                     {/* Badge */}
                     <div className="reveal-up inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/5 border border-sky-500/15 mb-8">
                         <span className="relative flex h-2 w-2">
-                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-sky-400"></span>
                         </span>
                         <span className="text-sm font-bold text-sky-500 tracking-widest uppercase">{t('allProductsTitle')}</span>
@@ -103,11 +103,11 @@ export default async function ProductsPage({ params }: Props) {
                         <span className="text-3xl sm:text-4xl lg:text-5xl block mb-2">
                             {hero.titleLine2}{' '}
                             <span className="relative inline-block">
-                                <span className="relative z-10 bg-gradient-to-r from-sky-500 via-indigo-600 to-sky-500 bg-clip-text text-transparent">
+                                <span className="relative z-10 bg-gradient-to-r from-sky-500 via-sky-600 to-sky-500 bg-clip-text text-transparent">
                                     {hero.titleHighlight}
                                 </span>
                                 {/* Underline decoration */}
-                                <svg className="absolute w-full h-3 -bottom-1 left-0 text-blue-200 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
+                                <svg className="absolute w-full h-3 -bottom-1 left-0 text-sky-200 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
                                     <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="8" fill="none" />
                                 </svg>
                             </span>

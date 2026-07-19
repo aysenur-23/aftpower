@@ -94,13 +94,13 @@ export default function QuotePage() {
             <div className="min-h-screen bg-white flex items-center justify-center pt-24 pb-12 px-4">
                 <div className="max-w-md w-full text-center space-y-8">
                     <div className="relative">
-                        <div className="absolute inset-0 bg-emerald-500 rounded-full blur-2xl opacity-20 animate-pulse" />
-                        <div className="relative w-24 h-24 bg-emerald-50 rounded-full flex items-center justify-center mx-auto">
-                            <CheckCircle className="h-12 w-12 text-emerald-600" />
+                        <div className="absolute inset-0 bg-sky-500 rounded-full blur-2xl opacity-20 animate-pulse" />
+                        <div className="relative w-24 h-24 bg-sky-50 rounded-full flex items-center justify-center mx-auto">
+                            <CheckCircle className="h-12 w-12 text-sky-600" />
                         </div>
                     </div>
                     <div>
-                        <h2 className="text-3xl font-heavy text-slate-900 mb-4">{t('successTitle')}</h2>
+                        <h2 className="text-3xl font-extrabold text-slate-900 mb-4">{t('successTitle')}</h2>
                         <p className="text-lg text-slate-600 font-medium">{t('successMessage')}</p>
                     </div>
                     <div className="pt-4">
@@ -122,8 +122,8 @@ export default function QuotePage() {
             {/* Header Section - Elegant & Minimal */}
             <section className="relative pt-24 pb-10 lg:pt-28 lg:pb-12 overflow-hidden bg-gradient-to-b from-slate-50 to-white">
                 {/* Subtle Decorative Elements */}
-                <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-blue-50/20 to-transparent pointer-events-none" />
-                <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-gradient-to-tr from-emerald-50/10 to-transparent pointer-events-none" />
+                <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-sky-50/20 to-transparent pointer-events-none" />
+                <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-gradient-to-tr from-sky-50/10 to-transparent pointer-events-none" />
 
                 <div className="container relative z-10 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto text-center">
                     <div className="max-w-2xl mx-auto space-y-4">
@@ -163,7 +163,7 @@ export default function QuotePage() {
                                                     type="text"
                                                     required
                                                     placeholder={t('namePlaceholder')}
-                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-blue-500 transition-all font-medium text-slate-900 placeholder:text-slate-400"
+                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-sky-500 transition-all font-medium text-slate-900 placeholder:text-slate-400"
                                                 />
                                             </div>
                                         </div>
@@ -175,7 +175,7 @@ export default function QuotePage() {
                                                     type="email"
                                                     required
                                                     placeholder={t('emailPlaceholder')}
-                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-blue-500 transition-all font-medium text-slate-900 placeholder:text-slate-400"
+                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-sky-500 transition-all font-medium text-slate-900 placeholder:text-slate-400"
                                                 />
                                             </div>
                                         </div>
@@ -187,7 +187,7 @@ export default function QuotePage() {
                                                     type="tel"
                                                     required
                                                     placeholder={t('phonePlaceholder')}
-                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-blue-500 transition-all font-medium text-slate-900 placeholder:text-slate-400"
+                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-sky-500 transition-all font-medium text-slate-900 placeholder:text-slate-400"
                                                 />
                                             </div>
                                         </div>
@@ -198,7 +198,7 @@ export default function QuotePage() {
                                                 <input
                                                     type="text"
                                                     placeholder={t('companyPlaceholder')}
-                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-blue-500 transition-all font-medium text-slate-900 placeholder:text-slate-400"
+                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-sky-500 transition-all font-medium text-slate-900 placeholder:text-slate-400"
                                                 />
                                             </div>
                                         </div>
@@ -208,7 +208,7 @@ export default function QuotePage() {
                                 {/* Project Information */}
                                 <div className="space-y-6">
                                     <div className="flex items-center gap-3 border-b border-slate-100 pb-3">
-                                        <div className="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center">
+                                        <div className="w-8 h-8 rounded-lg bg-sky-50 text-sky-600 flex items-center justify-center">
                                             <Package className="w-4 h-4" />
                                         </div>
                                         <h3 className="text-xl font-bold text-slate-900 tracking-tight">{t('projectInfo')}</h3>
@@ -220,7 +220,7 @@ export default function QuotePage() {
                                                 <Package className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
                                                 <select
                                                     required
-                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-blue-500 transition-all font-medium text-slate-900 appearance-none"
+                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-sky-500 transition-all font-medium text-slate-900 appearance-none"
                                                 >
                                                     <option value="">{t('categorySelect')}</option>
                                                     <option value="portable">{t('categories.portable')}</option>
@@ -242,7 +242,7 @@ export default function QuotePage() {
                                                 <Zap className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
                                                 <select
                                                     required
-                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-blue-500 transition-all font-medium text-slate-900 appearance-none"
+                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-sky-500 transition-all font-medium text-slate-900 appearance-none"
                                                 >
                                                     <option value="">{t('powerSelect')}</option>
                                                     <option value="0-5">{locale === 'ar' ? '٠-٥ كيلوواط' : '0-5 kW'}</option>
@@ -262,7 +262,7 @@ export default function QuotePage() {
                                                 <Layout className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
                                                 <select
                                                     required
-                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-blue-500 transition-all font-medium text-slate-900 appearance-none"
+                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-sky-500 transition-all font-medium text-slate-900 appearance-none"
                                                 >
                                                     <option value="">{t('areaSelect')}</option>
                                                     <option value="residential">{locale === 'tr' ? 'Konut' : locale === 'ar' ? 'سكني' : 'Residential'}</option>
@@ -281,7 +281,7 @@ export default function QuotePage() {
                                             <div className="relative">
                                                 <TrendingUp className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
                                                 <select
-                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-blue-500 transition-all font-medium text-slate-900 appearance-none"
+                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-sky-500 transition-all font-medium text-slate-900 appearance-none"
                                                 >
                                                     <option value="">{t('budgetSelect')}</option>
                                                     <option value="low">₺0 - ₺50.000</option>
@@ -299,7 +299,7 @@ export default function QuotePage() {
                                 {/* Technical Requirements */}
                                 <div className="space-y-6">
                                     <div className="flex items-center gap-3 border-b border-slate-100 pb-3">
-                                        <div className="w-8 h-8 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center">
+                                        <div className="w-8 h-8 rounded-lg bg-slate-50 text-slate-600 flex items-center justify-center">
                                             <Settings className="w-4 h-4" />
                                         </div>
                                         <h3 className="text-xl font-bold text-slate-900 tracking-tight">{t('technicalRequirements')}</h3>
@@ -310,7 +310,7 @@ export default function QuotePage() {
                                             <textarea
                                                 placeholder={t('specPlaceholder')}
                                                 rows={4}
-                                                className="w-full p-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-blue-500 transition-all font-medium text-slate-900 resize-none placeholder:text-slate-400"
+                                                className="w-full p-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-sky-500 transition-all font-medium text-slate-900 resize-none placeholder:text-slate-400"
                                             />
                                         </div>
                                         <div className="space-y-1.5">
@@ -319,7 +319,7 @@ export default function QuotePage() {
                                                 <Calendar className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
                                                 <input
                                                     type="date"
-                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-blue-500 transition-all font-medium text-slate-900"
+                                                    className="w-full h-12 pl-11 pr-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-sky-500 transition-all font-medium text-slate-900"
                                                 />
                                             </div>
                                         </div>
@@ -339,7 +339,7 @@ export default function QuotePage() {
                                         <textarea
                                             placeholder={t('messagePlaceholder')}
                                             rows={3}
-                                            className="w-full p-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-blue-500 transition-all font-medium text-slate-900 resize-none placeholder:text-slate-400"
+                                            className="w-full p-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-sky-500 transition-all font-medium text-slate-900 resize-none placeholder:text-slate-400"
                                         />
                                     </div>
                                 </div>
@@ -368,9 +368,9 @@ export default function QuotePage() {
                     {/* Features Detail */}
                     <div className="mt-20 grid grid-cols-1 sm:grid-cols-3 gap-8">
                         {[
-                            { icon: Clock, title: 'fastResponse', desc: 'fastResponseDesc', color: 'bg-emerald-50 text-emerald-600' },
+                            { icon: Clock, title: 'fastResponse', desc: 'fastResponseDesc', color: 'bg-sky-50 text-sky-600' },
                             { icon: FileText, title: 'detailedOffer', desc: 'detailedOfferDesc', color: 'bg-sky-500/5 text-sky-500' },
-                            { icon: Shield, title: 'expertSupport', desc: 'expertSupportDesc', color: 'bg-purple-50 text-purple-600' }
+                            { icon: Shield, title: 'expertSupport', desc: 'expertSupportDesc', color: 'bg-slate-50 text-slate-600' }
                         ].map((feature, i) => (
                             <div key={i} className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm text-center space-y-4">
                                 <div className={cn("w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-6", feature.color)}>

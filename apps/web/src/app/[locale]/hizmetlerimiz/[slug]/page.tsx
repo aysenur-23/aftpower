@@ -57,9 +57,9 @@ export default async function ServiceDetailPage({ params }: Props) {
     return (
         <div className="min-h-screen bg-white">
             {/* Hero Section - Light Theme */}
-            <section className="relative pt-24 pb-16 lg:pt-28 lg:pb-20 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-emerald-50/20">
+            <section className="relative pt-24 pb-16 lg:pt-28 lg:pb-20 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-sky-50/20">
                 {/* Decorative Background Elements */}
-                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-emerald-100/30 rounded-full blur-[100px] translate-x-1/3 -translate-y-1/3 pointer-events-none" />
+                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-sky-100/30 rounded-full blur-[100px] translate-x-1/3 -translate-y-1/3 pointer-events-none" />
                 <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-sky-500/10 rounded-full blur-[80px] -translate-x-1/3 translate-y-1/3 pointer-events-none" />
 
                 <div className="container relative z-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
@@ -67,9 +67,9 @@ export default async function ServiceDetailPage({ params }: Props) {
 
                         {/* Left: Content */}
                         <div>
-                            <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 rounded-full bg-emerald-50 border border-emerald-100">
-                                <div className="w-2 h-2 rounded-full bg-emerald-500" />
-                                <span className="text-xs font-semibold uppercase tracking-wide text-emerald-600">
+                            <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 rounded-full bg-sky-50 border border-sky-100">
+                                <div className="w-2 h-2 rounded-full bg-sky-500" />
+                                <span className="text-xs font-semibold uppercase tracking-wide text-sky-600">
                                     {t('serviceTag')}
                                 </span>
                             </div>
@@ -85,7 +85,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <Link
                                     href={`/${locale}/fiyat-teklifi/`}
-                                    className="px-8 py-4 bg-emerald-600 text-white rounded-xl font-semibold hover:bg-emerald-700 transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/25"
+                                    className="px-8 py-4 bg-sky-600 text-white rounded-xl font-semibold hover:bg-sky-700 transition-all flex items-center justify-center gap-2 shadow-lg shadow-sky-600/25"
                                 >
                                     {t('getQuote')}
                                     <ArrowRight className="w-4 h-4" />
@@ -102,7 +102,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                         {/* Right: Service Image Showcase */}
                         <div className="relative">
                             <div className="relative aspect-[4/3] w-full max-w-[550px] mx-auto">
-                                <div className="absolute inset-0 bg-gradient-to-br from-emerald-100 via-slate-100 to-blue-50 rounded-2xl" />
+                                <div className="absolute inset-0 bg-gradient-to-br from-sky-100 via-slate-100 to-sky-50 rounded-2xl" />
                                 <div className="absolute inset-2 rounded-xl overflow-hidden shadow-xl">
                                     <Image
                                         src={service.image}
@@ -135,8 +135,8 @@ export default async function ServiceDetailPage({ params }: Props) {
                         <div className="flex flex-wrap justify-center gap-4">
                             {features.map((feature, idx) => (
                                 <div key={idx} className="flex items-center gap-3 p-4 bg-white rounded-xl border border-slate-200 w-full sm:w-auto sm:max-w-xs">
-                                    <div className="w-8 h-8 rounded-lg bg-emerald-50 flex items-center justify-center flex-shrink-0">
-                                        <Check className="h-4 w-4 text-emerald-600" />
+                                    <div className="w-8 h-8 rounded-lg bg-sky-50 flex items-center justify-center flex-shrink-0">
+                                        <Check className="h-4 w-4 text-sky-600" />
                                     </div>
                                     <span className="text-sm font-medium text-slate-700">{feature}</span>
                                 </div>
@@ -149,15 +149,15 @@ export default async function ServiceDetailPage({ params }: Props) {
             {/* Why Us Section - Stylish Glassmorphism */}
             <section className="py-20 lg:py-32 relative overflow-hidden">
                 <div className="absolute inset-0 bg-slate-50/50" />
-                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-400/5 rounded-full blur-[100px] translate-x-1/2 -translate-y-1/2" />
-                <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-emerald-400/5 rounded-full blur-[100px] -translate-x-1/2 translate-y-1/2" />
+                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-sky-400/5 rounded-full blur-[100px] translate-x-1/2 -translate-y-1/2" />
+                <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-sky-400/5 rounded-full blur-[100px] -translate-x-1/2 translate-y-1/2" />
 
                 <div className="container relative z-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                     <div className="text-center max-w-3xl mx-auto mb-20">
                         <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-sky-500/5 border border-sky-500/15">
                             <span className="text-[10px] font-bold text-sky-500 uppercase tracking-widest">{t('whyUs.title')}</span>
                         </div>
-                        <h2 className="text-3xl md:text-5xl font-heavy text-slate-900 tracking-tight leading-none mb-6">
+                        <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-none mb-6">
                             {t(`${service.key}.whyUs.title`)}
                         </h2>
                         <p className="text-lg text-slate-500 font-medium">
@@ -174,7 +174,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                             return (
                                 <div
                                     key={index}
-                                    className="p-10 bg-white/60 backdrop-blur-md rounded-[2.5rem] border border-white shadow-xl shadow-slate-200/50 hover:shadow-2xl hover:shadow-blue-200/40 transition-all duration-500 hover:-translate-y-2 group"
+                                    className="p-10 bg-white/60 backdrop-blur-md rounded-[2.5rem] border border-white shadow-xl shadow-slate-200/50 hover:shadow-2xl hover:shadow-sky-200/40 transition-all duration-500 hover:-translate-y-2 group"
                                 >
                                     <div className="w-16 h-16 rounded-2xl bg-white shadow-lg flex items-center justify-center mb-8 mx-auto group-hover:bg-sky-500 group-hover:text-white transition-all duration-500">
                                         <Icon className="h-7 w-7 text-sky-500 group-hover:text-white transition-colors duration-500" />
@@ -194,7 +194,7 @@ export default async function ServiceDetailPage({ params }: Props) {
             <section className="py-12 lg:py-20">
                 <div className="container px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                     <div className="text-center max-w-3xl mx-auto mb-20">
-                        <h2 className="text-3xl md:text-5xl font-heavy text-slate-900 tracking-tight leading-none mb-6">
+                        <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-none mb-6">
                             {t(`${service.key}.process.title`)}
                         </h2>
                         <p className="text-lg text-slate-500 font-medium">

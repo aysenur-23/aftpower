@@ -1,9 +1,7 @@
 import { setRequestLocale } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
-import Link from 'next/link';
-import Image from 'next/image';
-import { ArrowRight } from 'lucide-react';
 import ServiceCards from '@/components/services/ServiceCards';
+import PageHero from '@/components/ui/PageHero';
 
 interface Props {
     params: Promise<{ locale: string }>;
@@ -13,11 +11,11 @@ export default async function ServicesPage({ params }: Props) {
     const { locale } = await params;
     setRequestLocale(locale);
     const t = await getTranslations('services');
-
-
+    const eyebrow = locale === 'ar' ? 'خدماتنا' : locale === 'en' ? 'OUR SERVICES' : 'HİZMETLERİMİZ';
 
     return (
-        <div className="min-h-screen bg-white pt-20 lg:pt-24">
+        <div className="min-h-screen bg-white">
+            <PageHero eyebrow={eyebrow} title={t('title')} description={t('subtitle')} />
             {/* Services Grid */}
             <ServiceCards />
         </div>

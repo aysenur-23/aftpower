@@ -79,8 +79,8 @@ export default function Iletisim() {
             title: t('email'),
             value: 'info@aftpowertech.com',
             href: 'mailto:info@aftpowertech.com',
-            color: 'text-emerald-600',
-            bg: 'bg-emerald-50'
+            color: 'text-sky-600',
+            bg: 'bg-sky-50'
         },
         {
             icon: MapPin,
@@ -95,7 +95,7 @@ export default function Iletisim() {
     return (
         <div className="min-h-screen bg-white">
             {/* Hero Section - Clean & Simple */}
-            <section className="relative pt-28 pb-12 lg:pt-32 lg:pb-16 flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50">
+            <section className="relative pt-28 pb-12 lg:pt-32 lg:pb-16 flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-white to-sky-50">
                 <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.1)_1px,transparent_1px)] bg-[size:40px_40px]" />
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-sky-500/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/3" />
 
@@ -140,7 +140,7 @@ export default function Iletisim() {
                                         type="text"
                                         name="name"
                                         required
-                                        className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-blue-500 transition-all font-medium text-slate-900"
+                                        className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-sky-500 transition-all font-medium text-slate-900"
                                     />
                                 </div>
                                 <div className="space-y-1.5">
@@ -149,7 +149,7 @@ export default function Iletisim() {
                                         type="email"
                                         name="email"
                                         required
-                                        className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-blue-500 transition-all font-medium text-slate-900"
+                                        className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-sky-500 transition-all font-medium text-slate-900"
                                     />
                                 </div>
                             </div>
@@ -159,7 +159,7 @@ export default function Iletisim() {
                                     type="tel"
                                     name="phone"
                                     placeholder={locale === 'ar' ? '+٩٠ ٥XX XXX XX XX' : '+90 5XX XXX XX XX'}
-                                    className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-blue-500 transition-all font-medium text-slate-900"
+                                    className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-sky-500 transition-all font-medium text-slate-900"
                                     dir="ltr"
                                 />
                             </div>
@@ -169,7 +169,7 @@ export default function Iletisim() {
                                     type="text"
                                     name="subject"
                                     required
-                                    className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-blue-500 transition-all font-medium text-slate-900"
+                                    className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-sky-500 transition-all font-medium text-slate-900"
                                 />
                             </div>
                             <div className="space-y-1.5">
@@ -178,13 +178,13 @@ export default function Iletisim() {
                                     name="message"
                                     rows={5}
                                     required
-                                    className="w-full p-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-blue-500 transition-all font-medium text-slate-900 resize-none"
+                                    className="w-full p-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-sky-500 transition-all font-medium text-slate-900 resize-none"
                                 />
                             </div>
                             <button
                                 type="submit"
                                 disabled={isSubmitting}
-                                className="inline-flex items-center justify-center gap-3 h-14 px-10 bg-sky-500 text-white rounded-xl font-bold hover:bg-sky-600 transition-all shadow-lg shadow-blue-100 disabled:opacity-50"
+                                className="inline-flex items-center justify-center gap-3 h-14 px-10 bg-sky-500 text-white rounded-xl font-bold hover:bg-sky-600 transition-all shadow-lg shadow-sky-100 disabled:opacity-50"
                             >
                                 {isSubmitting ? (
                                     <div className="w-5 h-5 border-3 border-white/30 border-t-white rounded-full animate-spin" />

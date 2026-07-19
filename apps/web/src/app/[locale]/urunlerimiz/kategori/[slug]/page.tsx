@@ -86,12 +86,12 @@ export default async function CategoryPage({ params }: Props) {
     return (
         <div className="min-h-screen bg-white">
             {/* Premium Category Hero - Enhanced Light Theme */}
-            <section className="relative pt-24 pb-12 lg:pt-28 lg:pb-16 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50/50">
+            <section className="relative pt-24 pb-12 lg:pt-28 lg:pb-16 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-sky-50/50">
                 {/* Refined Background Pattern */}
                 <div className="absolute inset-0 z-0 pointer-events-none">
                     <div className="absolute inset-0 opacity-[0.035] bg-[linear-gradient(rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.1)_1px,transparent_1px)] bg-[size:50px_50px]" />
                     <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-sky-500/10 blur-[130px] rounded-full -translate-y-1/2 translate-x-1/3 animate-pulse duration-[8000ms]" />
-                    <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-cyan-100/20 blur-[100px] rounded-full translate-y-1/2 -translate-x-1/3" />
+                    <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-sky-100/20 blur-[100px] rounded-full translate-y-1/2 -translate-x-1/3" />
                 </div>
 
                 <div className="container relative z-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
@@ -122,12 +122,12 @@ export default async function CategoryPage({ params }: Props) {
                             {/* Enhanced Feature Pills */}
                             <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
                                 <div className="px-6 py-3 rounded-2xl bg-white/60 border border-slate-200/60 shadow-md backdrop-blur-xl text-slate-700 font-semibold text-sm flex items-center gap-3 hover:scale-105 transition-transform duration-300 hover:border-sky-500/20 cursor-default">
-                                    <span className={`w-2.5 h-2.5 rounded-full ring-2 ring-offset-1 ring-offset-slate-50 ${slug === 'portable' ? 'bg-sky-400 ring-blue-300' :
+                                    <span className={`w-2.5 h-2.5 rounded-full ring-2 ring-offset-1 ring-offset-slate-50 ${slug === 'portable' ? 'bg-sky-400 ring-sky-300' :
                                         slug === 'vehicle' ? 'bg-sky-500 ring-sky-300' :
-                                            slug === 'cabin' ? 'bg-emerald-500 ring-emerald-300' :
-                                                slug === 'charging' ? 'bg-cyan-500 ring-cyan-300' :
-                                                    slug === 'battery' ? 'bg-purple-500 ring-purple-300' :
-                                                        'bg-yellow-500 ring-yellow-300'
+                                            slug === 'cabin' ? 'bg-sky-500 ring-sky-300' :
+                                                slug === 'charging' ? 'bg-sky-500 ring-sky-300' :
+                                                    slug === 'battery' ? 'bg-slate-500 ring-slate-300' :
+                                                        'bg-sky-500 ring-sky-300'
                                         }`} />
                                     {locale === 'ar' ? `${toArabicNumeral(category.products.length, locale)} منتجات` : locale === 'en' ? `${category.products.length} Products` : `${category.products.length} Ürün`}
                                 </div>
@@ -143,7 +143,7 @@ export default async function CategoryPage({ params }: Props) {
                         {/* Right Column: Hero Image (Enhanced Float & Shadow) */}
                         <div className="relative order-1 lg:order-2 flex justify-center animate-in zoom-in-95 fade-in duration-1000 delay-200">
                             {/* Decorative Circle with Border */}
-                            <div className="absolute w-[95%] aspect-square rounded-full bg-gradient-to-br from-blue-50 to-indigo-50/30 border border-sky-500/15 -z-10 animate-spin-slow duration-[30s]" />
+                            <div className="absolute w-[95%] aspect-square rounded-full bg-gradient-to-br from-sky-50 to-sky-50/30 border border-sky-500/15 -z-10 animate-spin-slow duration-[30s]" />
 
                             <div className="relative w-full aspect-square max-w-[450px] p-6 flex items-center justify-center filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.12)] hover:drop-shadow-[0_30px_60px_rgba(0,0,0,0.15)] transition-all duration-500 hover:scale-[1.02]">
                                 <Image
@@ -176,10 +176,10 @@ export default async function CategoryPage({ params }: Props) {
                                 <Link
                                     key={product.slug}
                                     href={`/${locale}/urunlerimiz/${product.slug}/`}
-                                    className="group bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 flex flex-col h-full ring-1 ring-slate-100 hover:ring-blue-100"
+                                    className="group bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 flex flex-col h-full ring-1 ring-slate-100 hover:ring-sky-100"
                                     style={{ animationDelay: `${idx * 100}ms` }}
                                 >
-                                    <div className="aspect-square relative p-8 flex items-center justify-center bg-gradient-to-b from-slate-50 to-white transition-colors group-hover:from-blue-50/30 group-hover:to-white">
+                                    <div className="aspect-square relative p-8 flex items-center justify-center bg-gradient-to-b from-slate-50 to-white transition-colors group-hover:from-sky-50/30 group-hover:to-white">
                                         <Image
                                             src={product.image}
                                             alt={productName}
@@ -213,7 +213,7 @@ export default async function CategoryPage({ params }: Props) {
             {/* CTA Section - Light Theme */}
             <section className="py-16 lg:py-24 bg-white">
                 <div className="container px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-                    <div className="bg-gradient-to-br from-slate-50 to-blue-50/30 border border-slate-200 rounded-3xl p-8 sm:p-12 lg:p-16 text-center shadow-sm">
+                    <div className="bg-gradient-to-br from-slate-50 to-sky-50/30 border border-slate-200 rounded-3xl p-8 sm:p-12 lg:p-16 text-center shadow-sm">
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight mb-4">
                             {locale === 'tr' ? 'Bize Ulaşın' : locale === 'en' ? 'Get In Touch' : 'اتصل بنا'}
                         </h2>
