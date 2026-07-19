@@ -128,12 +128,12 @@ export default function QuotePage() {
                 <div className="container relative z-10 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto text-center">
                     <div className="max-w-2xl mx-auto space-y-4">
                         {/* Title */}
-                        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
+                        <h1 className="reveal-up text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
                             {t('title')}
                         </h1>
 
                         {/* Description */}
-                        <p className="text-lg text-slate-500 leading-relaxed font-medium">
+                        <p className="reveal-up text-lg text-slate-500 leading-relaxed font-medium" style={{ ['--delay' as string]: '120ms' }}>
                             {t('description')}
                         </p>
                     </div>

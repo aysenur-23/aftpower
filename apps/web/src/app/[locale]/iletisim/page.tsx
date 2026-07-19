@@ -101,16 +101,16 @@ export default function Iletisim() {
 
                 <div className="container relative z-10 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto text-center">
                     <div className="space-y-4">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/10 border border-sky-500/20">
+                        <div className="reveal-up inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/10 border border-sky-500/20">
                             <span className="flex h-2 w-2 rounded-full bg-sky-400 animate-pulse" />
                             <span className="text-xs font-bold text-sky-600 uppercase tracking-wider">
                                 {locale === 'tr' ? 'İletişim' : locale === 'ar' ? 'اتصل بنا' : 'Contact'}
                             </span>
                         </div>
-                        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight">
+                        <h1 className="reveal-up text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight" style={{ ['--delay' as string]: '90ms' }}>
                             {t('title')}
                         </h1>
-                        <p className="text-base sm:text-lg text-slate-600 max-w-xl mx-auto font-medium">
+                        <p className="reveal-up text-base sm:text-lg text-slate-600 max-w-xl mx-auto font-medium" style={{ ['--delay' as string]: '180ms' }}>
                             {t('description')}
                         </p>
                     </div>
