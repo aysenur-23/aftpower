@@ -118,27 +118,27 @@ export default function EnergyJourney() {
         <section
             ref={containerRef}
             className="relative w-full"
-            style={{ height: `${STEPS.length * 100}vh`, background: 'linear-gradient(180deg, #0a0f1e 0%, #0f172a 50%, #0a0f1e 100%)' }}
+            style={{ height: `${STEPS.length * 100}vh`, background: 'linear-gradient(180deg, #f8fafc 0%, #e0f2fe 50%, #f8fafc 100%)' }}
             aria-label={heading}
         >
             {/* Sticky viewport */}
             <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col">
                 {/* Top accent */}
-                <div className="h-px w-full bg-gradient-to-r from-transparent via-orange-500/60 to-transparent shrink-0" />
+                <div className="h-px w-full bg-gradient-to-r from-transparent via-sky-500/60 to-transparent shrink-0" />
 
                 {/* Progress bar */}
-                <div className="absolute top-0 left-0 h-[3px] bg-gradient-to-r from-orange-500 to-amber-400 z-30 transition-[width] duration-150" style={{ width: `${progress * 100}%` }} />
+                <div className="absolute top-0 left-0 h-[3px] bg-gradient-to-r from-sky-500 to-sky-400 z-30 transition-[width] duration-150" style={{ width: `${progress * 100}%` }} />
 
                 <div className="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center py-10">
                     {/* LEFT: Text that changes */}
                     <div className="order-2 lg:order-1 relative">
                         {/* Section header */}
                         <div className="mb-6 lg:mb-10">
-                            <div className="inline-flex items-center gap-2 px-3 py-1.5 border border-orange-500/40 bg-orange-500/10 mb-4">
-                                <Zap className="w-3 h-3 text-orange-400" />
-                                <span className="text-orange-400 text-[10px] tracking-[0.25em] uppercase font-brand font-semibold">{sectionLabel}</span>
+                            <div className="inline-flex items-center gap-2 px-3 py-1.5 border border-sky-500/40 bg-sky-500/10 mb-4">
+                                <Zap className="w-3 h-3 text-sky-400" />
+                                <span className="text-sky-400 text-[10px] tracking-[0.25em] uppercase font-brand font-semibold">{sectionLabel}</span>
                             </div>
-                            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white tracking-tight leading-tight">
+                            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 tracking-tight leading-tight">
                                 {heading}
                             </h2>
                         </div>
@@ -154,25 +154,25 @@ export default function EnergyJourney() {
                                     )}
                                 >
                                     <div className="flex items-center gap-3 mb-3">
-                                        <span className="font-brand text-orange-500 text-sm font-bold tabular-nums">
+                                        <span className="font-brand text-sky-500 text-sm font-bold tabular-nums">
                                             0{i + 1}
                                         </span>
-                                        <span className="h-px w-8 bg-orange-500/50" />
-                                        <span className="text-orange-300/80 text-[11px] uppercase tracking-[0.2em] font-semibold">
+                                        <span className="h-px w-8 bg-sky-500/50" />
+                                        <span className="text-sky-300/80 text-[11px] uppercase tracking-[0.2em] font-semibold">
                                             {tag(s)}
                                         </span>
                                     </div>
-                                    <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 tracking-tight leading-[1.1]">
+                                    <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-4 tracking-tight leading-[1.1]">
                                         {title(s)}
                                     </h3>
-                                    <p className="text-sm sm:text-base text-slate-300/90 leading-relaxed max-w-md mb-6">
+                                    <p className="text-sm sm:text-base text-slate-600 leading-relaxed max-w-md mb-6">
                                         {desc(s)}
                                     </p>
                                     <Link
                                         href={`/${locale}/urunlerimiz/kategori/${s.slug}/`}
                                         className="inline-flex items-center gap-2 px-6 py-3 text-white font-semibold text-xs uppercase tracking-widest transition-all duration-300 hover:scale-[1.03]"
                                         style={{
-                                            background: 'linear-gradient(135deg, #f97316, #ea580c)',
+                                            background: 'linear-gradient(135deg, #0ea5e9, #0284c7)',
                                             clipPath: 'polygon(0 0, calc(100% - 9px) 0, 100% 9px, 100% 100%, 9px 100%, 0 calc(100% - 9px))',
                                         }}
                                     >
@@ -190,7 +190,7 @@ export default function EnergyJourney() {
                                     key={s.slug}
                                     className={cn(
                                         'h-1.5 rounded-full transition-all duration-300',
-                                        i === active ? 'w-8 bg-orange-500' : 'w-1.5 bg-white/25'
+                                        i === active ? 'w-8 bg-sky-500' : 'w-1.5 bg-white/25'
                                     )}
                                 />
                             ))}
@@ -200,7 +200,7 @@ export default function EnergyJourney() {
                     {/* RIGHT: Visual that changes (crossfade) */}
                     <div className="order-1 lg:order-2 relative aspect-[4/3] w-full">
                         {/* Glow */}
-                        <div className="absolute -inset-6 rounded-full opacity-40 blur-3xl pointer-events-none" style={{ background: 'radial-gradient(circle, rgba(249,115,22,0.25), transparent 70%)' }} />
+                        <div className="absolute -inset-6 rounded-full opacity-40 blur-3xl pointer-events-none" style={{ background: 'radial-gradient(circle, rgba(14, 165, 233,0.25), transparent 70%)' }} />
                         {STEPS.map((s, i) => (
                             <div
                                 key={s.slug}
@@ -209,7 +209,7 @@ export default function EnergyJourney() {
                                     i === active ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
                                 )}
                             >
-                                <div className="relative w-full h-full overflow-hidden border border-white/10" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))' }}>
+                                <div className="relative w-full h-full overflow-hidden border border-slate-200" style={{ clipPath: 'polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))' }}>
                                     <Image
                                         src={s.image}
                                         alt={title(s)}
@@ -217,9 +217,9 @@ export default function EnergyJourney() {
                                         className="object-cover"
                                         sizes="(max-width: 1024px) 100vw, 50vw"
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-navy-950/70 via-transparent to-transparent" />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent" />
                                     {/* Corner index badge */}
-                                    <div className="absolute top-4 right-4 font-brand text-white/90 text-xs font-bold px-2.5 py-1 bg-black/40 backdrop-blur-sm border border-white/10">
+                                    <div className="absolute top-4 right-4 font-brand text-white/90 text-xs font-bold px-2.5 py-1 bg-black/40 backdrop-blur-sm border border-slate-200">
                                         {i + 1} / {STEPS.length}
                                     </div>
                                 </div>

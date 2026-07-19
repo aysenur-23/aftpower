@@ -30,20 +30,20 @@ export default function CustomSolutions() {
         {
             key: 'consulting',
             icon: Lightbulb,
-            color: 'text-orange-500',
-            bgColor: 'bg-orange-500/5',
-            borderColor: 'border-orange-500/20',
+            color: 'text-sky-500',
+            bgColor: 'bg-sky-500/5',
+            borderColor: 'border-sky-500/20',
             hoverBorder: 'hover:border-blue-400',
-            accentColor: 'bg-orange-500'
+            accentColor: 'bg-sky-500'
         },
         {
             key: 'design',
             icon: Layers,
-            color: 'text-amber-600',
-            bgColor: 'bg-amber-50',
-            borderColor: 'border-amber-200',
-            hoverBorder: 'hover:border-amber-400',
-            accentColor: 'bg-amber-500'
+            color: 'text-sky-600',
+            bgColor: 'bg-sky-50',
+            borderColor: 'border-sky-200',
+            hoverBorder: 'hover:border-sky-400',
+            accentColor: 'bg-sky-500'
         },
         {
             key: 'projectManagement',
@@ -74,7 +74,7 @@ export default function CustomSolutions() {
             <div className="absolute inset-0 opacity-[0.015] bg-[radial-gradient(circle_at_1px_1px,_rgb(0,0,0)_1px,_transparent_0)] bg-[size:32px_32px]" />
 
             {/* Decorative Elements */}
-            <div className="absolute top-20 right-20 w-72 h-72 bg-orange-500/10 rounded-full blur-3xl" />
+            <div className="absolute top-20 right-20 w-72 h-72 bg-sky-500/10 rounded-full blur-3xl" />
             <div className="absolute bottom-20 left-20 w-80 h-80 bg-purple-100/30 rounded-full blur-3xl" />
 
             <div className="container px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative z-10">
@@ -84,9 +84,9 @@ export default function CustomSolutions() {
                     "max-w-3xl mx-auto text-center mb-14 transition-all duration-700 transform",
                     isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 )}>
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/5 border border-orange-500/15 mb-6">
-                        <Sparkles className="w-4 h-4 text-orange-400" />
-                        <span className="text-xs font-bold text-orange-500 uppercase tracking-widest">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/5 border border-sky-500/15 mb-6">
+                        <Sparkles className="w-4 h-4 text-sky-400" />
+                        <span className="text-xs font-bold text-sky-500 uppercase tracking-widest">
                             {locale === 'tr' ? 'Profesyonel Hizmetler' : locale === 'ar' ? 'خدمات احترافية' : 'Professional Services'}
                         </span>
                     </div>
@@ -159,7 +159,7 @@ export default function CustomSolutions() {
                 )} style={{ transitionDelay: '400ms' }}>
                     <Link
                         href={`/${locale}/iletisim/`}
-                        className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-slate-900 text-white font-semibold hover:bg-orange-500 transition-all shadow-lg shadow-slate-200 group"
+                        className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-sky-500 text-white font-semibold hover:bg-sky-500 transition-all shadow-lg shadow-slate-200 group"
                     >
                         <span>{t('requestConsultation')}</span>
                         <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />

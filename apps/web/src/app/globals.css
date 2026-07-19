@@ -7,17 +7,17 @@
 }
 
 @theme inline {
-  /* Brand Colors - AFT Power: Turuncu/Amber aksan */
-  --color-brand-50: #fff7ed;
-  --color-brand-100: #ffedd5;
-  --color-brand-200: #fed7aa;
-  --color-brand-300: #fdba74;
-  --color-brand-400: #fb923c;
-  --color-brand-500: #f97316;
-  --color-brand-600: #ea580c;
-  --color-brand-700: #c2410c;
-  --color-brand-800: #9a3412;
-  --color-brand-900: #7c2d12;
+  /* Brand Colors - AFT Power: Açık mavi aksan */
+  --color-brand-50: #f0f9ff;
+  --color-brand-100: #e0f2fe;
+  --color-brand-200: #bae6fd;
+  --color-brand-300: #7dd3fc;
+  --color-brand-400: #38bdf8;
+  --color-brand-500: #0ea5e9;
+  --color-brand-600: #0284c7;
+  --color-brand-700: #0369a1;
+  --color-brand-800: #075985;
+  --color-brand-900: #0c4a6e;
 
   /* Dark Navy */
   --color-navy-50: #f0f4ff;
@@ -33,9 +33,9 @@
   --color-navy-950: #080f1f;
 
   /* Accent */
-  --color-accent-400: #fb923c;
-  --color-accent-500: #f97316;
-  --color-accent-600: #ea580c;
+  --color-accent-400: #38bdf8;
+  --color-accent-500: #0ea5e9;
+  --color-accent-600: #0284c7;
 }
 
 html {
@@ -77,19 +77,19 @@ p, span, a, li, button, input, textarea, label {
 
 /* Gradient utilities */
 .gradient-power {
-  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #f97316 100%);
+  background: linear-gradient(135deg, #e0f2fe 0%, #7dd3fc 50%, #0ea5e9 100%);
 }
 
 .gradient-orange {
-  background: linear-gradient(to right, #f97316, #ea580c);
+  background: linear-gradient(to right, #0ea5e9, #0284c7);
 }
 
 .gradient-dark {
-  background: linear-gradient(135deg, #0f172a, #172554);
+  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
 }
 
 .text-gradient-power {
-  background: linear-gradient(to right, #f97316, #fb923c);
+  background: linear-gradient(to right, #0ea5e9, #38bdf8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -97,7 +97,7 @@ p, span, a, li, button, input, textarea, label {
 
 /* Legacy compat */
 .gradient-electric {
-  background: linear-gradient(to right, #f97316, #ea580c);
+  background: linear-gradient(to right, #0ea5e9, #0284c7);
 }
 
 /* Animation utilities */
@@ -138,8 +138,8 @@ p, span, a, li, button, input, textarea, label {
 }
 
 @keyframes glow-pulse {
-  0%, 100% { box-shadow: 0 0 20px rgba(249, 115, 22, 0.3); }
-  50% { box-shadow: 0 0 40px rgba(249, 115, 22, 0.6); }
+  0%, 100% { box-shadow: 0 0 20px rgba(14, 165, 233, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(14, 165, 233, 0.6); }
 }
 
 .animate-fade-in {
@@ -177,7 +177,7 @@ p, span, a, li, button, input, textarea, label {
 
 .hover-lift:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 60px rgba(249, 115, 22, 0.15);
+  box-shadow: 0 20px 60px rgba(14, 165, 233, 0.15);
 }
 
 /* Card styles */
@@ -188,8 +188,8 @@ p, span, a, li, button, input, textarea, label {
 }
 
 .card-dark {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(14, 165, 233, 0.04);
+  border: 1px solid rgba(14, 165, 233, 0.12);
   border-radius: 0.25rem;
   backdrop-filter: blur(10px);
 }
@@ -199,8 +199,8 @@ p, span, a, li, button, input, textarea, label {
 }
 
 .card-hover:hover {
-  box-shadow: 0 20px 40px rgba(249, 115, 22, 0.12);
-  border-color: rgba(249, 115, 22, 0.3);
+  box-shadow: 0 20px 40px rgba(14, 165, 233, 0.12);
+  border-color: rgba(14, 165, 233, 0.3);
   transform: translateY(-4px);
 }
 
@@ -219,29 +219,29 @@ p, span, a, li, button, input, textarea, label {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #f97316, #ea580c);
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
   color: white;
   padding: 0.75rem 2rem;
   clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #fb923c, #f97316);
-  box-shadow: 0 0 30px rgba(249, 115, 22, 0.5);
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  box-shadow: 0 0 30px rgba(14, 165, 233, 0.5);
   transform: translateY(-2px);
 }
 
 .btn-outline {
-  border: 1px solid rgba(249, 115, 22, 0.5);
-  color: #f97316;
+  border: 1px solid rgba(14, 165, 233, 0.5);
+  color: #0ea5e9;
   background: transparent;
   padding: 0.75rem 2rem;
 }
 
 .btn-outline:hover {
-  border-color: #f97316;
-  background: rgba(249, 115, 22, 0.1);
-  box-shadow: 0 0 20px rgba(249, 115, 22, 0.2);
+  border-color: #0ea5e9;
+  background: rgba(14, 165, 233, 0.1);
+  box-shadow: 0 0 20px rgba(14, 165, 233, 0.2);
 }
 
 .btn-ghost {
@@ -249,7 +249,7 @@ p, span, a, li, button, input, textarea, label {
 }
 
 .btn-ghost:hover {
-  background: rgba(249, 115, 22, 0.08);
+  background: rgba(14, 165, 233, 0.08);
 }
 
 /* Mobile optimizations */
@@ -309,7 +309,7 @@ p, span, a, li, button, input, textarea, label {
 
 /* Brand glow */
 .brand-glow {
-  text-shadow: 0 0 40px rgba(249, 115, 22, 0.4), 0 0 80px rgba(249, 115, 22, 0.15);
+  text-shadow: 0 0 40px rgba(14, 165, 233, 0.4), 0 0 80px rgba(14, 165, 233, 0.15);
 }
 
 /* Power accent line */
@@ -325,11 +325,11 @@ p, span, a, li, button, input, textarea, label {
   top: 0;
   bottom: 0;
   width: 3px;
-  background: linear-gradient(to bottom, #f97316, #ea580c);
+  background: linear-gradient(to bottom, #0ea5e9, #0284c7);
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: #0f172a; }
-::-webkit-scrollbar-thumb { background: #f97316; border-radius: 2px; }
-::-webkit-scrollbar-thumb:hover { background: #fb923c; }
+::-webkit-scrollbar-track { background: #e0f2fe; }
+::-webkit-scrollbar-thumb { background: #0ea5e9; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #38bdf8; }

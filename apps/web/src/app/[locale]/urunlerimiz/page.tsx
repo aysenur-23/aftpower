@@ -81,19 +81,19 @@ export default async function ProductsPage({ params }: Props) {
             <section className="relative pt-24 pb-12 lg:pt-28 lg:pb-16 overflow-hidden bg-white">
                 {/* Premium Animated Background */}
                 <div className="absolute inset-0 z-0">
-                    <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-orange-500/10 rounded-full blur-[120px] mix-blend-multiply animate-pulse" style={{ animationDuration: '8s' }} />
+                    <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-sky-500/10 rounded-full blur-[120px] mix-blend-multiply animate-pulse" style={{ animationDuration: '8s' }} />
                     <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-indigo-100/40 rounded-full blur-[100px] mix-blend-multiply animate-pulse" style={{ animationDuration: '10s', animationDelay: '2s' }} />
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-sky-50/60 rounded-full blur-[80px]" />
                 </div>
 
                 <div className="container relative z-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
                     {/* Badge */}
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/5 border border-orange-500/15 mb-8">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/5 border border-sky-500/15 mb-8">
                         <span className="relative flex h-2 w-2">
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                            <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-400"></span>
+                            <span className="relative inline-flex rounded-full h-2 w-2 bg-sky-400"></span>
                         </span>
-                        <span className="text-sm font-bold text-orange-500 tracking-widest uppercase">{t('allProductsTitle')}</span>
+                        <span className="text-sm font-bold text-sky-500 tracking-widest uppercase">{t('allProductsTitle')}</span>
                     </div>
 
                     <h1 className="font-bold text-slate-900 tracking-tight leading-[1.1] mb-6">
@@ -103,7 +103,7 @@ export default async function ProductsPage({ params }: Props) {
                         <span className="text-3xl sm:text-4xl lg:text-5xl block mb-2">
                             {hero.titleLine2}{' '}
                             <span className="relative inline-block">
-                                <span className="relative z-10 bg-gradient-to-r from-orange-500 via-indigo-600 to-orange-500 bg-clip-text text-transparent">
+                                <span className="relative z-10 bg-gradient-to-r from-sky-500 via-indigo-600 to-sky-500 bg-clip-text text-transparent">
                                     {hero.titleHighlight}
                                 </span>
                                 {/* Underline decoration */}
@@ -131,7 +131,7 @@ export default async function ProductsPage({ params }: Props) {
                         <div className="container px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                             {/* Category Header */}
                             <div className="flex items-center gap-4 mb-10">
-                                <div className="p-3 bg-orange-500/10 rounded-xl text-orange-500">
+                                <div className="p-3 bg-sky-500/10 rounded-xl text-sky-500">
                                     <Icon className="w-8 h-8" />
                                 </div>
                                 <div>
@@ -168,18 +168,18 @@ export default async function ProductsPage({ params }: Props) {
                                         </div>
 
                                         <div className="mt-auto">
-                                            <div className="flex items-center gap-2 text-xs font-bold text-orange-500 uppercase tracking-widest mb-2">
+                                            <div className="flex items-center gap-2 text-xs font-bold text-sky-500 uppercase tracking-widest mb-2">
                                                 <Icon className="w-3 h-3" />
                                                 <span>{t(`${product.category}.title`)}</span>
                                             </div>
-                                            <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-orange-500 transition-colors">
+                                            <h3 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-sky-500 transition-colors">
                                                 {tDetails(`${product.id}.name`) || product.name}
                                             </h3>
                                             <p className="text-slate-500 text-sm leading-relaxed line-clamp-2 mb-6">
                                                 {tDetails(`${product.id}.description`)}
                                             </p>
 
-                                            <div className="flex items-center gap-2 text-sm font-bold text-slate-900 group-hover:text-orange-500 transition-colors">
+                                            <div className="flex items-center gap-2 text-sm font-bold text-slate-900 group-hover:text-sky-500 transition-colors">
                                                 {t('viewDetails')} <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                                             </div>
                                         </div>
@@ -204,7 +204,7 @@ export default async function ProductsPage({ params }: Props) {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link
                             href={`/${locale}/iletisim/`}
-                            className="px-10 py-5 bg-slate-900 text-white rounded-xl font-bold hover:bg-slate-800 transition-all flex items-center justify-center gap-2 shadow-xl hover:shadow-2xl"
+                            className="px-10 py-5 bg-sky-500 text-white rounded-xl font-bold hover:bg-sky-600 transition-all flex items-center justify-center gap-2 shadow-xl hover:shadow-2xl"
                         >
                             {t('cta.contactUs')}
                             <ArrowRight className="w-5 h-5" />

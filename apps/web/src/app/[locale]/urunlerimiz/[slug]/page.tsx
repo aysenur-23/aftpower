@@ -892,7 +892,7 @@ export default async function ProductDetailPage({ params }: Props) {
                     {/* Background Pattern */}
                     <div className="absolute inset-0 z-0">
                         <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.1)_1px,transparent_1px)] bg-[size:60px_60px]" />
-                        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-orange-500/10 blur-[150px] rounded-full -translate-y-1/2 translate-x-1/3" />
+                        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-sky-500/10 blur-[150px] rounded-full -translate-y-1/2 translate-x-1/3" />
                         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-cyan-100/30 blur-[120px] rounded-full translate-y-1/2 -translate-x-1/3" />
                     </div>
 
@@ -902,9 +902,9 @@ export default async function ProductDetailPage({ params }: Props) {
                             {/* Left Content - Wider Text Area */}
                             <div className="lg:col-span-7 space-y-6 sm:space-y-8 text-center lg:text-left order-2 lg:order-1">
                                 <div className="space-y-6">
-                                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 border border-orange-500/20">
-                                        <span className="flex h-2 w-2 rounded-full bg-orange-400 animate-pulse" />
-                                        <span className="text-xs font-bold text-orange-600 uppercase tracking-wider">
+                                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/10 border border-sky-500/20">
+                                        <span className="flex h-2 w-2 rounded-full bg-sky-400 animate-pulse" />
+                                        <span className="text-xs font-bold text-sky-600 uppercase tracking-wider">
                                             {locale === 'en' ? ({
                                                 'Taşınabilir Enerji Depolama': 'Portable Energy Storage',
                                                 'Yüksek Kapasiteli Taşınabilir Güç': 'High-Capacity Portable Power',
@@ -944,7 +944,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                     </div>
                                     <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-black text-slate-900 tracking-tight leading-[1.05]">
                                         {localizedName.split(' ').slice(0, -2).join(' ')}{' '}
-                                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-cyan-500">
+                                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-cyan-500">
                                             {localizedName.split(' ').slice(-2).join(' ')}
                                         </span>
                                     </h1>
@@ -956,7 +956,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                 {/* Key Specs - Light Theme */}
                                 <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 lg:gap-10 py-4 sm:py-6 px-4 sm:px-6 rounded-xl sm:rounded-2xl bg-white/80 backdrop-blur-sm border border-slate-200 shadow-sm max-w-fit mx-auto lg:mx-0">
                                     <div className="space-y-1 text-left">
-                                        <div className="flex items-center gap-1.5 sm:gap-2 text-orange-500">
+                                        <div className="flex items-center gap-1.5 sm:gap-2 text-sky-500">
                                             <Battery className="h-4 w-4 sm:h-5 sm:w-5" />
                                             <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-slate-500">{locale === 'en' ? 'Energy' : locale === 'ar' ? 'الطاقة' : 'Enerji'}</span>
                                         </div>
@@ -993,7 +993,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                 <div className="flex flex-col sm:flex-row gap-4 pt-2 justify-center lg:justify-start">
                                     <Link
                                         href={`/${locale}/fiyat-teklifi/`}
-                                        className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-bold text-sm transition-all duration-300 shadow-lg shadow-blue-600/25 hover:shadow-xl hover:shadow-blue-600/30"
+                                        className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-sky-500 hover:bg-sky-600 text-white font-bold text-sm transition-all duration-300 shadow-lg shadow-blue-600/25 hover:shadow-xl hover:shadow-blue-600/30"
                                     >
                                         <span>{tDetail('labels.getQuote') || 'Teklif Talep Et'}</span>
                                         <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
@@ -1011,7 +1011,7 @@ export default async function ProductDetailPage({ params }: Props) {
                             <div className="lg:col-span-5 relative order-1 lg:order-2 mb-4 lg:mb-0">
                                 <div className="relative flex items-center justify-center max-w-[280px] sm:max-w-[350px] lg:max-w-none mx-auto">
                                     {/* Decorative Circle - Hidden on mobile */}
-                                    <div className="absolute w-[90%] aspect-square rounded-full bg-gradient-to-br from-blue-100 to-cyan-50 border border-orange-500/15 hidden sm:block" />
+                                    <div className="absolute w-[90%] aspect-square rounded-full bg-gradient-to-br from-blue-100 to-cyan-50 border border-sky-500/15 hidden sm:block" />
 
                                     {/* Product Image */}
                                     <div className="relative w-full max-w-[500px] p-2 sm:p-4 lg:p-8 transition-transform duration-700 hover:scale-[1.03] transform-gpu">
@@ -1027,7 +1027,7 @@ export default async function ProductDetailPage({ params }: Props) {
 
                                     {/* Model Badge */}
                                     <div className="absolute -bottom-2 right-4 sm:right-8 p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-white border border-slate-200 shadow-lg hidden sm:block">
-                                        <div className="text-[10px] font-black text-orange-500 uppercase tracking-widest mb-1">{locale === 'ar' ? 'رقم الموديل' : 'Model ID'}</div>
+                                        <div className="text-[10px] font-black text-sky-500 uppercase tracking-widest mb-1">{locale === 'ar' ? 'رقم الموديل' : 'Model ID'}</div>
                                         <div className="text-lg sm:text-xl font-bold text-slate-900">{translateModelId(product.modelId, locale)}</div>
                                     </div>
                                 </div>
@@ -1050,7 +1050,7 @@ export default async function ProductDetailPage({ params }: Props) {
                         </div>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                             {localizedFeatures.map((feature, index) => (
-                                <div key={index} className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 card hover-lift border border-orange-500/20 rounded-lg sm:rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105">
+                                <div key={index} className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 card hover-lift border border-sky-500/20 rounded-lg sm:rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105">
                                     <CheckCircle className="h-5 w-5 sm:h-6 sm:w-6 text-emerald-500 flex-shrink-0" />
                                     <span className="text-sm sm:text-base text-neutral-700 font-medium">{formatNumber(translateLabel(feature, locale), locale)}</span>
                                 </div>
@@ -1066,9 +1066,9 @@ export default async function ProductDetailPage({ params }: Props) {
 
                         <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
                             <div className="mx-auto max-w-3xl text-center mb-8 sm:mb-10 px-4">
-                                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/20 mb-3">
-                                    <Clock className="w-3.5 h-3.5 text-orange-500" />
-                                    <span className="text-[10px] font-bold text-orange-600 uppercase tracking-wider">
+                                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-sky-500/10 border border-sky-500/20 mb-3">
+                                    <Clock className="w-3.5 h-3.5 text-sky-500" />
+                                    <span className="text-[10px] font-bold text-sky-600 uppercase tracking-wider">
                                         {locale === 'en' ? 'Real-World Performance' : locale === 'ar' ? 'أداء عالم حقيقي' : 'Gerçek Dünya Performansı'}
                                     </span>
                                 </div>
@@ -1093,11 +1093,11 @@ export default async function ProductDetailPage({ params }: Props) {
                                 {product.runtimeStats.map((stat, index) => {
                                     const Icon = getIcon(stat.icon);
                                     return (
-                                        <div key={index} className="group relative p-4 sm:p-5 rounded-2xl bg-white border border-slate-200 hover:border-orange-500/40 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
+                                        <div key={index} className="group relative p-4 sm:p-5 rounded-2xl bg-white border border-slate-200 hover:border-sky-500/40 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
                                             <div className="relative z-10">
                                                 <div className="flex items-center justify-between mb-3">
-                                                    <div className="p-2 rounded-xl bg-orange-500/10 group-hover:bg-blue-200 transition-colors">
-                                                        <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-orange-500" />
+                                                    <div className="p-2 rounded-xl bg-sky-500/10 group-hover:bg-blue-200 transition-colors">
+                                                        <Icon className="w-4 h-4 sm:w-5 sm:h-5 text-sky-500" />
                                                     </div>
                                                     <div className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">{formatNumber(stat.power, locale)
                                                         .replace('MWh', locale === 'ar' ? ' ميغاواط ساعة' : 'MWh')
@@ -1108,7 +1108,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                                 </div>
                                                 <div className="space-y-0.5">
                                                     <h4 className="text-slate-500 font-bold text-[10px] uppercase tracking-wider">{translateLabel(stat.label, locale)}</h4>
-                                                    <div className="text-lg sm:text-xl font-black text-slate-900 tracking-tight group-hover:text-orange-500 transition-colors">
+                                                    <div className="text-lg sm:text-xl font-black text-slate-900 tracking-tight group-hover:text-sky-500 transition-colors">
                                                         {formatNumber(translateLabel(stat.duration, locale), locale)}
                                                     </div>
                                                 </div>
@@ -1162,7 +1162,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                                     { label: 'LED Aydınlatma', power: '80W' }
                                                 ]).map((item, i) => (
                                                     <div key={i} className="flex items-center gap-2 text-slate-600 font-medium text-sm">
-                                                        <div className="w-1.5 h-1.5 rounded-full bg-orange-400" />
+                                                        <div className="w-1.5 h-1.5 rounded-full bg-sky-400" />
                                                         {item.label}: <span className="font-bold text-slate-900 ml-auto">{item.power}</span>
                                                     </div>
                                                 ))}
@@ -1170,7 +1170,7 @@ export default async function ProductDetailPage({ params }: Props) {
                                                     <span className="text-slate-500 font-bold uppercase text-[10px] tracking-widest">
                                                         {locale === 'en' ? 'Total Load' : locale === 'ar' ? 'الحمل الإجمالي' : 'Toplam Yük'}
                                                     </span>
-                                                    <span className="text-xl font-black text-orange-500">≈ {formatNumber('350', locale)} {locale === 'ar' ? 'واط' : 'W'}</span>
+                                                    <span className="text-xl font-black text-sky-500">≈ {formatNumber('350', locale)} {locale === 'ar' ? 'واط' : 'W'}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -1188,14 +1188,14 @@ export default async function ProductDetailPage({ params }: Props) {
                                     </div>
                                 </div>
 
-                                {/* Site Scenario - Now Light Theme with Orange Accents */}
-                                <div className="relative p-8 sm:p-12 rounded-[3rem] bg-gradient-to-br from-amber-50 to-orange-50 border border-amber-100 overflow-hidden group">
+                                {/* Site Scenario - Light Theme with Sky Accents */}
+                                <div className="relative p-8 sm:p-12 rounded-[3rem] bg-gradient-to-br from-sky-50 to-sky-50 border border-sky-100 overflow-hidden group">
                                     <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
-                                        <Hammer className="w-40 h-40 text-amber-600" />
+                                        <Hammer className="w-40 h-40 text-sky-600" />
                                     </div>
                                     <div className="relative z-10 space-y-8">
                                         <div className="space-y-4">
-                                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-[10px] font-bold uppercase tracking-widest border border-amber-200">
+                                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-100 text-sky-700 text-[10px] font-bold uppercase tracking-widest border border-sky-200">
                                                 {locale === 'en' ? 'Example Scenario 02' : locale === 'ar' ? 'سيناريو مثال ٠٢' : 'Örnek Senaryo 02'}
                                             </div>
                                             <h3 className="text-3xl font-black text-slate-900 tracking-tight">
@@ -1213,27 +1213,27 @@ export default async function ProductDetailPage({ params }: Props) {
                                                     { label: 'Saha Aydınlatma', power: '100W' }
                                                 ]).map((item, i) => (
                                                     <div key={i} className="flex items-center gap-2 text-slate-600 font-medium text-sm">
-                                                        <div className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+                                                        <div className="w-1.5 h-1.5 rounded-full bg-sky-500" />
                                                         {item.label}: <span className="font-bold text-slate-900 ml-auto">{item.power}</span>
                                                     </div>
                                                 ))}
-                                                <div className="pt-4 border-t border-amber-200 flex justify-between items-center">
+                                                <div className="pt-4 border-t border-sky-200 flex justify-between items-center">
                                                     <span className="text-slate-500 font-bold uppercase text-[10px] tracking-widest">
                                                         {locale === 'en' ? 'Total Load' : locale === 'ar' ? 'الحمل الإجمالي' : 'Toplam Yük'}
                                                     </span>
-                                                    <span className="text-xl font-black text-amber-600">≈ {formatNumber('1100', locale)} {locale === 'ar' ? 'واط' : 'W'}</span>
+                                                    <span className="text-xl font-black text-sky-600">≈ {formatNumber('1100', locale)} {locale === 'ar' ? 'واط' : 'W'}</span>
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div className="space-y-4">
-                                            <div className="flex items-center justify-between p-4 rounded-2xl bg-white shadow-sm border border-amber-100">
+                                            <div className="flex items-center justify-between p-4 rounded-2xl bg-white shadow-sm border border-sky-100">
                                                 <span className="font-bold text-slate-900">{locale === 'ar' ? 'حزمة ٢.٧ كيلوواط ساعة' : `2.7 kWh ${locale === 'en' ? 'Pack' : 'Paket'}`}</span>
-                                                <span className="text-amber-600 font-black text-lg">≈ {formatNumber('2.3', locale)} {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
+                                                <span className="text-sky-600 font-black text-lg">≈ {formatNumber('2.3', locale)} {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
                                             </div>
-                                            <div className="flex items-center justify-between p-4 rounded-2xl bg-white shadow-sm border border-amber-100">
+                                            <div className="flex items-center justify-between p-4 rounded-2xl bg-white shadow-sm border border-sky-100">
                                                 <span className="font-bold text-slate-900">{locale === 'ar' ? 'حزمة ٥.٤ كيلوواط ساعة' : `5.4 kWh ${locale === 'en' ? 'Pack' : 'Paket'}`}</span>
-                                                <span className="text-amber-600 font-black text-lg">≈ {formatNumber('4.8', locale)}–{formatNumber('5', locale)} {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
+                                                <span className="text-sky-600 font-black text-lg">≈ {formatNumber('4.8', locale)}–{formatNumber('5', locale)} {locale === 'en' ? 'Hours' : locale === 'ar' ? 'ساعات' : 'Saat'}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1262,9 +1262,9 @@ export default async function ProductDetailPage({ params }: Props) {
                                     {product.usageAreas.map((area, index) => {
                                         const IconComponent = getIcon(area.icon);
                                         return (
-                                            <div key={index} className="flex items-center gap-2 sm:gap-3 md:gap-4 p-3 sm:p-4 md:p-6 card hover-lift border-2 border-orange-500/20 rounded-lg sm:rounded-xl md:rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-gradient-to-r from-blue-50 to-slate-50 min-h-[60px] sm:min-h-[70px]">
+                                            <div key={index} className="flex items-center gap-2 sm:gap-3 md:gap-4 p-3 sm:p-4 md:p-6 card hover-lift border-2 border-sky-500/20 rounded-lg sm:rounded-xl md:rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 bg-gradient-to-r from-blue-50 to-slate-50 min-h-[60px] sm:min-h-[70px]">
                                                 <div className="flex-shrink-0">
-                                                    <div className="flex h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 items-center justify-center rounded-lg sm:rounded-xl bg-gradient-to-r from-orange-400 to-slate-600 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                                    <div className="flex h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 items-center justify-center rounded-lg sm:rounded-xl bg-gradient-to-r from-sky-400 to-slate-600 shadow-lg group-hover:scale-110 transition-transform duration-300">
                                                         <IconComponent className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-white" />
                                                     </div>
                                                 </div>
@@ -1295,12 +1295,12 @@ export default async function ProductDetailPage({ params }: Props) {
                             {/* Card 1 */}
                             <div className="text-center group border border-purple-300 rounded-xl sm:rounded-2xl p-4 sm:p-6 hover:border-purple-500 transition-all duration-300 hover:shadow-lg w-full max-w-xs bg-white">
                                 <div className="relative inline-block mb-4 sm:mb-6">
-                                    <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-orange-500 rounded-xl sm:rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
-                                    <div className="relative flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-xl sm:rounded-2xl bg-gradient-to-r from-orange-400 to-orange-500 shadow-xl group-hover:scale-110 transition-transform duration-500">
+                                    <div className="absolute inset-0 bg-gradient-to-r from-sky-400 to-sky-500 rounded-xl sm:rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
+                                    <div className="relative flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-xl sm:rounded-2xl bg-gradient-to-r from-sky-400 to-sky-500 shadow-xl group-hover:scale-110 transition-transform duration-500">
                                         <Shield className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
                                     </div>
                                 </div>
-                                <h3 className="text-lg sm:text-xl font-bold text-neutral-900 transition-colors duration-300 mb-3 sm:mb-4 group-hover:text-orange-500">
+                                <h3 className="text-lg sm:text-xl font-bold text-neutral-900 transition-colors duration-300 mb-3 sm:mb-4 group-hover:text-sky-500">
                                     {locale === 'tr' ? 'Güvenilir Teknoloji' : locale === 'ar' ? 'تقنية موثوقة' : 'Reliable Technology'}
                                 </h3>
                                 <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
@@ -1311,12 +1311,12 @@ export default async function ProductDetailPage({ params }: Props) {
                             {/* Card 2 */}
                             <div className="text-center group border border-purple-300 rounded-xl sm:rounded-2xl p-4 sm:p-6 hover:border-purple-500 transition-all duration-300 hover:shadow-lg w-full max-w-xs bg-white">
                                 <div className="relative inline-block mb-4 sm:mb-6">
-                                    <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-slate-600 rounded-xl sm:rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
-                                    <div className="relative flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-xl sm:rounded-2xl bg-gradient-to-r from-orange-400 to-slate-600 shadow-xl group-hover:scale-110 transition-transform duration-500">
+                                    <div className="absolute inset-0 bg-gradient-to-r from-sky-400 to-slate-600 rounded-xl sm:rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
+                                    <div className="relative flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-xl sm:rounded-2xl bg-gradient-to-r from-sky-400 to-slate-600 shadow-xl group-hover:scale-110 transition-transform duration-500">
                                         <Battery className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
                                     </div>
                                 </div>
-                                <h3 className="text-lg sm:text-xl font-bold text-neutral-900 transition-colors duration-300 mb-3 sm:mb-4 group-hover:text-orange-500">
+                                <h3 className="text-lg sm:text-xl font-bold text-neutral-900 transition-colors duration-300 mb-3 sm:mb-4 group-hover:text-sky-500">
                                     {locale === 'tr' ? 'Yüksek Performans' : locale === 'ar' ? 'أداء عالي' : 'High Performance'}
                                 </h3>
                                 <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
@@ -1327,12 +1327,12 @@ export default async function ProductDetailPage({ params }: Props) {
                             {/* Card 3 */}
                             <div className="text-center group border border-purple-300 rounded-xl sm:rounded-2xl p-4 sm:p-6 hover:border-purple-500 transition-all duration-300 hover:shadow-lg w-full max-w-xs sm:col-span-2 lg:col-span-1 sm:max-w-md lg:max-w-xs bg-white">
                                 <div className="relative inline-block mb-4 sm:mb-6">
-                                    <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl sm:rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
-                                    <div className="relative flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-xl sm:rounded-2xl bg-gradient-to-r from-orange-500 to-red-500 shadow-xl group-hover:scale-110 transition-transform duration-500">
+                                    <div className="absolute inset-0 bg-gradient-to-r from-sky-500 to-red-500 rounded-xl sm:rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-500"></div>
+                                    <div className="relative flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-xl sm:rounded-2xl bg-gradient-to-r from-sky-500 to-red-500 shadow-xl group-hover:scale-110 transition-transform duration-500">
                                         <Globe className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
                                     </div>
                                 </div>
-                                <h3 className="text-lg sm:text-xl font-bold text-neutral-900 transition-colors duration-300 mb-3 sm:mb-4 group-hover:text-orange-600">
+                                <h3 className="text-lg sm:text-xl font-bold text-neutral-900 transition-colors duration-300 mb-3 sm:mb-4 group-hover:text-sky-600">
                                     {locale === 'tr' ? 'Global Kalite' : locale === 'ar' ? 'جودة عالمية' : 'Global Quality'}
                                 </h3>
                                 <p className="text-xs sm:text-sm text-neutral-600 leading-relaxed">
@@ -1356,14 +1356,14 @@ export default async function ProductDetailPage({ params }: Props) {
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">
                                 <Link
                                     href={`/${locale}/fiyat-teklifi/`}
-                                    className="btn btn-primary w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg bg-gradient-to-r from-cyan-500 to-orange-600 hover:from-cyan-600 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 sm:gap-3"
+                                    className="btn btn-primary w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg bg-gradient-to-r from-cyan-500 to-sky-600 hover:from-cyan-600 hover:to-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 sm:gap-3"
                                 >
                                     <span>{tDetail('labels.getQuote') || 'Fiyat Teklifi Talep Et'}</span>
                                     <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" />
                                 </Link>
                                 <Link
                                     href={`/${locale}/iletisim/`}
-                                    className="btn btn-primary w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg bg-gradient-to-r from-orange-500 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 sm:gap-3"
+                                    className="btn btn-primary w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg bg-gradient-to-r from-sky-500 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 sm:gap-3"
                                 >
                                     <span>{locale === 'tr' ? 'Uzman Danışmanlığı' : locale === 'ar' ? 'استشارة الخبراء' : 'Expert Consultation'}</span>
                                 </Link>

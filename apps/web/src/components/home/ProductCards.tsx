@@ -87,7 +87,7 @@ export default function ProductCards() {
                     "mb-8 lg:mb-10 text-center transition-all duration-1000 ease-out transform",
                     isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 )} ref={sectionRef}>
-                    <span className="text-orange-500 font-brand font-bold tracking-[0.2em] text-[10px] uppercase mb-4 block">
+                    <span className="text-sky-500 font-brand font-bold tracking-[0.2em] text-[10px] uppercase mb-4 block">
                         {locale === 'tr' ? 'AFT POWER ENERJİ' : locale === 'ar' ? 'AFT Power للطاقة' : 'AFT POWER ENERGY'}
                     </span>
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900">
@@ -130,7 +130,7 @@ function CategoryCard({ category, index, locale, t }: { category: any, index: nu
                         "opacity-0 scale-95",
                         index % 2 === 0 ? "-translate-x-12" : "translate-x-12"
                     ),
-                "hover:z-10 hover:-translate-y-2 hover:shadow-xl hover:shadow-orange-500/10 hover:border-orange-500/30"
+                "hover:z-10 hover:-translate-y-2 hover:shadow-xl hover:shadow-sky-500/10 hover:border-sky-500/30"
             )}
         >
             {/* Full-Bleed Background Image */}
@@ -147,7 +147,7 @@ function CategoryCard({ category, index, locale, t }: { category: any, index: nu
 
             {/* Content */}
             <div className="absolute bottom-5 left-6 sm:bottom-7 sm:left-8 z-20 flex flex-col items-start text-left max-w-[90%] pointer-events-none">
-                <h3 className="text-2xl sm:text-3xl font-bold text-white tracking-tight leading-tight group-hover:text-orange-300 transition-colors duration-300 drop-shadow-lg">
+                <h3 className="text-2xl sm:text-3xl font-bold text-white tracking-tight leading-tight group-hover:text-sky-300 transition-colors duration-300 drop-shadow-lg">
                     {t.has(`${category.key}.title`) ? t(`${category.key}.title`) : category.defaultTitle}
                 </h3>
 

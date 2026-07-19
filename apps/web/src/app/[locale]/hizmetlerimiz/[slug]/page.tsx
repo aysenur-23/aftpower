@@ -60,7 +60,7 @@ export default async function ServiceDetailPage({ params }: Props) {
             <section className="relative pt-24 pb-16 lg:pt-28 lg:pb-20 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-emerald-50/20">
                 {/* Decorative Background Elements */}
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-emerald-100/30 rounded-full blur-[100px] translate-x-1/3 -translate-y-1/3 pointer-events-none" />
-                <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-orange-500/10 rounded-full blur-[80px] -translate-x-1/3 translate-y-1/3 pointer-events-none" />
+                <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-sky-500/10 rounded-full blur-[80px] -translate-x-1/3 translate-y-1/3 pointer-events-none" />
 
                 <div className="container relative z-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
@@ -154,8 +154,8 @@ export default async function ServiceDetailPage({ params }: Props) {
 
                 <div className="container relative z-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                     <div className="text-center max-w-3xl mx-auto mb-20">
-                        <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-orange-500/5 border border-orange-500/15">
-                            <span className="text-[10px] font-bold text-orange-500 uppercase tracking-widest">{t('whyUs.title')}</span>
+                        <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-sky-500/5 border border-sky-500/15">
+                            <span className="text-[10px] font-bold text-sky-500 uppercase tracking-widest">{t('whyUs.title')}</span>
                         </div>
                         <h2 className="text-3xl md:text-5xl font-heavy text-slate-900 tracking-tight leading-none mb-6">
                             {t(`${service.key}.whyUs.title`)}
@@ -176,8 +176,8 @@ export default async function ServiceDetailPage({ params }: Props) {
                                     key={index}
                                     className="p-10 bg-white/60 backdrop-blur-md rounded-[2.5rem] border border-white shadow-xl shadow-slate-200/50 hover:shadow-2xl hover:shadow-blue-200/40 transition-all duration-500 hover:-translate-y-2 group"
                                 >
-                                    <div className="w-16 h-16 rounded-2xl bg-white shadow-lg flex items-center justify-center mb-8 mx-auto group-hover:bg-orange-500 group-hover:text-white transition-all duration-500">
-                                        <Icon className="h-7 w-7 text-orange-500 group-hover:text-white transition-colors duration-500" />
+                                    <div className="w-16 h-16 rounded-2xl bg-white shadow-lg flex items-center justify-center mb-8 mx-auto group-hover:bg-sky-500 group-hover:text-white transition-all duration-500">
+                                        <Icon className="h-7 w-7 text-sky-500 group-hover:text-white transition-colors duration-500" />
                                     </div>
                                     <h3 className="text-xl font-bold text-slate-900 mb-4">{item.title}</h3>
                                     <p className="text-slate-500 text-sm leading-relaxed">
@@ -209,7 +209,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                                 className="relative p-8 bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all group"
                             >
                                 <div className="flex items-start gap-4">
-                                    <div className="w-10 h-10 rounded-xl bg-orange-500 flex items-center justify-center text-white font-bold flex-shrink-0">
+                                    <div className="w-10 h-10 rounded-xl bg-sky-500 flex items-center justify-center text-white font-bold flex-shrink-0">
                                         {toArabicNumeral(index + 1, locale)}
                                     </div>
                                     <div>
@@ -238,7 +238,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link
                                 href={`/${locale}/iletisim/`}
-                                className="px-8 py-4 bg-slate-900 text-white rounded-xl font-semibold hover:bg-slate-800 transition-all flex items-center justify-center gap-2"
+                                className="px-8 py-4 bg-sky-500 text-white rounded-xl font-semibold hover:bg-sky-600 transition-all flex items-center justify-center gap-2"
                             >
                                 {t('freeConsultation')}
                                 <ArrowRight className="w-4 h-4" />

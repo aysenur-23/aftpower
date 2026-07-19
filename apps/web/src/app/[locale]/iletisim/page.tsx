@@ -71,8 +71,8 @@ export default function Iletisim() {
             title: t('phone'),
             value: locale === 'ar' ? '+٩٠ (٥٥١) ٨٢٩-١٦١٣' : '+90 (551) 829-1613',
             href: 'tel:+905518291613',
-            color: 'text-orange-500',
-            bg: 'bg-orange-500/5'
+            color: 'text-sky-500',
+            bg: 'bg-sky-500/5'
         },
         {
             icon: Mail,
@@ -87,8 +87,8 @@ export default function Iletisim() {
             title: t('address'),
             value: locale === 'ar' ? 'حي فوزي تشاكماك، شارع الألفية رقم: 81، كاراتاي/قونية' : locale === 'en' ? 'Fevzi Cakmak District, Milenyum Street No:81 Karatay/KONYA' : 'Fevzi Çakmak Mahallesi Milenyum Caddesi No:81 Karatay/KONYA',
             href: 'https://maps.app.goo.gl/dEJViRBejc7dpB3WA',
-            color: 'text-orange-600',
-            bg: 'bg-orange-50'
+            color: 'text-sky-600',
+            bg: 'bg-sky-50'
         }
     ];
 
@@ -97,13 +97,13 @@ export default function Iletisim() {
             {/* Hero Section - Clean & Simple */}
             <section className="relative pt-28 pb-12 lg:pt-32 lg:pb-16 flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50">
                 <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.1)_1px,transparent_1px)] bg-[size:40px_40px]" />
-                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-orange-500/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/3" />
+                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-sky-500/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/3" />
 
                 <div className="container relative z-10 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto text-center">
                     <div className="space-y-4">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 border border-orange-500/20">
-                            <span className="flex h-2 w-2 rounded-full bg-orange-400 animate-pulse" />
-                            <span className="text-xs font-bold text-orange-600 uppercase tracking-wider">
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/10 border border-sky-500/20">
+                            <span className="flex h-2 w-2 rounded-full bg-sky-400 animate-pulse" />
+                            <span className="text-xs font-bold text-sky-600 uppercase tracking-wider">
                                 {locale === 'tr' ? 'İletişim' : locale === 'ar' ? 'اتصل بنا' : 'Contact'}
                             </span>
                         </div>
@@ -140,7 +140,7 @@ export default function Iletisim() {
                                         type="text"
                                         name="name"
                                         required
-                                        className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-orange-400/10 focus:border-blue-500 transition-all font-medium text-slate-900"
+                                        className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-blue-500 transition-all font-medium text-slate-900"
                                     />
                                 </div>
                                 <div className="space-y-1.5">
@@ -149,7 +149,7 @@ export default function Iletisim() {
                                         type="email"
                                         name="email"
                                         required
-                                        className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-orange-400/10 focus:border-blue-500 transition-all font-medium text-slate-900"
+                                        className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-blue-500 transition-all font-medium text-slate-900"
                                     />
                                 </div>
                             </div>
@@ -159,7 +159,7 @@ export default function Iletisim() {
                                     type="tel"
                                     name="phone"
                                     placeholder={locale === 'ar' ? '+٩٠ ٥XX XXX XX XX' : '+90 5XX XXX XX XX'}
-                                    className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-orange-400/10 focus:border-blue-500 transition-all font-medium text-slate-900"
+                                    className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-blue-500 transition-all font-medium text-slate-900"
                                     dir="ltr"
                                 />
                             </div>
@@ -169,7 +169,7 @@ export default function Iletisim() {
                                     type="text"
                                     name="subject"
                                     required
-                                    className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-orange-400/10 focus:border-blue-500 transition-all font-medium text-slate-900"
+                                    className="w-full h-12 px-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-blue-500 transition-all font-medium text-slate-900"
                                 />
                             </div>
                             <div className="space-y-1.5">
@@ -178,13 +178,13 @@ export default function Iletisim() {
                                     name="message"
                                     rows={5}
                                     required
-                                    className="w-full p-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-orange-400/10 focus:border-blue-500 transition-all font-medium text-slate-900 resize-none"
+                                    className="w-full p-4 bg-white border border-slate-200 rounded-xl focus:ring-2 focus:ring-sky-400/10 focus:border-blue-500 transition-all font-medium text-slate-900 resize-none"
                                 />
                             </div>
                             <button
                                 type="submit"
                                 disabled={isSubmitting}
-                                className="inline-flex items-center justify-center gap-3 h-14 px-10 bg-orange-500 text-white rounded-xl font-bold hover:bg-slate-900 transition-all shadow-lg shadow-blue-100 disabled:opacity-50"
+                                className="inline-flex items-center justify-center gap-3 h-14 px-10 bg-sky-500 text-white rounded-xl font-bold hover:bg-sky-600 transition-all shadow-lg shadow-blue-100 disabled:opacity-50"
                             >
                                 {isSubmitting ? (
                                     <div className="w-5 h-5 border-3 border-white/30 border-t-white rounded-full animate-spin" />
@@ -224,7 +224,7 @@ export default function Iletisim() {
                                             target={method.icon === MapPin ? "_blank" : undefined}
                                             rel={method.icon === MapPin ? "noopener noreferrer" : undefined}
                                             dir={method.icon === MapPin ? undefined : "ltr"}
-                                            className="text-[17px] font-bold text-slate-900 hover:text-orange-500 transition-colors"
+                                            className="text-[17px] font-bold text-slate-900 hover:text-sky-500 transition-colors"
                                         >
                                             {method.value}
                                         </a>

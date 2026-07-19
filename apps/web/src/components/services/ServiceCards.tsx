@@ -100,7 +100,7 @@ function AnimatedServiceCard({ service, index, locale, t }: { service: any, inde
                         "opacity-0 scale-95",
                         index % 2 === 0 ? "-translate-x-12" : "translate-x-12"
                     ),
-                "hover:z-10 hover:-translate-y-3 hover:shadow-2xl hover:border-orange-500/15"
+                "hover:z-10 hover:-translate-y-3 hover:shadow-2xl hover:border-sky-500/15"
             )}
         >
             {/* Full-Bleed Background Image */}
@@ -117,12 +117,12 @@ function AnimatedServiceCard({ service, index, locale, t }: { service: any, inde
 
             {/* Content - Moved slightly lower and more compact */}
             <div className="absolute bottom-6 left-8 sm:bottom-8 sm:left-10 z-20 flex flex-col items-start text-left max-w-[90%] pointer-events-none">
-                <div className="mb-2 px-2.5 py-0.5 rounded-full bg-orange-400/10 backdrop-blur-md border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <div className="mb-2 px-2.5 py-0.5 rounded-full bg-sky-400/10 backdrop-blur-md border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                     <span className="text-[9px] font-bold text-blue-300 uppercase tracking-widest">
                         {t('serviceTag')}
                     </span>
                 </div>
-                <h3 className="text-xl sm:text-2xl font-extrabold text-white tracking-tighter leading-tight group-hover:text-orange-400 transition-colors duration-300">
+                <h3 className="text-xl sm:text-2xl font-extrabold text-white tracking-tighter leading-tight group-hover:text-sky-400 transition-colors duration-300">
                     {t(`${service.key}.title`)}
                 </h3>
 

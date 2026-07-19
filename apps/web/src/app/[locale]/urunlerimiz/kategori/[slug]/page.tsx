@@ -90,7 +90,7 @@ export default async function CategoryPage({ params }: Props) {
                 {/* Refined Background Pattern */}
                 <div className="absolute inset-0 z-0 pointer-events-none">
                     <div className="absolute inset-0 opacity-[0.035] bg-[linear-gradient(rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.1)_1px,transparent_1px)] bg-[size:50px_50px]" />
-                    <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-orange-500/10 blur-[130px] rounded-full -translate-y-1/2 translate-x-1/3 animate-pulse duration-[8000ms]" />
+                    <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-sky-500/10 blur-[130px] rounded-full -translate-y-1/2 translate-x-1/3 animate-pulse duration-[8000ms]" />
                     <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-cyan-100/20 blur-[100px] rounded-full translate-y-1/2 -translate-x-1/3" />
                 </div>
 
@@ -100,11 +100,11 @@ export default async function CategoryPage({ params }: Props) {
                         <div className="max-w-2xl text-center lg:text-left mx-auto lg:mx-0 order-2 lg:order-1 animate-in slide-in-from-bottom-6 fade-in duration-700">
                             {/* Breadcrumb / Badge */}
                             <div className="flex items-center gap-3 mb-8 justify-center lg:justify-start">
-                                <Link href={`/${locale}/urunlerimiz`} className="text-sm font-semibold text-slate-500 hover:text-orange-500 transition-colors uppercase tracking-wide">
+                                <Link href={`/${locale}/urunlerimiz`} className="text-sm font-semibold text-slate-500 hover:text-sky-500 transition-colors uppercase tracking-wide">
                                     {t('allProducts')}
                                 </Link>
                                 <span className="text-slate-300">/</span>
-                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-500/5 border border-orange-500/15 text-orange-600 text-xs font-bold uppercase tracking-widest backdrop-blur-md shadow-sm ring-1 ring-orange-400/10">
+                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/5 border border-sky-500/15 text-sky-600 text-xs font-bold uppercase tracking-widest backdrop-blur-md shadow-sm ring-1 ring-sky-400/10">
                                     {t(`${category.titleKey}.title`)}
                                 </div>
                             </div>
@@ -121,9 +121,9 @@ export default async function CategoryPage({ params }: Props) {
 
                             {/* Enhanced Feature Pills */}
                             <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-                                <div className="px-6 py-3 rounded-2xl bg-white/60 border border-slate-200/60 shadow-md backdrop-blur-xl text-slate-700 font-semibold text-sm flex items-center gap-3 hover:scale-105 transition-transform duration-300 hover:border-orange-500/20 cursor-default">
-                                    <span className={`w-2.5 h-2.5 rounded-full ring-2 ring-offset-1 ring-offset-slate-50 ${slug === 'portable' ? 'bg-orange-400 ring-blue-300' :
-                                        slug === 'vehicle' ? 'bg-orange-500 ring-orange-300' :
+                                <div className="px-6 py-3 rounded-2xl bg-white/60 border border-slate-200/60 shadow-md backdrop-blur-xl text-slate-700 font-semibold text-sm flex items-center gap-3 hover:scale-105 transition-transform duration-300 hover:border-sky-500/20 cursor-default">
+                                    <span className={`w-2.5 h-2.5 rounded-full ring-2 ring-offset-1 ring-offset-slate-50 ${slug === 'portable' ? 'bg-sky-400 ring-blue-300' :
+                                        slug === 'vehicle' ? 'bg-sky-500 ring-sky-300' :
                                             slug === 'cabin' ? 'bg-emerald-500 ring-emerald-300' :
                                                 slug === 'charging' ? 'bg-cyan-500 ring-cyan-300' :
                                                     slug === 'battery' ? 'bg-purple-500 ring-purple-300' :
@@ -143,7 +143,7 @@ export default async function CategoryPage({ params }: Props) {
                         {/* Right Column: Hero Image (Enhanced Float & Shadow) */}
                         <div className="relative order-1 lg:order-2 flex justify-center animate-in zoom-in-95 fade-in duration-1000 delay-200">
                             {/* Decorative Circle with Border */}
-                            <div className="absolute w-[95%] aspect-square rounded-full bg-gradient-to-br from-blue-50 to-indigo-50/30 border border-orange-500/15 -z-10 animate-spin-slow duration-[30s]" />
+                            <div className="absolute w-[95%] aspect-square rounded-full bg-gradient-to-br from-blue-50 to-indigo-50/30 border border-sky-500/15 -z-10 animate-spin-slow duration-[30s]" />
 
                             <div className="relative w-full aspect-square max-w-[450px] p-6 flex items-center justify-center filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.12)] hover:drop-shadow-[0_30px_60px_rgba(0,0,0,0.15)] transition-all duration-500 hover:scale-[1.02]">
                                 <Image
@@ -189,16 +189,16 @@ export default async function CategoryPage({ params }: Props) {
                                     </div>
 
                                     <div className="p-8 flex flex-col flex-grow">
-                                        <h3 className="text-xl font-bold text-slate-900 leading-tight group-hover:text-orange-500 transition-colors mb-3">
+                                        <h3 className="text-xl font-bold text-slate-900 leading-tight group-hover:text-sky-500 transition-colors mb-3">
                                             {productName}
                                         </h3>
                                         <p className="text-slate-500 text-sm leading-relaxed mb-6 line-clamp-2">
                                             {productDesc}
                                         </p>
 
-                                        <div className="mt-auto pt-6 border-t border-slate-100 flex items-center justify-between text-sm font-semibold text-slate-600 group-hover:text-orange-500 transition-colors">
+                                        <div className="mt-auto pt-6 border-t border-slate-100 flex items-center justify-between text-sm font-semibold text-slate-600 group-hover:text-sky-500 transition-colors">
                                             <span>{t('viewDetails')}</span>
-                                            <div className="w-8 h-8 rounded-full bg-slate-100 group-hover:bg-orange-500/10 text-slate-600 group-hover:text-orange-500 flex items-center justify-center transition-colors">
+                                            <div className="w-8 h-8 rounded-full bg-slate-100 group-hover:bg-sky-500/10 text-slate-600 group-hover:text-sky-500 flex items-center justify-center transition-colors">
                                                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
                                             </div>
                                         </div>
@@ -223,13 +223,13 @@ export default async function CategoryPage({ params }: Props) {
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link
                                 href={`/${locale}/urunlerimiz`}
-                                className="px-8 py-4 bg-orange-500/5 text-orange-600 border-2 border-orange-500/15 rounded-xl font-bold hover:bg-orange-500/10 hover:border-orange-500/20 transition-all flex items-center justify-center gap-2 shadow-sm hover:shadow"
+                                className="px-8 py-4 bg-sky-500/5 text-sky-600 border-2 border-sky-500/15 rounded-xl font-bold hover:bg-sky-500/10 hover:border-sky-500/20 transition-all flex items-center justify-center gap-2 shadow-sm hover:shadow"
                             >
                                 {t('allProducts')}
                             </Link>
                             <Link
                                 href={`/${locale}/iletisim/`}
-                                className="px-8 py-4 bg-slate-900 text-white rounded-xl font-bold hover:bg-slate-800 transition-all flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+                                className="px-8 py-4 bg-sky-500 text-white rounded-xl font-bold hover:bg-sky-600 transition-all flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
                             >
                                 {locale === 'tr' ? 'İletişime Geç' : locale === 'en' ? 'Contact Us' : 'تواصل معنا'}
                                 <ArrowRight className="w-4 h-4" />

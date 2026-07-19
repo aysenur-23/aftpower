@@ -40,7 +40,7 @@ export default function PortablePower() {
                     isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
                 )}>
                     {/* Background Accents - Subtle Blue Tints */}
-                    <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_top_right,rgba(249,115,22,0.04),transparent_50%)] pointer-events-none" />
+                    <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(circle_at_top_right,rgba(14, 165, 233,0.04),transparent_50%)] pointer-events-none" />
 
                     <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-0">
                         {/* Text Content */}
@@ -50,15 +50,15 @@ export default function PortablePower() {
                                 isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-12"
                             )}>
                                 <div>
-                                    <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-orange-500/10 border border-orange-500/20">
-                                        <div className="w-1.5 h-1.5 rounded-full bg-orange-500 animate-pulse" />
-                                        <span className="text-[10px] font-bold text-orange-600 uppercase tracking-widest">
+                                    <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-sky-500/10 border border-sky-500/20">
+                                        <div className="w-1.5 h-1.5 rounded-full bg-sky-500 animate-pulse" />
+                                        <span className="text-[10px] font-bold text-sky-600 uppercase tracking-widest">
                                             {t('badge') || 'YÜKSEK KAPASİTE'}
                                         </span>
                                     </div>
                                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight leading-[1.1] mb-6">
                                         {t('title1')} <br />
-                                        <span className="bg-gradient-to-r from-orange-500 to-amber-400 bg-clip-text text-transparent">{t('title2')}</span>
+                                        <span className="bg-gradient-to-r from-sky-500 to-sky-400 bg-clip-text text-transparent">{t('title2')}</span>
                                     </h2>
                                     <p className="text-lg text-slate-600 max-w-md leading-relaxed font-medium">
                                         {t('subtitle')}
@@ -70,8 +70,8 @@ export default function PortablePower() {
                                     {features.map((feature, idx) => (
                                         <div key={idx} className="group flex flex-col gap-3">
                                             <div className="flex items-center gap-4">
-                                                <div className="w-12 h-12 rounded-sm bg-white flex items-center justify-center border border-slate-200 group-hover:bg-orange-500 group-hover:border-orange-500 transition-all duration-300 shadow-sm">
-                                                    <feature.icon className="w-6 h-6 text-orange-500 group-hover:text-white transition-colors" />
+                                                <div className="w-12 h-12 rounded-sm bg-white flex items-center justify-center border border-slate-200 group-hover:bg-sky-500 group-hover:border-sky-500 transition-all duration-300 shadow-sm">
+                                                    <feature.icon className="w-6 h-6 text-sky-500 group-hover:text-white transition-colors" />
                                                 </div>
                                                 <div className="text-base font-bold text-slate-900 tracking-tight">
                                                     {t(feature.key)}
@@ -87,7 +87,7 @@ export default function PortablePower() {
                                 <div className="pt-8 flex flex-col sm:flex-row items-center gap-8">
                                     <Link
                                         href={`/${locale}/urunlerimiz/aftpower-5-4-kwh/`}
-                                        className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-5 bg-slate-900 text-white rounded-sm font-bold hover:bg-orange-500 transition-all transform hover:-translate-y-1 hover:shadow-2xl"
+                                        className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-5 bg-sky-500 text-white rounded-sm font-bold hover:bg-sky-500 transition-all transform hover:-translate-y-1 hover:shadow-2xl"
                                     >
                                         {t('viewDetails')}
                                         <ArrowRight className="w-5 h-5" />
@@ -95,7 +95,7 @@ export default function PortablePower() {
 
                                     <Link
                                         href={`/${locale}/fiyat-teklifi/`}
-                                        className="text-sm font-bold text-slate-400 hover:text-orange-500 transition-colors uppercase tracking-widest border-b-2 border-transparent hover:border-orange-500 pb-1"
+                                        className="text-sm font-bold text-slate-400 hover:text-sky-500 transition-colors uppercase tracking-widest border-b-2 border-transparent hover:border-sky-500 pb-1"
                                     >
                                         {t('getQuote')}
                                     </Link>

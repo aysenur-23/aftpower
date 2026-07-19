@@ -63,7 +63,7 @@ export default function MissionStatement() {
             <div className="container px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
                 <div className="text-center space-y-12">
                     <div className="space-y-6">
-                        <span className="text-orange-500 font-bold tracking-widest text-xs uppercase block">
+                        <span className="text-sky-500 font-bold tracking-widest text-xs uppercase block">
                             {locale === 'tr' ? 'VİZYONUMUZ' : locale === 'ar' ? 'رؤيتنا' : 'OUR VISION'}
                         </span>
 
@@ -71,14 +71,14 @@ export default function MissionStatement() {
                         <div className="min-h-[3.5rem] sm:min-h-[4rem] lg:min-h-[5rem] flex items-center justify-center">
                             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight tracking-tight">
                                 <span className={cn(
-                                    "bg-gradient-to-r from-orange-500 to-orange-500 bg-clip-text text-transparent transition-opacity duration-300",
+                                    "bg-gradient-to-r from-sky-500 to-sky-500 bg-clip-text text-transparent transition-opacity duration-300",
                                     isVisible ? "opacity-100" : "opacity-0"
                                 )}>
                                     {displayedText}
                                 </span>
                                 {/* Blinking Cursor */}
                                 <span className={cn(
-                                    "inline-block w-[3px] h-[1em] bg-orange-500 ml-1 align-middle",
+                                    "inline-block w-[3px] h-[1em] bg-sky-500 ml-1 align-middle",
                                     isVisible && displayedText.length < visionText.length ? "animate-pulse" : "opacity-0"
                                 )} />
                             </h2>
@@ -87,7 +87,7 @@ export default function MissionStatement() {
                     <div className="pt-2">
                         <Link
                             href={`/${locale}/kurumsal/`}
-                            className="inline-flex items-center justify-center px-8 py-4 bg-[#0f172a] text-white font-bold transition-all duration-300 shadow-xl shadow-slate-200 hover:bg-orange-500 hover:shadow-blue-100 transform hover:-translate-y-1"
+                            className="inline-flex items-center justify-center px-8 py-4 bg-sky-500 text-white font-bold transition-all duration-300 shadow-xl shadow-slate-200 hover:bg-sky-600 hover:shadow-blue-100 transform hover:-translate-y-1"
                         >
                             {t('button')}
                             <ArrowRight className="ml-2 h-5 w-5" />

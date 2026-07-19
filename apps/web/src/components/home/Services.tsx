@@ -49,7 +49,7 @@ export default function Services() {
                     <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 mb-6">
                         {t('title')}
                     </h2>
-                    <div className="w-16 h-1 bg-orange-500 mx-auto rounded-full opacity-20" />
+                    <div className="w-16 h-1 bg-sky-500 mx-auto rounded-full opacity-20" />
                 </div>
                 {/* Services Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto px-4">
@@ -96,7 +96,7 @@ function AnimatedServiceCard({ service, index, locale, t }: { service: any, inde
                         "opacity-0 scale-95",
                         index % 2 === 0 ? "-translate-x-12" : "translate-x-12"
                     ),
-                "hover:z-10 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-100/50 hover:border-orange-500/20"
+                "hover:z-10 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-100/50 hover:border-sky-500/20"
             )}
         >
             {/* Full-Bleed Background Image */}

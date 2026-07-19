@@ -89,7 +89,7 @@ export default async function LocaleLayout({ children, params }: Props) {
             <head>
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-                <meta name="theme-color" content="#0f172a" />
+                <meta name="theme-color" content="#0ea5e9" />
             </head>
             <body className="antialiased" suppressHydrationWarning>
                 <NextIntlClientProvider messages={messages}>

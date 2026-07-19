@@ -70,7 +70,7 @@ export default function Features() {
                         className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight"
                     >
                         <span className="block mb-2">{t('title1')}</span>
-                        <span className="bg-gradient-to-r from-orange-500 to-orange-400 bg-clip-text text-transparent">
+                        <span className="bg-gradient-to-r from-sky-500 to-sky-400 bg-clip-text text-transparent">
                             {t('title2')}
                         </span>
                     </h2>
@@ -81,12 +81,12 @@ export default function Features() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     {features.map((feature, index) => (
                         <div key={index} className="group">
-                            <div className="bg-white/80 backdrop-blur-md border border-slate-200/60 rounded-sm p-8 sm:p-10 text-center hover:bg-white hover:shadow-2xl hover:border-orange-200 transition-all duration-500 hover:-translate-y-2 h-full flex flex-col">
+                            <div className="bg-white/80 backdrop-blur-md border border-slate-200/60 rounded-sm p-8 sm:p-10 text-center hover:bg-white hover:shadow-2xl hover:border-sky-200 transition-all duration-500 hover:-translate-y-2 h-full flex flex-col">
                                 <div className="mx-auto mb-8 relative">
-                                    <div className="w-16 h-16 rounded-sm bg-slate-50 shadow-xl shadow-orange-100 flex items-center justify-center text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition-all duration-500">
+                                    <div className="w-16 h-16 rounded-sm bg-slate-50 shadow-xl shadow-sky-100 flex items-center justify-center text-sky-500 group-hover:bg-sky-500 group-hover:text-white transition-all duration-500">
                                         <feature.icon className="w-8 h-8" strokeWidth={1.5} />
                                     </div>
-                                    <div className="absolute -bottom-2 -right-2 w-6 h-6 rounded-sm bg-orange-50 text-orange-600 flex items-center justify-center text-[10px] font-bold border border-white">
+                                    <div className="absolute -bottom-2 -right-2 w-6 h-6 rounded-sm bg-sky-50 text-sky-600 flex items-center justify-center text-[10px] font-bold border border-white">
                                         0{index + 1}
                                     </div>
                                 </div>
