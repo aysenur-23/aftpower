@@ -1,143 +1,131 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
-import { ArrowRight, Zap } from 'lucide-react';
+import { ArrowRight, Zap, ShieldCheck, Leaf } from 'lucide-react';
 
 export default function Hero() {
     const t = useTranslations('hero');
     const locale = useLocale();
 
+    const stats = [
+        { value: '500+', label: locale === 'ar' ? 'مشروع' : locale === 'en' ? 'Projects' : 'Proje' },
+        { value: '10+', label: locale === 'ar' ? 'سنوات' : locale === 'en' ? 'Years' : 'Yıl' },
+        { value: '99%', label: locale === 'ar' ? 'رضا' : locale === 'en' ? 'Satisfaction' : 'Memnuniyet' },
+    ];
+
+    const trust = [
+        { icon: ShieldCheck, label: locale === 'ar' ? 'ضمان' : locale === 'en' ? 'Warranty' : 'Garantili' },
+        { icon: Leaf, label: locale === 'ar' ? 'طاقة نظيفة' : locale === 'en' ? 'Clean Energy' : 'Temiz Enerji' },
+        { icon: Zap, label: locale === 'ar' ? 'أداء عالٍ' : locale === 'en' ? 'High Output' : 'Yüksek Güç' },
+    ];
+
     return (
-        <section className="relative w-[100vw] min-h-[130vh] left-[50%] right-[50%] -ml-[50vw] -mr-[50vw] bg-white -mt-20 flex flex-col items-center justify-center overflow-hidden">
-            {/* Background Video */}
-            <div className="absolute inset-[-20px] w-[calc(100%+40px)] h-[calc(100%+40px)]">
-                <video
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    preload="auto"
-                    poster="/images/hero/1.png"
-                    className="absolute inset-0 w-full h-full object-cover min-w-full min-h-full"
-                    style={{ objectFit: 'cover', objectPosition: 'center', transform: 'scale(1.15)' }}
-                >
-                    <source src="/videos/hero-new.mp4" type="video/mp4" />
-                </video>
-
-                {/* Light overlay — beyaz/açık mavi tonlu */}
-                <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, rgba(240,249,255,0.92) 0%, rgba(224,242,254,0.82) 50%, rgba(240,249,255,0.9) 100%)', zIndex: 2 }} />
-                {/* Bottom fade */}
-                <div className="absolute bottom-0 left-0 right-0 h-48" style={{ background: 'linear-gradient(to top, #ffffff, transparent)', zIndex: 3 }} />
+        <section className="relative bg-white overflow-hidden">
+            {/* Subtle background accents */}
+            <div className="absolute inset-0 pointer-events-none">
+                <div className="absolute top-0 right-0 w-[45%] h-full" style={{ background: 'linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 100%)' }} />
+                <div className="absolute -top-24 -right-24 w-[420px] h-[420px] rounded-full" style={{ background: 'radial-gradient(circle, rgba(56,189,248,0.18), transparent 70%)', filter: 'blur(30px)' }} />
+                <div className="absolute bottom-0 left-1/4 w-[380px] h-[380px] rounded-full" style={{ background: 'radial-gradient(circle, rgba(14,165,233,0.10), transparent 70%)', filter: 'blur(40px)' }} />
             </div>
 
-            {/* Animated glow orbs */}
-            <div className="absolute inset-0 pointer-events-none w-full h-full" style={{ zIndex: 3 }}>
-                <div
-                    className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full animate-pulse-slow"
-                    style={{ background: 'radial-gradient(circle, rgba(14, 165, 233,0.12) 0%, transparent 70%)', filter: 'blur(40px)' }}
-                />
-                <div
-                    className="absolute bottom-1/3 right-1/4 w-80 h-80 rounded-full animate-pulse-slow"
-                    style={{ background: 'radial-gradient(circle, rgba(56, 189, 248,0.2) 0%, transparent 70%)', filter: 'blur(50px)', animationDelay: '1.5s' }}
-                />
-            </div>
+            <div className="relative container px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center py-14 sm:py-20 lg:py-24">
 
-            {/* Content */}
-            <div className="relative container px-4 sm:px-6 lg:px-8" style={{ zIndex: 10 }}>
-                <div className="w-full max-w-4xl mx-auto">
-                    <div className="space-y-6 sm:space-y-8 text-center">
-
+                    {/* LEFT — Text */}
+                    <div className="text-center lg:text-left order-2 lg:order-1">
                         {/* Brand badge */}
-                        <div className="flex items-center justify-center gap-2 animate-fade-in">
-                            <div className="flex items-center gap-2 px-4 py-1.5 border border-sky-500/40 bg-sky-500/10 backdrop-blur-sm">
-                                <Zap className="w-3.5 h-3.5 text-sky-600" />
-                                <span className="text-sky-600 text-[10px] tracking-[0.3em] uppercase font-brand font-semibold">AFT Power</span>
-                                <Zap className="w-3.5 h-3.5 text-sky-600" />
-                            </div>
+                        <div className="inline-flex items-center gap-2 px-4 py-1.5 border border-sky-200 bg-sky-50 mb-6 animate-fade-in">
+                            <Zap className="w-3.5 h-3.5 text-sky-600" />
+                            <span className="text-sky-700 text-[10px] tracking-[0.3em] uppercase font-brand font-semibold">AFT Power</span>
                         </div>
 
-                        <div className="space-y-3 sm:space-y-4">
-                            <h1
-                                className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 leading-[1.05] tracking-tight animate-slide-up font-body"
+                        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-[1.08] tracking-tight animate-slide-up">
+                            <span className="block">{t('title1')}</span>
+                            <span
+                                className="block mt-1"
+                                style={{
+                                    background: 'linear-gradient(to right, #0284c7, #0ea5e9, #38bdf8)',
+                                    WebkitBackgroundClip: 'text',
+                                    WebkitTextFillColor: 'transparent',
+                                    backgroundClip: 'text',
+                                }}
                             >
-                                <span className="block">{t('title1')}</span>
-                                <span
-                                    className="block mt-1"
-                                    style={{
-                                        background: 'linear-gradient(to right, #0ea5e9, #38bdf8, #7dd3fc)',
-                                        WebkitBackgroundClip: 'text',
-                                        WebkitTextFillColor: 'transparent',
-                                        backgroundClip: 'text',
-                                        filter: 'drop-shadow(0 4px 20px rgba(14, 165, 233,0.4))'
-                                    }}
-                                >
-                                    {t('title2')}
-                                </span>
-                            </h1>
+                                {t('title2')}
+                            </span>
+                        </h1>
 
-                            {/* Accent line */}
-                            <div className="flex items-center justify-center gap-3 my-4">
-                                <div className="h-px w-16 bg-gradient-to-r from-transparent to-sky-500" />
-                                <div className="w-1.5 h-1.5 bg-sky-500 rotate-45" />
-                                <div className="h-px w-16 bg-gradient-to-l from-transparent to-sky-500" />
-                            </div>
-
-                            <p
-                                className="text-sm sm:text-base md:text-lg text-slate-600 max-w-xl mx-auto leading-relaxed animate-fade-in font-body"
-                                style={{ animationDelay: '0.2s' }}
-                            >
-                                {t('description')}
-                            </p>
+                        {/* Accent line */}
+                        <div className="flex items-center justify-center lg:justify-start gap-3 my-6">
+                            <div className="h-1 w-12 rounded-full bg-gradient-to-r from-sky-500 to-sky-300" />
+                            <div className="w-1.5 h-1.5 bg-sky-500 rotate-45" />
                         </div>
+
+                        <p className="text-base sm:text-lg text-slate-600 max-w-lg mx-auto lg:mx-0 leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
+                            {t('description')}
+                        </p>
 
                         {/* CTA Buttons */}
-                        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+                        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start mt-8 animate-fade-in" style={{ animationDelay: '0.4s' }}>
                             <Link
                                 href={`/${locale}/urunlerimiz/`}
-                                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-white font-semibold text-sm uppercase tracking-widest transition-all duration-300 hover:scale-105 font-body"
+                                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-white font-semibold text-sm uppercase tracking-widest transition-all duration-300 hover:-translate-y-0.5"
                                 style={{
                                     background: 'linear-gradient(135deg, #0ea5e9, #0284c7)',
                                     clipPath: 'polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px))',
-                                    boxShadow: '0 0 0 rgba(14, 165, 233,0)'
+                                    boxShadow: '0 10px 30px rgba(14,165,233,0.25)'
                                 }}
-                                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.boxShadow = '0 0 30px rgba(14, 165, 233,0.5)'; }}
-                                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.boxShadow = '0 0 0 rgba(14, 165, 233,0)'; }}
                             >
                                 {t('exploreProducts')}
                                 <ArrowRight className="h-4 w-4" />
                             </Link>
                             <Link
                                 href={`/${locale}/fiyat-teklifi/`}
-                                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-slate-700 font-semibold text-sm uppercase tracking-widest transition-all duration-300 hover:scale-105 font-body"
-                                style={{
-                                    border: '1px solid rgba(14, 165, 233,0.4)',
-                                    background: 'rgba(255,255,255,0.7)',
-                                    backdropFilter: 'blur(10px)',
-                                    clipPath: 'polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px))'
-                                }}
-                                onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(14, 165, 233,0.12)'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(14, 165, 233,0.6)'; }}
-                                onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.7)'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(14, 165, 233,0.4)'; }}
+                                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-slate-700 font-semibold text-sm uppercase tracking-widest border border-slate-200 bg-white transition-all duration-300 hover:border-sky-400 hover:text-sky-700"
+                                style={{ clipPath: 'polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px))' }}
                             >
                                 {t('getQuote')}
                             </Link>
                         </div>
 
-                        {/* Stats row */}
-                        <div className="flex items-center justify-center gap-8 sm:gap-12 pt-4 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-                            {[
-                                { value: '500+', label: locale === 'ar' ? 'مشروع' : locale === 'en' ? 'Projects' : 'Proje' },
-                                { value: '10+', label: locale === 'ar' ? 'سنوات' : locale === 'en' ? 'Years' : 'Yıl' },
-                                { value: '99%', label: locale === 'ar' ? 'رضا' : locale === 'en' ? 'Satisfaction' : 'Memnuniyet' },
-                            ].map((stat) => (
-                                <div key={stat.label} className="text-center">
-                                    <div className="text-2xl sm:text-3xl font-bold font-brand" style={{ background: 'linear-gradient(to right, #0ea5e9, #38bdf8)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
-                                        {stat.value}
-                                    </div>
-                                    <div className="text-[10px] text-slate-500 uppercase tracking-[0.15em] mt-0.5 font-body">{stat.label}</div>
+                        {/* Trust badges */}
+                        <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2 mt-8 animate-fade-in" style={{ animationDelay: '0.5s' }}>
+                            {trust.map((item) => (
+                                <div key={item.label} className="flex items-center gap-2 text-slate-500">
+                                    <item.icon className="w-4 h-4 text-sky-500" />
+                                    <span className="text-xs font-medium">{item.label}</span>
                                 </div>
                             ))}
                         </div>
+                    </div>
+
+                    {/* RIGHT — Image */}
+                    <div className="order-1 lg:order-2 relative animate-fade-in">
+                        <div className="relative w-full max-w-lg mx-auto">
+                            <Image
+                                src="/images/hero/hero-corporate.png"
+                                alt="AFT Power - Enerji Depolama Sistemi"
+                                width={1200}
+                                height={1000}
+                                className="w-full h-auto"
+                                priority
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                {/* Stats bar */}
+                <div className="relative border-t border-slate-100 py-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+                    <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto lg:mx-0">
+                        {stats.map((stat) => (
+                            <div key={stat.label} className="text-center lg:text-left">
+                                <div className="text-2xl sm:text-3xl lg:text-4xl font-bold font-brand" style={{ background: 'linear-gradient(to right, #0ea5e9, #38bdf8)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+                                    {stat.value}
+                                </div>
+                                <div className="text-[10px] sm:text-xs text-slate-500 uppercase tracking-[0.15em] mt-1 font-body">{stat.label}</div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
