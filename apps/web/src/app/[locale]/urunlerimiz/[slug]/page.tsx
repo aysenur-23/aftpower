@@ -1356,14 +1356,14 @@ export default async function ProductDetailPage({ params }: Props) {
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">
                                 <Link
                                     href={`/${locale}/fiyat-teklifi/`}
-                                    className="btn btn-primary w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg bg-gradient-to-r from-sky-500 to-sky-600 hover:from-sky-600 hover:to-sky-700 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 sm:gap-3"
+                                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-md bg-sky-600 text-white font-semibold text-sm tracking-wide hover:bg-sky-700 hover:-translate-y-0.5 transition-all duration-300 shadow-lg shadow-sky-600/20"
                                 >
                                     <span>{tDetail('labels.getQuote') || 'Fiyat Teklifi Talep Et'}</span>
-                                    <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" />
+                                    <ArrowRight className="h-4 w-4" />
                                 </Link>
                                 <Link
                                     href={`/${locale}/iletisim/`}
-                                    className="btn btn-primary w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg bg-gradient-to-r from-sky-500 to-sky-700 hover:from-sky-700 hover:to-sky-800 text-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 sm:gap-3"
+                                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-md border border-slate-300 bg-white text-slate-700 font-semibold text-sm tracking-wide hover:border-sky-400 hover:text-sky-700 transition-all duration-300"
                                 >
                                     <span>{locale === 'tr' ? 'Uzman Danışmanlığı' : locale === 'ar' ? 'استشارة الخبراء' : 'Expert Consultation'}</span>
                                 </Link>

@@ -10,6 +10,7 @@ import {
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
+import PageHero from '@/components/ui/PageHero';
 import { db } from '@/lib/firebase';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 
@@ -119,26 +120,12 @@ export default function QuotePage() {
 
     return (
         <div className="min-h-screen bg-white">
-            {/* Header Section - Elegant & Minimal */}
-            <section className="relative pt-24 pb-10 lg:pt-28 lg:pb-12 overflow-hidden bg-gradient-to-b from-slate-50 to-white">
-                {/* Subtle Decorative Elements */}
-                <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-sky-50/20 to-transparent pointer-events-none" />
-                <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-gradient-to-tr from-sky-50/10 to-transparent pointer-events-none" />
-
-                <div className="container relative z-10 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto text-center">
-                    <div className="max-w-2xl mx-auto space-y-4">
-                        {/* Title */}
-                        <h1 className="reveal-up text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight leading-tight">
-                            {t('title')}
-                        </h1>
-
-                        {/* Description */}
-                        <p className="reveal-up text-lg text-slate-500 leading-relaxed font-medium" style={{ ['--delay' as string]: '120ms' }}>
-                            {t('description')}
-                        </p>
-                    </div>
-                </div>
-            </section>
+            {/* Header — homepage-aligned PageHero */}
+            <PageHero
+                eyebrow={locale === 'ar' ? 'احصل على عرض سعر' : locale === 'en' ? 'GET A QUOTE' : 'TEKLİF AL'}
+                title={t('title')}
+                description={t('description')}
+            />
 
             {/* Form Section */}
             <section className="py-12 lg:py-16 bg-white">

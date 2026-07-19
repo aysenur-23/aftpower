@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
+import PageHero from '@/components/ui/PageHero';
 import { db } from '@/lib/firebase';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 
@@ -94,28 +95,12 @@ export default function Iletisim() {
 
     return (
         <div className="min-h-screen bg-white">
-            {/* Hero Section - Clean & Simple */}
-            <section className="relative pt-28 pb-12 lg:pt-32 lg:pb-16 flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-white to-sky-50">
-                <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.1)_1px,transparent_1px)] bg-[size:40px_40px]" />
-                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-sky-500/10 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/3" />
-
-                <div className="container relative z-10 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto text-center">
-                    <div className="space-y-4">
-                        <div className="reveal-up inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/10 border border-sky-500/20">
-                            <span className="flex h-2 w-2 rounded-full bg-sky-400 animate-pulse" />
-                            <span className="text-xs font-bold text-sky-600 uppercase tracking-wider">
-                                {locale === 'tr' ? 'İletişim' : locale === 'ar' ? 'اتصل بنا' : 'Contact'}
-                            </span>
-                        </div>
-                        <h1 className="reveal-up text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight" style={{ ['--delay' as string]: '90ms' }}>
-                            {t('title')}
-                        </h1>
-                        <p className="reveal-up text-base sm:text-lg text-slate-600 max-w-xl mx-auto font-medium" style={{ ['--delay' as string]: '180ms' }}>
-                            {t('description')}
-                        </p>
-                    </div>
-                </div>
-            </section>
+            {/* Hero — homepage-aligned PageHero */}
+            <PageHero
+                eyebrow={locale === 'tr' ? 'İLETİŞİM' : locale === 'ar' ? 'اتصل بنا' : 'CONTACT'}
+                title={t('title')}
+                description={t('description')}
+            />
 
             {/* Main Content Area */}
             <div className="container px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto py-16 lg:py-24">

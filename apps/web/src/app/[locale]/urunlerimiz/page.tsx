@@ -93,7 +93,7 @@ export default async function ProductsPage({ params }: Props) {
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-sky-400"></span>
                         </span>
-                        <span className="text-sm font-bold text-sky-500 tracking-widest uppercase">{t('allProductsTitle')}</span>
+                        <span className="font-brand text-sm font-bold text-sky-600 tracking-widest uppercase">{t('allProductsTitle')}</span>
                     </div>
 
                     <h1 className="reveal-up font-bold text-slate-900 tracking-tight leading-[1.1] mb-6" style={{ ['--delay' as string]: '90ms' }}>
