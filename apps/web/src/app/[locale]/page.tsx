@@ -1,13 +1,11 @@
 import { setRequestLocale, getTranslations } from 'next-intl/server';
-import Hero from '@/components/home/Hero';
-import MissionStatement from '@/components/home/MissionStatement';
+import EditorialHero from '@/components/home/EditorialHero';
+import WhatWeDo from '@/components/home/WhatWeDo';
 import Features from '@/components/home/Features';
 import EnergyJourney from '@/components/home/EnergyJourney';
-import PortablePower from '@/components/home/PortablePower';
-import Services from '@/components/home/Services';
-import CustomSolutions from '@/components/home/CustomSolutions';
 import SoftwareShowcase from '@/components/home/SoftwareShowcase';
 import FinalCTA from '@/components/home/FinalCTA';
+import Ticker from '@/components/ui/Ticker';
 
 interface Props {
     params: Promise<{ locale: string }>;
@@ -17,49 +15,40 @@ export default async function HomePage({ params }: Props) {
     const { locale } = await params;
     setRequestLocale(locale);
 
+    const tickerItems = locale === 'ar'
+        ? ['تخزين الطاقة', 'أنظمة ERP', 'برمجيات مخصصة', 'المراقبة', 'LiFePO₄', 'الطاقة الشمسية', 'شحن المركبات']
+        : locale === 'en'
+            ? ['Energy Storage', 'ERP Systems', 'Bespoke Software', 'Monitoring', 'LiFePO₄', 'Solar', 'EV Charging']
+            : ['Enerji Depolama', 'ERP Sistemleri', 'Firmaya Özel Yazılım', 'İzleme & Analitik', 'LiFePO₄', 'Solar', 'Şarj İstasyonları'];
+
     return (
         <div className="relative">
-            {/* Hero Section - Unscaled */}
-            <Hero />
+            {/* Editorial hero — asymmetric, oversized type */}
+            <EditorialHero />
 
-            {/* Main Content */}
-            <div className="relative">
-                {/* Mission Statement */}
-                <section className="relative z-10 overflow-hidden">
-                    <MissionStatement />
-                </section>
+            {/* Keyword ticker (signature) */}
+            <Ticker items={tickerItems} tone="dark" className="hairline-b" />
 
-                {/* Product Categories - Sticky split scroll storytelling */}
-                <section className="relative z-40">
-                    <EnergyJourney />
-                </section>
+            {/* §01 — What we do (bento) */}
+            <WhatWeDo />
 
-                {/* Portable Power Showcase */}
-                <section className="relative z-50 overflow-hidden">
-                    <PortablePower />
-                </section>
+            {/* §02 — Product categories (sticky split) */}
+            <div className="hairline">
+                <EnergyJourney />
+            </div>
 
-                {/* Services */}
-                <section className="relative z-60 overflow-hidden">
-                    <Services />
-                </section>
+            {/* §03 — AFT Software */}
+            <div className="hairline">
+                <SoftwareShowcase />
+            </div>
 
-                {/* AFT Software — Smart energy management platform */}
-                <section className="relative z-75 overflow-hidden">
-                    <SoftwareShowcase />
-                </section>
+            {/* §04 — Why AFT Power & Software */}
+            <div className="hairline">
+                <Features />
+            </div>
 
-                {/* Features (Neden AFT Power) */}
-                <section className="relative z-20 overflow-hidden">
-                    <Features />
-                </section>
-
-                {/* Custom Solutions */}
-                <section className="relative z-70 overflow-hidden">
-                    <CustomSolutions />
-                </section>
-
-                {/* Final CTA band */}
+            {/* Final CTA */}
+            <div className="hairline">
                 <FinalCTA />
             </div>
         </div>

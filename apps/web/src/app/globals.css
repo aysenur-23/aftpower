@@ -195,6 +195,43 @@ p, span, a, li, button, input, textarea, label {
   animation-delay: var(--delay, 0ms);
 }
 
+/* --- Editorial Tech dil yardımcıları --- */
+
+/* Sonsuz yatay şerit (ticker/marquee) */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee var(--marquee-duration, 32s) linear infinite;
+}
+
+/* İri editoryal tipografi (akışkan clamp) */
+.display-xl {
+  font-size: clamp(2.6rem, 8.5vw, 7.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  font-weight: 800;
+}
+.display-lg {
+  font-size: clamp(2rem, 5.5vw, 4rem);
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+  font-weight: 800;
+}
+
+/* İnce cetvel/ayraç çizgileri */
+.hairline { border-top: 1px solid rgba(15, 23, 42, 0.10); }
+.hairline-b { border-bottom: 1px solid rgba(15, 23, 42, 0.10); }
+
+/* Editoryal iri index numarası */
+.index-num {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
 .animate-fade-in {
   animation: fade-in 0.6s ease-out forwards;
 }
