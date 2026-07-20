@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { useState } from 'react';
 import { cn } from '@/lib/utils';
-import PageHero from '@/components/ui/PageHero';
+import EditorialPageHero from '@/components/ui/EditorialPageHero';
 import { db } from '@/lib/firebase';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 
@@ -95,11 +95,14 @@ export default function Iletisim() {
 
     return (
         <div className="min-h-screen bg-white">
-            {/* Hero — homepage-aligned PageHero */}
-            <PageHero
-                eyebrow={locale === 'tr' ? 'İLETİŞİM' : locale === 'ar' ? 'اتصل بنا' : 'CONTACT'}
+            {/* Hero — editorial */}
+            <EditorialPageHero
+                index="§ 06"
+                label={locale === 'tr' ? 'İLETİŞİM' : locale === 'ar' ? 'اتصل بنا' : 'CONTACT'}
+                metaRight="AFT POWER & SOFTWARE"
                 title={t('title')}
                 description={t('description')}
+                breadcrumb={[{ label: locale === 'ar' ? 'الرئيسية' : locale === 'en' ? 'Home' : 'Ana Sayfa', href: `/${locale}/` }, { label: locale === 'tr' ? 'İletişim' : locale === 'ar' ? 'اتصل بنا' : 'Contact' }]}
             />
 
             {/* Main Content Area */}

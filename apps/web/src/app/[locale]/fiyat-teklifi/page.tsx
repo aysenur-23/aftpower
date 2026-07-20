@@ -10,7 +10,7 @@ import {
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
-import PageHero from '@/components/ui/PageHero';
+import EditorialPageHero from '@/components/ui/EditorialPageHero';
 import { db } from '@/lib/firebase';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 
@@ -120,11 +120,14 @@ export default function QuotePage() {
 
     return (
         <div className="min-h-screen bg-white">
-            {/* Header — homepage-aligned PageHero */}
-            <PageHero
-                eyebrow={locale === 'ar' ? 'احصل على عرض سعر' : locale === 'en' ? 'GET A QUOTE' : 'TEKLİF AL'}
+            {/* Header — editorial */}
+            <EditorialPageHero
+                index="§ 07"
+                label={locale === 'ar' ? 'احصل على عرض سعر' : locale === 'en' ? 'GET A QUOTE' : 'TEKLİF AL'}
+                metaRight="AFT POWER & SOFTWARE"
                 title={t('title')}
                 description={t('description')}
+                breadcrumb={[{ label: locale === 'ar' ? 'الرئيسية' : locale === 'en' ? 'Home' : 'Ana Sayfa', href: `/${locale}/` }, { label: locale === 'ar' ? 'عرض سعر' : locale === 'en' ? 'Quote' : 'Teklif' }]}
             />
 
             {/* Form Section */}

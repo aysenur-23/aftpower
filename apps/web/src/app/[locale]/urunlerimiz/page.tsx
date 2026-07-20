@@ -3,6 +3,7 @@ import { getTranslations } from 'next-intl/server';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, Battery, Truck, Zap, Server, Sun } from 'lucide-react';
+import EditorialPageHero from '@/components/ui/EditorialPageHero';
 
 interface Props {
     params: Promise<{ locale: string }>;
@@ -76,49 +77,18 @@ export default async function ProductsPage({ params }: Props) {
 
     return (
         <div className="min-h-screen bg-slate-50">
-            {/* Hero Section */}
-            {/* Hero Section - Premium Redesign without Grid */}
-            <section className="relative pt-24 pb-12 lg:pt-28 lg:pb-16 overflow-hidden bg-white">
-                {/* Premium Animated Background */}
-                <div className="absolute inset-0 z-0">
-                    <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-sky-500/10 rounded-full blur-[120px] mix-blend-multiply animate-pulse" style={{ animationDuration: '8s' }} />
-                    <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-sky-100/40 rounded-full blur-[100px] mix-blend-multiply animate-pulse" style={{ animationDuration: '10s', animationDelay: '2s' }} />
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-sky-50/60 rounded-full blur-[80px]" />
-                </div>
-
-                <div className="container relative z-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
-                    {/* Badge */}
-                    <div className="reveal-up inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/5 border border-sky-500/15 mb-8">
-                        <span className="relative flex h-2 w-2">
-                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-                            <span className="relative inline-flex rounded-full h-2 w-2 bg-sky-400"></span>
-                        </span>
-                        <span className="font-brand text-sm font-bold text-sky-600 tracking-widest uppercase">{t('allProductsTitle')}</span>
-                    </div>
-
-                    <h1 className="reveal-up font-bold text-slate-900 tracking-tight leading-[1.1] mb-6" style={{ ['--delay' as string]: '90ms' }}>
-                        <span className="block font-medium text-slate-500 text-base sm:text-lg lg:text-xl mb-3 tracking-normal">
-                            {hero.titleLine1}
-                        </span>
-                        <span className="text-3xl sm:text-4xl lg:text-5xl block mb-2">
-                            {hero.titleLine2}{' '}
-                            <span className="relative inline-block">
-                                <span className="relative z-10 bg-gradient-to-r from-sky-500 via-sky-600 to-sky-500 bg-clip-text text-transparent">
-                                    {hero.titleHighlight}
-                                </span>
-                                {/* Underline decoration */}
-                                <svg className="absolute w-full h-3 -bottom-1 left-0 text-sky-200 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
-                                    <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="8" fill="none" />
-                                </svg>
-                            </span>
-                        </span>
-                    </h1>
-
-                    <p className="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto font-normal">
-                        {hero.description}
-                    </p>
-                </div>
-            </section>
+            {/* Hero — editorial */}
+            <div className="bg-white">
+                <EditorialPageHero
+                    index="§ 03"
+                    label={t('allProductsTitle')}
+                    metaRight="AFT POWER & SOFTWARE"
+                    title={hero.titleLine2}
+                    highlight={hero.titleHighlight}
+                    description={hero.description}
+                    breadcrumb={[{ label: locale === 'ar' ? 'الرئيسية' : locale === 'en' ? 'Home' : 'Ana Sayfa', href: `/${locale}/` }, { label: hero.titleLine2 }]}
+                />
+            </div>
 
             {/* Categories & Products */}
             {categories.map((cat) => {

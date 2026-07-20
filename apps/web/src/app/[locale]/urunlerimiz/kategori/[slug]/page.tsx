@@ -85,8 +85,15 @@ export default async function CategoryPage({ params }: Props) {
 
     return (
         <div className="min-h-screen bg-white">
+            {/* Editorial meta bar */}
+            <div className="hairline-b bg-white">
+                <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10 flex items-center justify-between h-11">
+                    <span className="font-brand text-[10px] font-bold tracking-[0.3em] uppercase text-slate-500">§ 04 — {t(`${category.titleKey}.title`)}</span>
+                    <span className="hidden sm:block font-brand text-[10px] font-bold tracking-[0.3em] uppercase text-sky-600">AFT POWER &amp; SOFTWARE</span>
+                </div>
+            </div>
             {/* Premium Category Hero - Enhanced Light Theme */}
-            <section className="relative pt-24 pb-12 lg:pt-28 lg:pb-16 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-sky-50/50">
+            <section className="relative pt-14 pb-12 lg:pt-16 lg:pb-16 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-sky-50/50">
                 {/* Refined Background Pattern */}
                 <div className="absolute inset-0 z-0 pointer-events-none">
                     <div className="absolute inset-0 opacity-[0.035] bg-[linear-gradient(rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.1)_1px,transparent_1px)] bg-[size:50px_50px]" />

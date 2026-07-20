@@ -1,7 +1,7 @@
 import { setRequestLocale } from 'next-intl/server';
 import { getTranslations } from 'next-intl/server';
 import ServiceCards from '@/components/services/ServiceCards';
-import PageHero from '@/components/ui/PageHero';
+import EditorialPageHero from '@/components/ui/EditorialPageHero';
 
 interface Props {
     params: Promise<{ locale: string }>;
@@ -11,11 +11,19 @@ export default async function ServicesPage({ params }: Props) {
     const { locale } = await params;
     setRequestLocale(locale);
     const t = await getTranslations('services');
-    const eyebrow = locale === 'ar' ? 'خدماتنا' : locale === 'en' ? 'OUR SERVICES' : 'HİZMETLERİMİZ';
+    const label = locale === 'ar' ? 'خدماتنا' : locale === 'en' ? 'OUR SERVICES' : 'HİZMETLERİMİZ';
+    const home = locale === 'ar' ? 'الرئيسية' : locale === 'en' ? 'Home' : 'Ana Sayfa';
 
     return (
         <div className="min-h-screen bg-white">
-            <PageHero eyebrow={eyebrow} title={t('title')} description={t('subtitle')} />
+            <EditorialPageHero
+                index="§ 02"
+                label={label}
+                metaRight="AFT POWER & SOFTWARE"
+                title={t('title')}
+                description={t('subtitle')}
+                breadcrumb={[{ label: home, href: `/${locale}/` }, { label }]}
+            />
             {/* Services Grid */}
             <ServiceCards />
         </div>
