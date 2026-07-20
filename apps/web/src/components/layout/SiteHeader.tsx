@@ -151,7 +151,7 @@ export default function SiteHeader() {
             {/* Top accent line */}
             <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-sky-500 to-transparent" />
 
-            <div className="container px-3 sm:px-4 lg:px-8 flex h-16 sm:h-18 items-center justify-between">
+            <div className="container px-3 sm:px-4 lg:px-4 xl:px-8 flex h-16 sm:h-18 items-center justify-between">
                 {/* Logo / Brand */}
                 <Link href={`/${locale}/`} className="flex items-center gap-2 group shrink-0" onClick={handleLinkClick}>
                     <div className="w-9 h-9 rounded-md flex items-center justify-center shrink-0" style={{ background: 'linear-gradient(135deg, #0ea5e9, #0284c7)' }}>
@@ -181,7 +181,7 @@ export default function SiteHeader() {
                             <Link
                                 href={item.href}
                                 className={cn(
-                                    "flex items-center gap-1 whitespace-nowrap px-3 xl:px-4 py-2 text-sm font-medium tracking-wide transition-all duration-200 relative font-body",
+                                    "flex items-center gap-1 whitespace-nowrap px-2 lg:px-2.5 xl:px-4 py-2 text-sm font-medium tracking-wide transition-all duration-200 relative font-body",
                                     "text-slate-600 hover:text-sky-400",
                                     activeMegaMenu === item.hasMegaMenu && "text-sky-400",
                                     "after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[2px] after:bg-sky-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-center"
@@ -595,6 +595,14 @@ export default function SiteHeader() {
                                 </div>
                             )}
                         </div>
+
+                        <Link
+                            href={`/${locale}/yazilim/`}
+                            className="block px-3 py-3 text-sm font-medium text-slate-600 hover:text-sky-400 hover:bg-slate-100 transition-colors font-body"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            {locale === 'ar' ? 'البرمجيات' : locale === 'en' ? 'Software' : 'Yazılım'}
+                        </Link>
 
                         <Link
                             href={`/${locale}/kurumsal/`}

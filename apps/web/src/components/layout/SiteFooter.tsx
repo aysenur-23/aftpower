@@ -96,6 +96,11 @@ export default async function SiteFooter() {
                         </h3>
                         <ul className="space-y-2.5 text-xs text-slate-500 font-body">
                             <li>
+                                <Link href={`/${locale}/yazilim/`} className="hover:text-sky-400 transition-colors">
+                                    {locale === 'ar' ? 'البرمجيات' : locale === 'en' ? 'Software' : 'Yazılım'}
+                                </Link>
+                            </li>
+                            <li>
                                 <Link href={`/${locale}/kurumsal/`} className="hover:text-sky-400 transition-colors">
                                     {t('corporate')}
                                 </Link>
