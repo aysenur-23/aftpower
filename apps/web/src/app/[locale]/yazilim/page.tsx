@@ -44,7 +44,7 @@ export default async function SoftwarePage({ params }: Props) {
     return (
         <div className="min-h-screen bg-white">
             <EditorialPageHero
-                index="§ 01"
+                index="§ 03"
                 label={L('YAZILIM', 'SOFTWARE', 'البرمجيات')}
                 metaRight="AFT POWER & SOFTWARE"
                 title={L('Firmanıza Özel', 'Software Built', 'برمجيات مخصصة')}
@@ -62,7 +62,7 @@ export default async function SoftwarePage({ params }: Props) {
             {/* §02 — Services */}
             <section className="py-14 lg:py-20">
                 <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10">
-                    <EditorialSection index="§ 02" eyebrow={L('KAPSAM', 'CAPABILITIES', 'الخدمات')} title={L('Yazılım hizmetlerimiz', 'Our software services', 'خدماتنا البرمجية')} />
+                    <EditorialSection index="§ 01" eyebrow={L('KAPSAM', 'CAPABILITIES', 'الخدمات')} title={L('Yazılım hizmetlerimiz', 'Our software services', 'خدماتنا البرمجية')} />
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5">
                         {services.map((s, i) => (
                             <div key={i} className="group rounded-2xl border border-slate-200 p-7 hover:border-sky-400 hover:-translate-y-1 hover:shadow-xl hover:shadow-sky-900/5 transition-all duration-300 bg-white">
@@ -83,7 +83,7 @@ export default async function SoftwarePage({ params }: Props) {
             {/* §03 — Process */}
             <section className="py-14 lg:py-20 bg-slate-50">
                 <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10">
-                    <EditorialSection index="§ 03" eyebrow={L('SÜRECİMİZ', 'OUR PROCESS', 'منهجيتنا')} title={L('Fikirden canlı sisteme', 'From idea to live system', 'من الفكرة إلى نظام حي')} />
+                    <EditorialSection index="§ 02" eyebrow={L('SÜRECİMİZ', 'OUR PROCESS', 'منهجيتنا')} title={L('Fikirden canlı sisteme', 'From idea to live system', 'من الفكرة إلى نظام حي')} />
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
                         {steps.map((st, i) => (
                             <div key={i} className="relative rounded-2xl bg-white border border-slate-200 p-6">
@@ -102,7 +102,7 @@ export default async function SoftwarePage({ params }: Props) {
             {/* §04 — Platform */}
             <section className="py-14 lg:py-20">
                 <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10">
-                    <EditorialSection index="§ 04" eyebrow={L('PLATFORM', 'PLATFORM', 'المنصة')} title={L('Tek panelden yönetim', 'Manage from one panel', 'إدارة من لوحة واحدة')} />
+                    <EditorialSection index="§ 03" eyebrow={L('PLATFORM', 'PLATFORM', 'المنصة')} title={L('Tek panelden yönetim', 'Manage from one panel', 'إدارة من لوحة واحدة')} />
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                         <div className="relative rounded-2xl overflow-hidden ring-1 ring-slate-200 shadow-2xl shadow-sky-900/10">
                             <Image src="/images/software/dashboard.png" alt={L('Yönetim paneli', 'Management dashboard', 'لوحة الإدارة')} width={1200} height={900} className="w-full h-auto" />

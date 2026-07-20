@@ -97,7 +97,7 @@ export default function Iletisim() {
         <div className="min-h-screen bg-white">
             {/* Hero — editorial */}
             <EditorialPageHero
-                index="§ 06"
+                index="§ 05"
                 label={locale === 'tr' ? 'İLETİŞİM' : locale === 'ar' ? 'اتصل بنا' : 'CONTACT'}
                 metaRight="AFT POWER & SOFTWARE"
                 title={t('title')}

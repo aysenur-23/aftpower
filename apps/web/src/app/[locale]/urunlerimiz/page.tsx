@@ -80,7 +80,7 @@ export default async function ProductsPage({ params }: Props) {
             {/* Hero — editorial */}
             <div className="bg-white">
                 <EditorialPageHero
-                    index="§ 03"
+                    index="§ 01"
                     label={t('allProductsTitle')}
                     metaRight="AFT POWER & SOFTWARE"
                     title={hero.titleLine2}

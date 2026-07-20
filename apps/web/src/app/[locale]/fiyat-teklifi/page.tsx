@@ -122,7 +122,7 @@ export default function QuotePage() {
         <div className="min-h-screen bg-white">
             {/* Header — editorial */}
             <EditorialPageHero
-                index="§ 07"
+                index="§ 06"
                 label={locale === 'ar' ? 'احصل على عرض سعر' : locale === 'en' ? 'GET A QUOTE' : 'TEKLİF AL'}
                 metaRight="AFT POWER & SOFTWARE"
                 title={t('title')}

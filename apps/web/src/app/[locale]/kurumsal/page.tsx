@@ -24,7 +24,7 @@ export default function Kurumsal() {
         <div className="min-h-screen bg-white">
             {/* Hero — editorial */}
             <EditorialPageHero
-                index="§ 01"
+                index="§ 04"
                 label={t('badge')}
                 metaRight="AFT POWER & SOFTWARE"
                 title={t('heroTitle')}
@@ -39,7 +39,7 @@ export default function Kurumsal() {
             {/* Product Showcase */}
             <section className="py-14 lg:py-20 bg-gradient-to-b from-slate-50 to-white">
                 <div className="container px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-                    <EditorialSection index="§ 02" eyebrow={L('HAKKIMIZDA', 'ABOUT US', 'من نحن')} title={t('aboutTitle')} subtitle={t('aboutDescription')} />
+                    <EditorialSection index="§ 01" eyebrow={L('HAKKIMIZDA', 'ABOUT US', 'من نحن')} title={t('aboutTitle')} subtitle={t('aboutDescription')} />
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                         {/* Image */}
                         <div className="relative bg-gradient-to-br from-sky-50 to-slate-100 rounded-3xl p-10 lg:p-16 border border-slate-200">
@@ -79,7 +79,7 @@ export default function Kurumsal() {
             {/* Mission & Vision */}
             <section className="py-14 lg:py-20">
                 <div className="container px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-                    <EditorialSection index="§ 03" eyebrow={L('YÖNÜMÜZ', 'OUR DIRECTION', 'توجهنا')} title={L('Misyon & Vizyon', 'Mission & Vision', 'المهمة والرؤية')} />
+                    <EditorialSection index="§ 02" eyebrow={L('YÖNÜMÜZ', 'OUR DIRECTION', 'توجهنا')} title={L('Misyon & Vizyon', 'Mission & Vision', 'المهمة والرؤية')} />
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
                         <div className="p-8 lg:p-12 bg-gradient-to-br from-sky-50 to-white border border-sky-500/15 rounded-3xl shadow-sm hover:shadow-lg transition-all duration-300">
                             <div className="flex items-center gap-4 mb-6">
@@ -109,7 +109,7 @@ export default function Kurumsal() {
                 <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.1)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
 
                 <div className="container px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative z-10">
-                    <EditorialSection index="§ 04" eyebrow={L('DEĞERLERİMİZ', 'OUR VALUES', 'قيمنا')} title={t('valuesTitle')} subtitle={t('valuesSubtitle')} />
+                    <EditorialSection index="§ 03" eyebrow={L('DEĞERLERİMİZ', 'OUR VALUES', 'قيمنا')} title={t('valuesTitle')} subtitle={t('valuesSubtitle')} />
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                         {valuesData.map((value, idx) => (

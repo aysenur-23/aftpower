@@ -890,7 +890,7 @@ export default async function ProductDetailPage({ params }: Props) {
                 {/* Editorial meta bar */}
                 <div className="hairline-b bg-white">
                     <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10 flex items-center justify-between h-11">
-                        <span className="font-brand text-[10px] font-bold tracking-[0.3em] uppercase text-slate-500">§ 05 — {localizedName}</span>
+                        <span className="font-brand text-[10px] font-bold tracking-[0.3em] uppercase text-slate-500">§ 01 — {localizedName}</span>
                         <span className="hidden sm:block font-brand text-[10px] font-bold tracking-[0.3em] uppercase text-sky-600">AFT POWER &amp; SOFTWARE</span>
                     </div>
                 </div>
