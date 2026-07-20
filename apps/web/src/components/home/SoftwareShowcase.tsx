@@ -90,7 +90,7 @@ export default function SoftwareShowcase() {
                         </div>
 
                         <Link
-                            href={`/${locale}/iletisim/`}
+                            href={`/${locale}/yazilim/`}
                             className="group inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-md bg-sky-600 text-white font-semibold text-sm tracking-wide transition-all duration-300 hover:bg-sky-700 hover:-translate-y-0.5 shadow-lg shadow-sky-600/20"
                         >
                             {cta}

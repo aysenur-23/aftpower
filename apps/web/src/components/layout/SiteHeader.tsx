@@ -105,6 +105,7 @@ export default function SiteHeader() {
         { name: t('home'), href: `/${locale}/` },
         { name: t('products'), href: `/${locale}/urunlerimiz/`, hasMegaMenu: 'products' },
         { name: t('services'), href: `/${locale}/hizmetlerimiz/`, hasMegaMenu: 'services' },
+        { name: locale === 'ar' ? 'البرمجيات' : locale === 'en' ? 'Software' : 'Yazılım', href: `/${locale}/yazilim/` },
         { name: t('corporate'), href: `/${locale}/kurumsal/` },
         { name: t('contact'), href: `/${locale}/iletisim/` },
     ];
