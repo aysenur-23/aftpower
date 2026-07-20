@@ -6,10 +6,12 @@ import Link from 'next/link';
 import { Shield, Lightbulb, Users, Award, ArrowRight, Target, Eye, Battery, Zap } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import EditorialPageHero from '@/components/ui/EditorialPageHero';
+import EditorialSection from '@/components/ui/EditorialSection';
 
 export default function Kurumsal() {
     const t = useTranslations('corporatePage');
     const locale = useLocale();
+    const L = (tr: string, en: string, ar: string) => (locale === 'ar' ? ar : locale === 'en' ? en : tr);
 
     const valuesData = [
         { icon: Shield, title: t('values.reliability.title'), desc: t('values.reliability.description'), color: 'bg-sky-400' },
@@ -35,8 +37,9 @@ export default function Kurumsal() {
             />
 
             {/* Product Showcase */}
-            <section className="py-16 lg:py-24 bg-gradient-to-b from-slate-50 to-white">
+            <section className="py-14 lg:py-20 bg-gradient-to-b from-slate-50 to-white">
                 <div className="container px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+                    <EditorialSection index="§ 02" eyebrow={L('HAKKIMIZDA', 'ABOUT US', 'من نحن')} title={t('aboutTitle')} subtitle={t('aboutDescription')} />
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                         {/* Image */}
                         <div className="relative bg-gradient-to-br from-sky-50 to-slate-100 rounded-3xl p-10 lg:p-16 border border-slate-200">
@@ -52,15 +55,6 @@ export default function Kurumsal() {
 
                         {/* Content */}
                         <div className="space-y-8">
-                            <div>
-                                <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight mb-6">
-                                    {t('aboutTitle')}
-                                </h2>
-                                <p className="text-lg text-slate-600 leading-relaxed">
-                                    {t('aboutDescription')}
-                                </p>
-                            </div>
-
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 <div className="p-6 bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
                                     <div className="w-12 h-12 rounded-xl bg-sky-400 flex items-center justify-center text-white mb-4 shadow-lg shadow-sky-500/30">
@@ -83,8 +77,9 @@ export default function Kurumsal() {
             </section>
 
             {/* Mission & Vision */}
-            <section className="py-16 lg:py-24">
+            <section className="py-14 lg:py-20">
                 <div className="container px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+                    <EditorialSection index="§ 03" eyebrow={L('YÖNÜMÜZ', 'OUR DIRECTION', 'توجهنا')} title={L('Misyon & Vizyon', 'Mission & Vision', 'المهمة والرؤية')} />
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
                         <div className="p-8 lg:p-12 bg-gradient-to-br from-sky-50 to-white border border-sky-500/15 rounded-3xl shadow-sm hover:shadow-lg transition-all duration-300">
                             <div className="flex items-center gap-4 mb-6">
@@ -114,10 +109,7 @@ export default function Kurumsal() {
                 <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.1)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
 
                 <div className="container px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative z-10">
-                    <div className="text-center mb-12 sm:mb-16">
-                        <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-4">{t('valuesTitle')}</h2>
-                        <p className="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">{t('valuesSubtitle')}</p>
-                    </div>
+                    <EditorialSection index="§ 04" eyebrow={L('DEĞERLERİMİZ', 'OUR VALUES', 'قيمنا')} title={t('valuesTitle')} subtitle={t('valuesSubtitle')} />
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                         {valuesData.map((value, idx) => (
