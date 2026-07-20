@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Shield, Lightbulb, Users, Award, ArrowRight, Target, Eye, Battery, Zap } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import PageHero from '@/components/ui/PageHero';
+import EditorialPageHero from '@/components/ui/EditorialPageHero';
 
 export default function Kurumsal() {
     const t = useTranslations('corporatePage');
@@ -20,8 +20,19 @@ export default function Kurumsal() {
 
     return (
         <div className="min-h-screen bg-white">
-            {/* Hero — light, homepage-aligned */}
-            <PageHero eyebrow={t('badge')} title={t('heroTitle')} description={t('heroSubtitle')} />
+            {/* Hero — editorial */}
+            <EditorialPageHero
+                index="§ 01"
+                label={t('badge')}
+                metaRight="AFT POWER & SOFTWARE"
+                title={t('heroTitle')}
+                description={t('heroSubtitle')}
+                breadcrumb={[{ label: locale === 'ar' ? 'الرئيسية' : locale === 'en' ? 'Home' : 'Ana Sayfa', href: `/${locale}/` }, { label: t('badge') }]}
+                ctas={[
+                    { label: locale === 'ar' ? 'المنتجات' : locale === 'en' ? 'Products' : 'Ürünler', href: `/${locale}/urunlerimiz/`, primary: true },
+                    { label: locale === 'ar' ? 'اتصل بنا' : locale === 'en' ? 'Contact' : 'İletişim', href: `/${locale}/iletisim/` },
+                ]}
+            />
 
             {/* Product Showcase */}
             <section className="py-16 lg:py-24 bg-gradient-to-b from-slate-50 to-white">
