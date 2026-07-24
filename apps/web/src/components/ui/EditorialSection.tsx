@@ -19,7 +19,7 @@ export default function EditorialSection({ index, eyebrow, title, subtitle, clas
                 <span className="index-num text-3xl sm:text-5xl lg:text-6xl text-sky-200 leading-none shrink-0 select-none">{index}</span>
                 <div className="min-w-0">
                     {eyebrow && (
-                        <span className="reveal-up block font-brand text-sky-600 font-bold tracking-[0.24em] text-[11px] uppercase mb-2">
+                        <span className="reveal-up eyebrow block mb-2">
                             {eyebrow}
                         </span>
                     )}
