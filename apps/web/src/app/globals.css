@@ -362,52 +362,59 @@ p, span, a, li, button, input, textarea, label {
 }
 
 /* Button styles - keskin köşeli, endüstriyel */
+/* Kurumsal buton sistemi (Faz 3) — tüm durumlar */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0;
+  gap: 0.5rem;
+  border-radius: var(--radius-sm);
   font-weight: 600;
   font-family: 'Space Grotesk', sans-serif;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  font-size: 0.78rem;
-  transition: all 0.25s ease;
+  letter-spacing: 0.01em;
+  font-size: 0.875rem;
+  padding: 0.75rem 1.5rem;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  white-space: nowrap;
 }
+.btn:disabled, .btn[aria-disabled="true"], .btn.is-loading {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+.btn.is-loading { position: relative; color: transparent !important; }
+.btn.is-loading::after {
+  content: '';
+  position: absolute;
+  width: 1rem; height: 1rem;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 9999px;
+  animation: spin 0.7s linear infinite;
+  color: #fff;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
 
 .btn-primary {
-  background: linear-gradient(135deg, #0ea5e9, #0284c7);
-  color: white;
-  padding: 0.75rem 2rem;
-  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+  background: #0284c7;         /* sky-600 */
+  color: #fff;
+  box-shadow: var(--shadow-md);
 }
-
-.btn-primary:hover {
-  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
-  box-shadow: 0 0 30px rgba(14, 165, 233, 0.5);
-  transform: translateY(-2px);
-}
+.btn-primary:hover:not(:disabled):not(.is-loading) { background: #0369a1; transform: translateY(-1px); box-shadow: var(--shadow-lg); }
+.btn-primary:active:not(:disabled) { transform: translateY(0); background: #075985; }
 
 .btn-outline {
-  border: 1px solid rgba(14, 165, 233, 0.5);
-  color: #0ea5e9;
-  background: transparent;
-  padding: 0.75rem 2rem;
+  border: 1px solid #cbd5e1;   /* slate-300 */
+  color: #334155;              /* slate-700 */
+  background: #fff;
 }
+.btn-outline:hover:not(:disabled) { border-color: #38bdf8; color: #0369a1; }
+.btn-outline:active:not(:disabled) { background: #f0f9ff; }
 
-.btn-outline:hover {
-  border-color: #0ea5e9;
-  background: rgba(14, 165, 233, 0.1);
-  box-shadow: 0 0 20px rgba(14, 165, 233, 0.2);
-}
-
-.btn-ghost {
-  background: transparent;
-}
-
-.btn-ghost:hover {
-  background: rgba(14, 165, 233, 0.08);
-}
+.btn-ghost { background: transparent; color: #0284c7; }
+.btn-ghost:hover:not(:disabled) { background: rgba(14, 165, 233, 0.08); }
 
 /* Mobile optimizations */
 .container-mobile-enhanced {

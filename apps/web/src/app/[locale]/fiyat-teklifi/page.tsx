@@ -339,10 +339,10 @@ export default function QuotePage() {
                                     <button
                                         type="submit"
                                         disabled={isSubmitting}
-                                        className="w-full h-14 bg-sky-500 text-white rounded-xl font-bold text-base hover:bg-sky-600 transition-all shadow-lg flex items-center justify-center gap-3 disabled:opacity-50 disabled:cursor-not-allowed"
+                                        className="w-full h-14 bg-sky-600 text-white rounded-md font-bold text-base hover:bg-sky-700 active:bg-sky-800 transition-all shadow-lg shadow-sky-600/20 flex items-center justify-center gap-3 disabled:opacity-55 disabled:cursor-not-allowed"
                                     >
                                         {isSubmitting ? (
-                                            <div className="w-6 h-6 border-4 border-white border-t-transparent rounded-full animate-spin" />
+                                            <div className="w-6 h-6 border-2 border-white/40 border-t-white rounded-full animate-spin" />
                                         ) : (
                                             <>
                                                 {t('submitButton')}

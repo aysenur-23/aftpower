@@ -172,10 +172,10 @@ export default function Iletisim() {
                             <button
                                 type="submit"
                                 disabled={isSubmitting}
-                                className="inline-flex items-center justify-center gap-3 h-14 px-10 bg-sky-500 text-white rounded-xl font-bold hover:bg-sky-600 transition-all shadow-lg shadow-sky-100 disabled:opacity-50"
+                                className="inline-flex items-center justify-center gap-3 h-14 px-10 bg-sky-600 text-white rounded-md font-bold hover:bg-sky-700 active:bg-sky-800 transition-all shadow-lg shadow-sky-600/20 disabled:opacity-55 disabled:cursor-not-allowed"
                             >
                                 {isSubmitting ? (
-                                    <div className="w-5 h-5 border-3 border-white/30 border-t-white rounded-full animate-spin" />
+                                    <div className="w-5 h-5 border-2 border-white/40 border-t-white rounded-full animate-spin" />
                                 ) : (
                                     <>
                                         <span>{t('sendButton')}</span>
