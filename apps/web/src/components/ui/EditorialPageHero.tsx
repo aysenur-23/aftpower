@@ -56,7 +56,7 @@ export default function EditorialPageHero({
                         )}
                         <h1 className="display-lg font-brand text-slate-900">
                             <span className="reveal-up inline-block">{title}</span>
-                            {highlight && <span className="reveal-up inline-block text-sky-600 ml-[0.25em]" style={{ ['--delay' as string]: '90ms' }}>{highlight}</span>}
+                            {highlight && <span className="reveal-up inline-block text-sky-600 ms-[0.25em]" style={{ ['--delay' as string]: '90ms' }}>{highlight}</span>}
                         </h1>
                     </div>
 
